@@ -3,739 +3,578 @@ VERSION:2.0
 PRODID:-//Ricadre//Football Calendar//ZH-CN
 CALSCALE:GREGORIAN
 METHOD:PUBLISH
-X-WR-CALNAME:AC Milan
+X-WR-CALNAME:AC米兰
 X-WR-TIMEZONE:Asia/Shanghai
-X-WR-CALDESC:AC Milan 与兰州陇原竞技；北京时间；早提醒及
- 开赛前30分钟。场馆核实情况见备注。
+X-WR-CALDESC:AC米兰与兰州陇原竞技；北京时间：比赛日 09:00
+ ；开赛前 30 分钟提醒。在 09:00 及之前开球，早提醒改为
+ 前一天 21:00。场馆核实情况见备注。
 REFRESH-INTERVAL;VALUE=DURATION:PT6H
 X-PUBLISHED-TTL:PT6H
 URL:https://ricadre.github.io/football-calendar/calendars/milan.ics
 BEGIN:VEVENT
 UID:milan-6a31e80bc63e9a4df43c94c5@football-calendar.ricadre.github.io
-DTSTAMP:20260908T063456Z
+DTSTAMP:20260908T065550Z
 CREATED:20260908T063456Z
-LAST-MODIFIED:20260908T063456Z
-SEQUENCE:0
+LAST-MODIFIED:20260908T065550Z
+SEQUENCE:2
 DTSTART:20260828T184500Z
 DTEND:20260828T204500Z
-SUMMARY:AC Milan vs 威尼斯｜意甲 · 第2轮
+SUMMARY:【主场】AC米兰 vs 威尼斯｜意甲 · 第2轮
 LOCATION:圣西罗球场（San Siro / Giuseppe Meazza）
-DESCRIPTION:AC Milan（主） vs 威尼斯（客）\n意甲 · 第2轮\n开
- 球：2026-08-29 02:45 北京时间\n场馆：圣西罗球场（San Siro /
-  Giuseppe Meazza）\n场馆说明：米兰官网赛程列示场馆\n赛程
- 来源：https://www.acmilan.com/en/season/active/schedule/all\n场馆来
- 源：https://www.acmilan.com/en/season/active/schedule/all\n日历占用2
- 小时，仅为观赛预留；实际终场时间可能变化。
+DESCRIPTION:AC米兰（主） vs 威尼斯（客）\n主客：AC米兰主
+ 场\n意甲 · 第2轮\n开球（北京时间）：2026-08-29 02:45\n开
+ 球（意大利时间）：2026-08-28 20:45\n场馆：圣西罗球场（Sa
+ n Siro / Giuseppe Meazza）\n场馆说明：米兰官网赛程列示场馆
+ \n赛程来源：https://www.acmilan.com/en/season/active/schedule/all\n
+ 场馆来源：https://www.acmilan.com/en/season/active/schedule/all\n日
+ 历预留120分钟；实际终场时间可能变化。
 URL:https://www.acmilan.com/en/season/active/schedule/all
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
-CATEGORIES:AC Milan
+CATEGORIES:AC米兰
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:AC Milan vs 威尼斯｜意甲 · 第2轮\n08月29日 02:45 北
- 京时间\n圣西罗球场（San Siro / Giuseppe Meazza）
+DESCRIPTION:【主场】AC米兰 vs 威尼斯｜意甲 · 第2轮\n08月29
+ 日 02:45 北京时间\n圣西罗球场（San Siro / Giuseppe Meazza）
 TRIGGER:-PT20700S
 END:VALARM
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:AC Milan vs 威尼斯｜意甲 · 第2轮\n08月29日 02:45 北
- 京时间\n圣西罗球场（San Siro / Giuseppe Meazza）
+DESCRIPTION:【主场】AC米兰 vs 威尼斯｜意甲 · 第2轮\n08月29
+ 日 02:45 北京时间\n圣西罗球场（San Siro / Giuseppe Meazza）
 TRIGGER:-PT1800S
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:milan-6a31e808c63e9a4df43c9479@football-calendar.ricadre.github.io
-DTSTAMP:20260908T063456Z
+DTSTAMP:20260908T065550Z
 CREATED:20260908T063456Z
-LAST-MODIFIED:20260908T063456Z
-SEQUENCE:0
+LAST-MODIFIED:20260908T065550Z
+SEQUENCE:2
 DTSTART:20260906T184500Z
 DTEND:20260906T204500Z
-SUMMARY:尤文图斯 vs AC Milan｜意甲 · 第3轮
+SUMMARY:【客场】尤文图斯 vs AC米兰｜意甲 · 第3轮
 LOCATION:Allianz Stadium
-DESCRIPTION:尤文图斯（主） vs AC Milan（客）\n意甲 · 第3轮\n
- 开球：2026-09-07 02:45 北京时间\n场馆：Allianz Stadium\n场馆
- 说明：米兰官网赛程列示场馆\n赛程来源：https://www.acmila
- n.com/en/season/active/schedule/all\n场馆来源：https://www.acmilan.co
- m/en/season/active/schedule/all\n日历占用2小时，仅为观赛预留
- ；实际终场时间可能变化。
+DESCRIPTION:尤文图斯（主） vs AC米兰（客）\n主客：AC米兰
+ 客场\n意甲 · 第3轮\n开球（北京时间）：2026-09-07 02:45\n
+ 开球（意大利时间）：2026-09-06 20:45\n场馆：Allianz Stadium\n
+ 场馆说明：米兰官网赛程列示场馆\n赛程来源：https://www.
+ acmilan.com/en/season/active/schedule/all\n场馆来源：https://www.acmi
+ lan.com/en/season/active/schedule/all\n日历预留120分钟；实际终
+ 场时间可能变化。
 URL:https://www.acmilan.com/en/season/active/schedule/all
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
-CATEGORIES:AC Milan
+CATEGORIES:AC米兰
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:尤文图斯 vs AC Milan｜意甲 · 第3轮\n09月07日 02:45 
- 北京时间\nAllianz Stadium
+DESCRIPTION:【客场】尤文图斯 vs AC米兰｜意甲 · 第3轮\n09月
+ 07日 02:45 北京时间\nAllianz Stadium
 TRIGGER:-PT20700S
 END:VALARM
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:尤文图斯 vs AC Milan｜意甲 · 第3轮\n09月07日 02:45 
- 北京时间\nAllianz Stadium
+DESCRIPTION:【客场】尤文图斯 vs AC米兰｜意甲 · 第3轮\n09月
+ 07日 02:45 北京时间\nAllianz Stadium
 TRIGGER:-PT1800S
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:milan-6a31e805c63e9a4df43c942c@football-calendar.ricadre.github.io
-DTSTAMP:20260908T063456Z
+DTSTAMP:20260908T065550Z
 CREATED:20260908T063456Z
-LAST-MODIFIED:20260908T063456Z
-SEQUENCE:0
+LAST-MODIFIED:20260908T065550Z
+SEQUENCE:2
 DTSTART:20260912T160000Z
 DTEND:20260912T180000Z
-SUMMARY:拉齐奥 vs AC Milan｜意甲 · 第4轮
+SUMMARY:【客场】拉齐奥 vs AC米兰｜意甲 · 第4轮
 LOCATION:罗马奥林匹克球场（Stadio Olimpico）
-DESCRIPTION:拉齐奥（主） vs AC Milan（客）\n意甲 · 第4轮\n开
- 球：2026-09-13 00:00 北京时间\n场馆：罗马奥林匹克球场（S
- tadio Olimpico）\n场馆说明：米兰官网赛程列示场馆\n赛程
- 来源：https://www.acmilan.com/en/season/active/schedule/all\n场馆来
- 源：https://www.acmilan.com/en/season/active/schedule/all\n日历占用2
- 小时，仅为观赛预留；实际终场时间可能变化。
+DESCRIPTION:拉齐奥（主） vs AC米兰（客）\n主客：AC米兰客
+ 场\n意甲 · 第4轮\n开球（北京时间）：2026-09-13 00:00\n开
+ 球（意大利时间）：2026-09-12 18:00\n场馆：罗马奥林匹克
+ 球场（Stadio Olimpico）\n场馆说明：米兰官网赛程列示场馆
+ \n赛程来源：https://www.acmilan.com/en/season/active/schedule/all\n
+ 场馆来源：https://www.acmilan.com/en/season/active/schedule/all\n日
+ 历预留120分钟；实际终场时间可能变化。
 URL:https://www.acmilan.com/en/season/active/schedule/all
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
-CATEGORIES:AC Milan
+CATEGORIES:AC米兰
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:拉齐奥 vs AC Milan｜意甲 · 第4轮\n09月13日 00:00 北
- 京时间\n罗马奥林匹克球场（Stadio Olimpico）
+DESCRIPTION:【客场】拉齐奥 vs AC米兰｜意甲 · 第4轮\n09月13
+ 日 00:00 北京时间\n罗马奥林匹克球场（Stadio Olimpico）
 TRIGGER:-PT10800S
 END:VALARM
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:拉齐奥 vs AC Milan｜意甲 · 第4轮\n09月13日 00:00 北
- 京时间\n罗马奥林匹克球场（Stadio Olimpico）
+DESCRIPTION:【客场】拉齐奥 vs AC米兰｜意甲 · 第4轮\n09月13
+ 日 00:00 北京时间\n罗马奥林匹克球场（Stadio Olimpico）
 TRIGGER:-PT1800S
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:milan-6a957ee6af5945385cfd86af@football-calendar.ricadre.github.io
-DTSTAMP:20260908T063456Z
+DTSTAMP:20260908T065550Z
 CREATED:20260908T063456Z
-LAST-MODIFIED:20260908T063456Z
-SEQUENCE:0
+LAST-MODIFIED:20260908T065550Z
+SEQUENCE:2
 DTSTART:20260916T190000Z
 DTEND:20260916T210000Z
-SUMMARY:AC Milan vs 本菲卡｜欧联杯 · 第1轮
+SUMMARY:【主场】AC米兰 vs 本菲卡｜欧联杯 · 第1轮
 LOCATION:圣西罗球场（San Siro / Giuseppe Meazza）
-DESCRIPTION:AC Milan（主） vs 本菲卡（客）\n欧联杯 · 第1轮\n
- 开球：2026-09-17 03:00 北京时间\n场馆：圣西罗球场（San Sir
- o / Giuseppe Meazza）\n场馆说明：米兰官网赛程列示场馆\n赛
- 程来源：https://www.acmilan.com/en/season/active/schedule/all\n场馆
- 来源：https://www.acmilan.com/en/season/active/schedule/all\n日历占
- 用2小时，仅为观赛预留；实际终场时间可能变化。
+DESCRIPTION:AC米兰（主） vs 本菲卡（客）\n主客：AC米兰主
+ 场\n欧联杯 · 第1轮\n开球（北京时间）：2026-09-17 03:00\n
+ 开球（意大利时间）：2026-09-16 21:00\n场馆：圣西罗球场
+ （San Siro / Giuseppe Meazza）\n场馆说明：米兰官网赛程列示
+ 场馆\n赛程来源：https://www.acmilan.com/en/season/active/schedule/a
+ ll\n场馆来源：https://www.acmilan.com/en/season/active/schedule/all\n
+ 日历预留120分钟；实际终场时间可能变化。
 URL:https://www.acmilan.com/en/season/active/schedule/all
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
-CATEGORIES:AC Milan
+CATEGORIES:AC米兰
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:AC Milan vs 本菲卡｜欧联杯 · 第1轮\n09月17日 03:00 
- 北京时间\n圣西罗球场（San Siro / Giuseppe Meazza）
+DESCRIPTION:【主场】AC米兰 vs 本菲卡｜欧联杯 · 第1轮\n09月
+ 17日 03:00 北京时间\n圣西罗球场（San Siro / Giuseppe Meazza）
 TRIGGER:-PT21600S
 END:VALARM
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:AC Milan vs 本菲卡｜欧联杯 · 第1轮\n09月17日 03:00 
- 北京时间\n圣西罗球场（San Siro / Giuseppe Meazza）
+DESCRIPTION:【主场】AC米兰 vs 本菲卡｜欧联杯 · 第1轮\n09月
+ 17日 03:00 北京时间\n圣西罗球场（San Siro / Giuseppe Meazza）
 TRIGGER:-PT1800S
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:milan-6a31e803c63e9a4df43c93df@football-calendar.ricadre.github.io
-DTSTAMP:20260908T063456Z
+DTSTAMP:20260908T065550Z
 CREATED:20260908T063456Z
-LAST-MODIFIED:20260908T063456Z
-SEQUENCE:0
+LAST-MODIFIED:20260908T065550Z
+SEQUENCE:2
 DTSTART:20260920T184500Z
 DTEND:20260920T204500Z
-SUMMARY:AC Milan vs 莱切｜意甲 · 第5轮
+SUMMARY:【主场】AC米兰 vs 莱切｜意甲 · 第5轮
 LOCATION:圣西罗球场（San Siro / Giuseppe Meazza）
-DESCRIPTION:AC Milan（主） vs 莱切（客）\n意甲 · 第5轮\n开球
- ：2026-09-21 02:45 北京时间\n场馆：圣西罗球场（San Siro / Gi
- useppe Meazza）\n场馆说明：米兰官网赛程列示场馆\n赛程来
- 源：https://www.acmilan.com/en/season/active/schedule/all\n场馆来源
- ：https://www.acmilan.com/en/season/active/schedule/all\n日历占用2小
- 时，仅为观赛预留；实际终场时间可能变化。
+DESCRIPTION:AC米兰（主） vs 莱切（客）\n主客：AC米兰主场\n
+ 意甲 · 第5轮\n开球（北京时间）：2026-09-21 02:45\n开球（
+ 意大利时间）：2026-09-20 20:45\n场馆：圣西罗球场（San Siro
+  / Giuseppe Meazza）\n场馆说明：米兰官网赛程列示场馆\n赛
+ 程来源：https://www.acmilan.com/en/season/active/schedule/all\n场馆
+ 来源：https://www.acmilan.com/en/season/active/schedule/all\n日历预
+ 留120分钟；实际终场时间可能变化。
 URL:https://www.acmilan.com/en/season/active/schedule/all
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
-CATEGORIES:AC Milan
+CATEGORIES:AC米兰
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:AC Milan vs 莱切｜意甲 · 第5轮\n09月21日 02:45 北京
- 时间\n圣西罗球场（San Siro / Giuseppe Meazza）
+DESCRIPTION:【主场】AC米兰 vs 莱切｜意甲 · 第5轮\n09月21日 
+ 02:45 北京时间\n圣西罗球场（San Siro / Giuseppe Meazza）
 TRIGGER:-PT20700S
 END:VALARM
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:AC Milan vs 莱切｜意甲 · 第5轮\n09月21日 02:45 北京
- 时间\n圣西罗球场（San Siro / Giuseppe Meazza）
+DESCRIPTION:【主场】AC米兰 vs 莱切｜意甲 · 第5轮\n09月21日 
+ 02:45 北京时间\n圣西罗球场（San Siro / Giuseppe Meazza）
 TRIGGER:-PT1800S
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:milan-6a31e801c63e9a4df43c9393@football-calendar.ricadre.github.io
-DTSTAMP:20260908T063456Z
+DTSTAMP:20260908T065550Z
 CREATED:20260908T063456Z
-LAST-MODIFIED:20260908T063456Z
-SEQUENCE:0
+LAST-MODIFIED:20260908T065550Z
+SEQUENCE:2
 DTSTART:20261011T160000Z
 DTEND:20261011T180000Z
-SUMMARY:萨索洛 vs AC Milan｜意甲 · 第6轮
+SUMMARY:【客场】萨索洛 vs AC米兰｜意甲 · 第6轮
 LOCATION:MAPEI Stadium
-DESCRIPTION:萨索洛（主） vs AC Milan（客）\n意甲 · 第6轮\n开
- 球：2026-10-12 00:00 北京时间\n场馆：MAPEI Stadium\n场馆说明
- ：米兰官网赛程列示场馆\n赛程来源：https://www.acmilan.com/
- en/season/active/schedule/all\n场馆来源：https://www.acmilan.com/en/s
- eason/active/schedule/all\n日历占用2小时，仅为观赛预留；实
- 际终场时间可能变化。
+DESCRIPTION:萨索洛（主） vs AC米兰（客）\n主客：AC米兰客
+ 场\n意甲 · 第6轮\n开球（北京时间）：2026-10-12 00:00\n开
+ 球（意大利时间）：2026-10-11 18:00\n场馆：MAPEI Stadium\n场
+ 馆说明：米兰官网赛程列示场馆\n赛程来源：https://www.acm
+ ilan.com/en/season/active/schedule/all\n场馆来源：https://www.acmilan
+ .com/en/season/active/schedule/all\n日历预留120分钟；实际终场
+ 时间可能变化。
 URL:https://www.acmilan.com/en/season/active/schedule/all
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
-CATEGORIES:AC Milan
+CATEGORIES:AC米兰
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:萨索洛 vs AC Milan｜意甲 · 第6轮\n10月12日 00:00 北
- 京时间\nMAPEI Stadium
+DESCRIPTION:【客场】萨索洛 vs AC米兰｜意甲 · 第6轮\n10月12
+ 日 00:00 北京时间\nMAPEI Stadium
 TRIGGER:-PT10800S
 END:VALARM
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:萨索洛 vs AC Milan｜意甲 · 第6轮\n10月12日 00:00 北
- 京时间\nMAPEI Stadium
+DESCRIPTION:【客场】萨索洛 vs AC米兰｜意甲 · 第6轮\n10月12
+ 日 00:00 北京时间\nMAPEI Stadium
 TRIGGER:-PT1800S
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:milan-6a957ee3af5945385cfd8517@football-calendar.ricadre.github.io
-DTSTAMP:20260908T063456Z
+DTSTAMP:20260908T065550Z
 CREATED:20260908T063456Z
-LAST-MODIFIED:20260908T063456Z
-SEQUENCE:0
+LAST-MODIFIED:20260908T065550Z
+SEQUENCE:2
 DTSTART:20261015T164500Z
 DTEND:20261015T184500Z
-SUMMARY:萨尔茨堡红牛 vs AC Milan｜欧联杯 · 第2轮
+SUMMARY:【客场】萨尔茨堡红牛 vs AC米兰｜欧联杯 · 第2轮
 LOCATION:Red Bull Arena
-DESCRIPTION:萨尔茨堡红牛（主） vs AC Milan（客）\n欧联杯 · 
- 第2轮\n开球：2026-10-16 00:45 北京时间\n场馆：Red Bull Arena\n
- 场馆说明：米兰官网赛程列示场馆\n赛程来源：https://www.
- acmilan.com/en/season/active/schedule/all\n场馆来源：https://www.acmi
- lan.com/en/season/active/schedule/all\n日历占用2小时，仅为观赛
- 预留；实际终场时间可能变化。
+DESCRIPTION:萨尔茨堡红牛（主） vs AC米兰（客）\n主客：AC
+ 米兰客场\n欧联杯 · 第2轮\n开球（北京时间）：2026-10-16 
+ 00:45\n开球（意大利时间）：2026-10-15 18:45\n场馆：Red Bull A
+ rena\n场馆说明：米兰官网赛程列示场馆\n赛程来源：https:
+ //www.acmilan.com/en/season/active/schedule/all\n场馆来源：https://ww
+ w.acmilan.com/en/season/active/schedule/all\n日历预留120分钟；实
+ 际终场时间可能变化。
 URL:https://www.acmilan.com/en/season/active/schedule/all
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
-CATEGORIES:AC Milan
+CATEGORIES:AC米兰
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:萨尔茨堡红牛 vs AC Milan｜欧联杯 · 第2轮\n10月16
- 日 00:45 北京时间\nRed Bull Arena
+DESCRIPTION:【客场】萨尔茨堡红牛 vs AC米兰｜欧联杯 · 第2
+ 轮\n10月16日 00:45 北京时间\nRed Bull Arena
 TRIGGER:-PT13500S
 END:VALARM
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:萨尔茨堡红牛 vs AC Milan｜欧联杯 · 第2轮\n10月16
- 日 00:45 北京时间\nRed Bull Arena
+DESCRIPTION:【客场】萨尔茨堡红牛 vs AC米兰｜欧联杯 · 第2
+ 轮\n10月16日 00:45 北京时间\nRed Bull Arena
 TRIGGER:-PT1800S
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:milan-6a31e7fdc63e9a4df43c9347@football-calendar.ricadre.github.io
-DTSTAMP:20260908T063456Z
+DTSTAMP:20260908T065550Z
 CREATED:20260908T063456Z
-LAST-MODIFIED:20260908T063456Z
-SEQUENCE:0
+LAST-MODIFIED:20260908T065550Z
+SEQUENCE:2
 DTSTART:20261018T160000Z
 DTEND:20261018T180000Z
-SUMMARY:AC Milan vs 亚特兰大｜意甲 · 第7轮
+SUMMARY:【主场】AC米兰 vs 亚特兰大｜意甲 · 第7轮
 LOCATION:圣西罗球场（San Siro / Giuseppe Meazza）
-DESCRIPTION:AC Milan（主） vs 亚特兰大（客）\n意甲 · 第7轮\n
- 开球：2026-10-19 00:00 北京时间\n场馆：圣西罗球场（San Sir
- o / Giuseppe Meazza）\n场馆说明：米兰官网赛程列示场馆\n赛
- 程来源：https://www.acmilan.com/en/season/active/schedule/all\n场馆
- 来源：https://www.acmilan.com/en/season/active/schedule/all\n日历占
- 用2小时，仅为观赛预留；实际终场时间可能变化。
+DESCRIPTION:AC米兰（主） vs 亚特兰大（客）\n主客：AC米兰
+ 主场\n意甲 · 第7轮\n开球（北京时间）：2026-10-19 00:00\n
+ 开球（意大利时间）：2026-10-18 18:00\n场馆：圣西罗球场
+ （San Siro / Giuseppe Meazza）\n场馆说明：米兰官网赛程列示
+ 场馆\n赛程来源：https://www.acmilan.com/en/season/active/schedule/a
+ ll\n场馆来源：https://www.acmilan.com/en/season/active/schedule/all\n
+ 日历预留120分钟；实际终场时间可能变化。
 URL:https://www.acmilan.com/en/season/active/schedule/all
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
-CATEGORIES:AC Milan
+CATEGORIES:AC米兰
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:AC Milan vs 亚特兰大｜意甲 · 第7轮\n10月19日 00:00 
- 北京时间\n圣西罗球场（San Siro / Giuseppe Meazza）
+DESCRIPTION:【主场】AC米兰 vs 亚特兰大｜意甲 · 第7轮\n10月
+ 19日 00:00 北京时间\n圣西罗球场（San Siro / Giuseppe Meazza）
 TRIGGER:-PT10800S
 END:VALARM
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:AC Milan vs 亚特兰大｜意甲 · 第7轮\n10月19日 00:00 
- 北京时间\n圣西罗球场（San Siro / Giuseppe Meazza）
+DESCRIPTION:【主场】AC米兰 vs 亚特兰大｜意甲 · 第7轮\n10月
+ 19日 00:00 北京时间\n圣西罗球场（San Siro / Giuseppe Meazza）
 TRIGGER:-PT1800S
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:milan-6a957ee0af5945385cfd8460@football-calendar.ricadre.github.io
-DTSTAMP:20260908T063456Z
+DTSTAMP:20260908T065550Z
 CREATED:20260908T063456Z
-LAST-MODIFIED:20260908T063456Z
-SEQUENCE:0
+LAST-MODIFIED:20260908T065550Z
+SEQUENCE:2
 DTSTART:20261022T190000Z
 DTEND:20261022T210000Z
-SUMMARY:伯恩茅斯 vs AC Milan｜欧联杯 · 第3轮
+SUMMARY:【客场】伯恩茅斯 vs AC米兰｜欧联杯 · 第3轮
 LOCATION:Vitality Stadium
-DESCRIPTION:伯恩茅斯（主） vs AC Milan（客）\n欧联杯 · 第3
- 轮\n开球：2026-10-23 03:00 北京时间\n场馆：Vitality Stadium\n
- 场馆说明：米兰官网赛程列示场馆\n赛程来源：https://www.
- acmilan.com/en/season/active/schedule/all\n场馆来源：https://www.acmi
- lan.com/en/season/active/schedule/all\n日历占用2小时，仅为观赛
- 预留；实际终场时间可能变化。
+DESCRIPTION:伯恩茅斯（主） vs AC米兰（客）\n主客：AC米兰
+ 客场\n欧联杯 · 第3轮\n开球（北京时间）：2026-10-23 03:00\
+ n开球（意大利时间）：2026-10-22 21:00\n场馆：Vitality Stadium
+ \n场馆说明：米兰官网赛程列示场馆\n赛程来源：https://ww
+ w.acmilan.com/en/season/active/schedule/all\n场馆来源：https://www.ac
+ milan.com/en/season/active/schedule/all\n日历预留120分钟；实际终
+ 场时间可能变化。
 URL:https://www.acmilan.com/en/season/active/schedule/all
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
-CATEGORIES:AC Milan
+CATEGORIES:AC米兰
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:伯恩茅斯 vs AC Milan｜欧联杯 · 第3轮\n10月23日 03:
- 00 北京时间\nVitality Stadium
+DESCRIPTION:【客场】伯恩茅斯 vs AC米兰｜欧联杯 · 第3轮\n10
+ 月23日 03:00 北京时间\nVitality Stadium
 TRIGGER:-PT21600S
 END:VALARM
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:伯恩茅斯 vs AC Milan｜欧联杯 · 第3轮\n10月23日 03:
- 00 北京时间\nVitality Stadium
+DESCRIPTION:【客场】伯恩茅斯 vs AC米兰｜欧联杯 · 第3轮\n10
+ 月23日 03:00 北京时间\nVitality Stadium
 TRIGGER:-PT1800S
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:milan-6a31e7fbc63e9a4df43c92fa@football-calendar.ricadre.github.io
-DTSTAMP:20260908T063456Z
+DTSTAMP:20260908T065550Z
 CREATED:20260908T063456Z
-LAST-MODIFIED:20260908T063456Z
-SEQUENCE:0
+LAST-MODIFIED:20260908T065550Z
+SEQUENCE:2
 DTSTART:20261025T194500Z
 DTEND:20261025T214500Z
-SUMMARY:乌迪内斯 vs AC Milan｜意甲 · 第8轮
+SUMMARY:【客场】乌迪内斯 vs AC米兰｜意甲 · 第8轮
 LOCATION:Bluenergy Stadium
-DESCRIPTION:乌迪内斯（主） vs AC Milan（客）\n意甲 · 第8轮\n
- 开球：2026-10-26 03:45 北京时间\n场馆：Bluenergy Stadium\n场馆
- 说明：米兰官网赛程列示场馆\n赛程来源：https://www.acmila
- n.com/en/season/active/schedule/all\n场馆来源：https://www.acmilan.co
- m/en/season/active/schedule/all\n日历占用2小时，仅为观赛预留
- ；实际终场时间可能变化。
+DESCRIPTION:乌迪内斯（主） vs AC米兰（客）\n主客：AC米兰
+ 客场\n意甲 · 第8轮\n开球（北京时间）：2026-10-26 03:45\n
+ 开球（意大利时间）：2026-10-25 20:45\n场馆：Bluenergy Stadium
+ \n场馆说明：米兰官网赛程列示场馆\n赛程来源：https://ww
+ w.acmilan.com/en/season/active/schedule/all\n场馆来源：https://www.ac
+ milan.com/en/season/active/schedule/all\n日历预留120分钟；实际终
+ 场时间可能变化。
 URL:https://www.acmilan.com/en/season/active/schedule/all
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
-CATEGORIES:AC Milan
+CATEGORIES:AC米兰
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:乌迪内斯 vs AC Milan｜意甲 · 第8轮\n10月26日 03:45 
- 北京时间\nBluenergy Stadium
+DESCRIPTION:【客场】乌迪内斯 vs AC米兰｜意甲 · 第8轮\n10月
+ 26日 03:45 北京时间\nBluenergy Stadium
 TRIGGER:-PT24300S
 END:VALARM
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:乌迪内斯 vs AC Milan｜意甲 · 第8轮\n10月26日 03:45 
- 北京时间\nBluenergy Stadium
+DESCRIPTION:【客场】乌迪内斯 vs AC米兰｜意甲 · 第8轮\n10月
+ 26日 03:45 北京时间\nBluenergy Stadium
 TRIGGER:-PT1800S
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:milan-6a31e7f9c63e9a4df43c92ae@football-calendar.ricadre.github.io
-DTSTAMP:20260908T063456Z
+DTSTAMP:20260908T065550Z
 CREATED:20260908T063456Z
-LAST-MODIFIED:20260908T063456Z
-SEQUENCE:0
+LAST-MODIFIED:20260908T065550Z
+SEQUENCE:2
 DTSTART:20261028T173000Z
 DTEND:20261028T193000Z
-SUMMARY:AC Milan vs 博洛尼亚｜意甲 · 第9轮
+SUMMARY:【主场】AC米兰 vs 博洛尼亚｜意甲 · 第9轮
 LOCATION:圣西罗球场（San Siro / Giuseppe Meazza）
-DESCRIPTION:AC Milan（主） vs 博洛尼亚（客）\n意甲 · 第9轮\n
- 开球：2026-10-29 01:30 北京时间\n场馆：圣西罗球场（San Sir
- o / Giuseppe Meazza）\n场馆说明：米兰官网赛程列示场馆\n赛
- 程来源：https://www.acmilan.com/en/season/active/schedule/all\n场馆
- 来源：https://www.acmilan.com/en/season/active/schedule/all\n日历占
- 用2小时，仅为观赛预留；实际终场时间可能变化。
+DESCRIPTION:AC米兰（主） vs 博洛尼亚（客）\n主客：AC米兰
+ 主场\n意甲 · 第9轮\n开球（北京时间）：2026-10-29 01:30\n
+ 开球（意大利时间）：2026-10-28 18:30\n场馆：圣西罗球场
+ （San Siro / Giuseppe Meazza）\n场馆说明：米兰官网赛程列示
+ 场馆\n赛程来源：https://www.acmilan.com/en/season/active/schedule/a
+ ll\n场馆来源：https://www.acmilan.com/en/season/active/schedule/all\n
+ 日历预留120分钟；实际终场时间可能变化。
 URL:https://www.acmilan.com/en/season/active/schedule/all
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
-CATEGORIES:AC Milan
+CATEGORIES:AC米兰
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:AC Milan vs 博洛尼亚｜意甲 · 第9轮\n10月29日 01:30 
- 北京时间\n圣西罗球场（San Siro / Giuseppe Meazza）
+DESCRIPTION:【主场】AC米兰 vs 博洛尼亚｜意甲 · 第9轮\n10月
+ 29日 01:30 北京时间\n圣西罗球场（San Siro / Giuseppe Meazza）
 TRIGGER:-PT16200S
 END:VALARM
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:AC Milan vs 博洛尼亚｜意甲 · 第9轮\n10月29日 01:30 
- 北京时间\n圣西罗球场（San Siro / Giuseppe Meazza）
+DESCRIPTION:【主场】AC米兰 vs 博洛尼亚｜意甲 · 第9轮\n10月
+ 29日 01:30 北京时间\n圣西罗球场（San Siro / Giuseppe Meazza）
 TRIGGER:-PT1800S
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:milan-6a31e7f6c63e9a4df43c9262@football-calendar.ricadre.github.io
-DTSTAMP:20260908T063456Z
+DTSTAMP:20260908T065550Z
 CREATED:20260908T063456Z
-LAST-MODIFIED:20260908T063456Z
-SEQUENCE:0
+LAST-MODIFIED:20260908T065550Z
+SEQUENCE:2
 DTSTART:20261031T194500Z
 DTEND:20261031T214500Z
-SUMMARY:AC Milan vs 国际米兰｜意甲 · 第10轮
+SUMMARY:【主场】AC米兰 vs 国际米兰｜意甲 · 第10轮
 LOCATION:圣西罗球场（San Siro / Giuseppe Meazza）
-DESCRIPTION:AC Milan（主） vs 国际米兰（客）\n意甲 · 第10轮\
- n开球：2026-11-01 03:45 北京时间\n场馆：圣西罗球场（San Si
- ro / Giuseppe Meazza）\n场馆说明：米兰官网赛程列示场馆\n
- 赛程来源：https://www.acmilan.com/en/season/active/schedule/all\n场
- 馆来源：https://www.acmilan.com/en/season/active/schedule/all\n日历
- 占用2小时，仅为观赛预留；实际终场时间可能变化。
+DESCRIPTION:AC米兰（主） vs 国际米兰（客）\n主客：AC米兰
+ 主场\n意甲 · 第10轮\n开球（北京时间）：2026-11-01 03:45\n
+ 开球（意大利时间）：2026-10-31 20:45\n场馆：圣西罗球场
+ （San Siro / Giuseppe Meazza）\n场馆说明：米兰官网赛程列示
+ 场馆\n赛程来源：https://www.acmilan.com/en/season/active/schedule/a
+ ll\n场馆来源：https://www.acmilan.com/en/season/active/schedule/all\n
+ 日历预留120分钟；实际终场时间可能变化。
 URL:https://www.acmilan.com/en/season/active/schedule/all
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
-CATEGORIES:AC Milan
+CATEGORIES:AC米兰
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:AC Milan vs 国际米兰｜意甲 · 第10轮\n11月01日 03:45
-  北京时间\n圣西罗球场（San Siro / Giuseppe Meazza）
+DESCRIPTION:【主场】AC米兰 vs 国际米兰｜意甲 · 第10轮\n11
+ 月01日 03:45 北京时间\n圣西罗球场（San Siro / Giuseppe Meazza
+ ）
 TRIGGER:-PT24300S
 END:VALARM
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:AC Milan vs 国际米兰｜意甲 · 第10轮\n11月01日 03:45
-  北京时间\n圣西罗球场（San Siro / Giuseppe Meazza）
+DESCRIPTION:【主场】AC米兰 vs 国际米兰｜意甲 · 第10轮\n11
+ 月01日 03:45 北京时间\n圣西罗球场（San Siro / Giuseppe Meazza
+ ）
 TRIGGER:-PT1800S
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:milan-6a957edeaf5945385cfd83f4@football-calendar.ricadre.github.io
-DTSTAMP:20260908T063456Z
+DTSTAMP:20260908T065550Z
 CREATED:20260908T063456Z
-LAST-MODIFIED:20260908T063456Z
-SEQUENCE:0
+LAST-MODIFIED:20260908T065550Z
+SEQUENCE:2
 DTSTART:20261105T174500Z
 DTEND:20261105T194500Z
-SUMMARY:AC Milan vs 费伦茨瓦罗斯｜欧联杯 · 第4轮
+SUMMARY:【主场】AC米兰 vs 费伦茨瓦罗斯｜欧联杯 · 第4轮
 LOCATION:圣西罗球场（San Siro / Giuseppe Meazza）
-DESCRIPTION:AC Milan（主） vs 费伦茨瓦罗斯（客）\n欧联杯 · 
- 第4轮\n开球：2026-11-06 01:45 北京时间\n场馆：圣西罗球场
- （San Siro / Giuseppe Meazza）\n场馆说明：米兰官网赛程列示
- 场馆\n赛程来源：https://www.acmilan.com/en/season/active/schedule/a
- ll\n场馆来源：https://www.acmilan.com/en/season/active/schedule/all\n
- 日历占用2小时，仅为观赛预留；实际终场时间可能变化
- 。
+DESCRIPTION:AC米兰（主） vs 费伦茨瓦罗斯（客）\n主客：AC
+ 米兰主场\n欧联杯 · 第4轮\n开球（北京时间）：2026-11-06 
+ 01:45\n开球（意大利时间）：2026-11-05 18:45\n场馆：圣西罗
+ 球场（San Siro / Giuseppe Meazza）\n场馆说明：米兰官网赛程
+ 列示场馆\n赛程来源：https://www.acmilan.com/en/season/active/sche
+ dule/all\n场馆来源：https://www.acmilan.com/en/season/active/schedule
+ /all\n日历预留120分钟；实际终场时间可能变化。
 URL:https://www.acmilan.com/en/season/active/schedule/all
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
-CATEGORIES:AC Milan
+CATEGORIES:AC米兰
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:AC Milan vs 费伦茨瓦罗斯｜欧联杯 · 第4轮\n11月06
- 日 01:45 北京时间\n圣西罗球场（San Siro / Giuseppe Meazza）
+DESCRIPTION:【主场】AC米兰 vs 费伦茨瓦罗斯｜欧联杯 · 第4
+ 轮\n11月06日 01:45 北京时间\n圣西罗球场（San Siro / Giuseppe 
+ Meazza）
 TRIGGER:-PT17100S
 END:VALARM
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:AC Milan vs 费伦茨瓦罗斯｜欧联杯 · 第4轮\n11月06
- 日 01:45 北京时间\n圣西罗球场（San Siro / Giuseppe Meazza）
+DESCRIPTION:【主场】AC米兰 vs 费伦茨瓦罗斯｜欧联杯 · 第4
+ 轮\n11月06日 01:45 北京时间\n圣西罗球场（San Siro / Giuseppe 
+ Meazza）
 TRIGGER:-PT1800S
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:milan-6a31e7f3c63e9a4df43c9215@football-calendar.ricadre.github.io
-DTSTAMP:20260908T063456Z
+DTSTAMP:20260908T065550Z
 CREATED:20260908T063456Z
-LAST-MODIFIED:20260908T063456Z
-SEQUENCE:0
+LAST-MODIFIED:20260908T065550Z
+SEQUENCE:2
 DTSTART:20261108T140000Z
 DTEND:20261108T160000Z
-SUMMARY:热那亚 vs AC Milan｜意甲 · 第11轮
+SUMMARY:【客场】热那亚 vs AC米兰｜意甲 · 第11轮
 LOCATION:Stadio Ferraris
-DESCRIPTION:热那亚（主） vs AC Milan（客）\n意甲 · 第11轮\n
- 开球：2026-11-08 22:00 北京时间\n场馆：Stadio Ferraris\n场馆
- 说明：米兰官网赛程列示场馆\n赛程来源：https://www.acmila
- n.com/en/season/active/schedule/all\n场馆来源：https://www.acmilan.co
- m/en/season/active/schedule/all\n日历占用2小时，仅为观赛预留
- ；实际终场时间可能变化。
+DESCRIPTION:热那亚（主） vs AC米兰（客）\n主客：AC米兰客
+ 场\n意甲 · 第11轮\n开球（北京时间）：2026-11-08 22:00\n开
+ 球（意大利时间）：2026-11-08 15:00\n场馆：Stadio Ferraris\n场
+ 馆说明：米兰官网赛程列示场馆\n赛程来源：https://www.acm
+ ilan.com/en/season/active/schedule/all\n场馆来源：https://www.acmilan
+ .com/en/season/active/schedule/all\n日历预留120分钟；实际终场
+ 时间可能变化。
 URL:https://www.acmilan.com/en/season/active/schedule/all
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
-CATEGORIES:AC Milan
+CATEGORIES:AC米兰
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:热那亚 vs AC Milan｜意甲 · 第11轮\n11月08日 22:00 
- 北京时间\nStadio Ferraris
+DESCRIPTION:【客场】热那亚 vs AC米兰｜意甲 · 第11轮\n11月08
+ 日 22:00 北京时间\nStadio Ferraris
 TRIGGER:-PT46800S
 END:VALARM
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:热那亚 vs AC Milan｜意甲 · 第11轮\n11月08日 22:00 
- 北京时间\nStadio Ferraris
+DESCRIPTION:【客场】热那亚 vs AC米兰｜意甲 · 第11轮\n11月08
+ 日 22:00 北京时间\nStadio Ferraris
 TRIGGER:-PT1800S
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:milan-6a31e7f1c63e9a4df43c91c9@football-calendar.ricadre.github.io
-DTSTAMP:20260908T063456Z
+DTSTAMP:20260908T065550Z
 CREATED:20260908T063456Z
-LAST-MODIFIED:20260908T063456Z
-SEQUENCE:0
+LAST-MODIFIED:20260908T065550Z
+SEQUENCE:2
 DTSTART:20261122T140000Z
 DTEND:20261122T160000Z
-SUMMARY:AC Milan vs 弗罗西诺内｜意甲 · 第12轮
+SUMMARY:【主场】AC米兰 vs 弗罗西诺内｜意甲 · 第12轮
 LOCATION:圣西罗球场（San Siro / Giuseppe Meazza）
-DESCRIPTION:AC Milan（主） vs 弗罗西诺内（客）\n意甲 · 第12
- 轮\n开球：2026-11-22 22:00 北京时间\n场馆：圣西罗球场（Sa
- n Siro / Giuseppe Meazza）\n场馆说明：米兰官网赛程列示场馆
- \n赛程来源：https://www.acmilan.com/en/season/active/schedule/all\n
- 场馆来源：https://www.acmilan.com/en/season/active/schedule/all\n日
- 历占用2小时，仅为观赛预留；实际终场时间可能变化。
+DESCRIPTION:AC米兰（主） vs 弗罗西诺内（客）\n主客：AC米
+ 兰主场\n意甲 · 第12轮\n开球（北京时间）：2026-11-22 22:00
+ \n开球（意大利时间）：2026-11-22 15:00\n场馆：圣西罗球场
+ （San Siro / Giuseppe Meazza）\n场馆说明：米兰官网赛程列示
+ 场馆\n赛程来源：https://www.acmilan.com/en/season/active/schedule/a
+ ll\n场馆来源：https://www.acmilan.com/en/season/active/schedule/all\n
+ 日历预留120分钟；实际终场时间可能变化。
 URL:https://www.acmilan.com/en/season/active/schedule/all
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
-CATEGORIES:AC Milan
+CATEGORIES:AC米兰
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:AC Milan vs 弗罗西诺内｜意甲 · 第12轮\n11月22日 22
- :00 北京时间\n圣西罗球场（San Siro / Giuseppe Meazza）
+DESCRIPTION:【主场】AC米兰 vs 弗罗西诺内｜意甲 · 第12轮\n1
+ 1月22日 22:00 北京时间\n圣西罗球场（San Siro / Giuseppe Meazza
+ ）
 TRIGGER:-PT46800S
 END:VALARM
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:AC Milan vs 弗罗西诺内｜意甲 · 第12轮\n11月22日 22
- :00 北京时间\n圣西罗球场（San Siro / Giuseppe Meazza）
+DESCRIPTION:【主场】AC米兰 vs 弗罗西诺内｜意甲 · 第12轮\n1
+ 1月22日 22:00 北京时间\n圣西罗球场（San Siro / Giuseppe Meazza
+ ）
 TRIGGER:-PT1800S
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:milan-6a957edbaf5945385cfd8339@football-calendar.ricadre.github.io
-DTSTAMP:20260908T063456Z
+DTSTAMP:20260908T065550Z
 CREATED:20260908T063456Z
-LAST-MODIFIED:20260908T063456Z
-SEQUENCE:0
+LAST-MODIFIED:20260908T065550Z
+SEQUENCE:2
 DTSTART:20261126T174500Z
 DTEND:20261126T194500Z
-SUMMARY:奥林匹亚科斯 vs AC Milan｜欧联杯 · 第5轮
+SUMMARY:【客场】奥林匹亚科斯 vs AC米兰｜欧联杯 · 第5轮
 LOCATION:Stadio Georgios Karaiskákis
-DESCRIPTION:奥林匹亚科斯（主） vs AC Milan（客）\n欧联杯 · 
- 第5轮\n开球：2026-11-27 01:45 北京时间\n场馆：Stadio Georgios 
- Karaiskákis\n场馆说明：米兰官网赛程列示场馆\n赛程来源
- ：https://www.acmilan.com/en/season/active/schedule/all\n场馆来源：h
- ttps://www.acmilan.com/en/season/active/schedule/all\n日历占用2小时
- ，仅为观赛预留；实际终场时间可能变化。
+DESCRIPTION:奥林匹亚科斯（主） vs AC米兰（客）\n主客：AC
+ 米兰客场\n欧联杯 · 第5轮\n开球（北京时间）：2026-11-27 
+ 01:45\n开球（意大利时间）：2026-11-26 18:45\n场馆：Stadio Geo
+ rgios Karaiskákis\n场馆说明：米兰官网赛程列示场馆\n赛程
+ 来源：https://www.acmilan.com/en/season/active/schedule/all\n场馆来
+ 源：https://www.acmilan.com/en/season/active/schedule/all\n日历预留1
+ 20分钟；实际终场时间可能变化。
 URL:https://www.acmilan.com/en/season/active/schedule/all
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
-CATEGORIES:AC Milan
+CATEGORIES:AC米兰
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:奥林匹亚科斯 vs AC Milan｜欧联杯 · 第5轮\n11月27
- 日 01:45 北京时间\nStadio Georgios Karaiskákis
+DESCRIPTION:【客场】奥林匹亚科斯 vs AC米兰｜欧联杯 · 第5
+ 轮\n11月27日 01:45 北京时间\nStadio Georgios Karaiskákis
 TRIGGER:-PT17100S
 END:VALARM
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:奥林匹亚科斯 vs AC Milan｜欧联杯 · 第5轮\n11月27
- 日 01:45 北京时间\nStadio Georgios Karaiskákis
+DESCRIPTION:【客场】奥林匹亚科斯 vs AC米兰｜欧联杯 · 第5
+ 轮\n11月27日 01:45 北京时间\nStadio Georgios Karaiskákis
 TRIGGER:-PT1800S
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:milan-6a31e7efc63e9a4df43c917d@football-calendar.ricadre.github.io
-DTSTAMP:20260908T063456Z
+DTSTAMP:20260908T065550Z
 CREATED:20260908T063456Z
-LAST-MODIFIED:20260908T063456Z
-SEQUENCE:0
+LAST-MODIFIED:20260908T065550Z
+SEQUENCE:2
 DTSTART;VALUE=DATE:20261129
 DTEND;VALUE=DATE:20261130
-SUMMARY:【时间待定】卡利亚里 vs AC Milan｜意甲 · 第13轮
+SUMMARY:【时间待定】【客场】卡利亚里 vs AC米兰｜意甲 · 
+ 第13轮
 LOCATION:Unipol Domus
-DESCRIPTION:卡利亚里（主） vs AC Milan（客）\n意甲 · 第13轮\
- n开球：日期／时间待官方确认，当前为暂定比赛日\n场
- 馆：Unipol Domus\n场馆说明：米兰官网赛程列示场馆\n赛程
- 来源：https://www.acmilan.com/en/season/active/schedule/all\n场馆来
- 源：https://www.acmilan.com/en/season/active/schedule/all\n时间明确
- 后会更新为定时日程，并启用赛前提醒。
-URL:https://www.acmilan.com/en/season/active/schedule/all
-STATUS:TENTATIVE
-TRANSP:TRANSPARENT
-CATEGORIES:AC Milan
-END:VEVENT
-BEGIN:VEVENT
-UID:milan-6a976bafaf5945385c2d4ae4@football-calendar.ricadre.github.io
-DTSTAMP:20260908T063456Z
-CREATED:20260908T063456Z
-LAST-MODIFIED:20260908T063456Z
-SEQUENCE:0
-DTSTART;VALUE=DATE:20261202
-DTEND;VALUE=DATE:20261203
-SUMMARY:【时间待定】AC Milan vs 蒙扎｜意大利杯 · 第?轮
-LOCATION:圣西罗球场（San Siro / Giuseppe Meazza）
-DESCRIPTION:AC Milan（主） vs 蒙扎（客）\n意大利杯 · 第?轮\n
- 开球：日期／时间待官方确认，当前为暂定比赛日\n场馆
- ：圣西罗球场（San Siro / Giuseppe Meazza）\n场馆说明：米兰
- 官网赛程列示场馆\n赛程来源：https://www.acmilan.com/en/season
- /active/schedule/all\n场馆来源：https://www.acmilan.com/en/season/act
- ive/schedule/all\n时间明确后会更新为定时日程，并启用赛
- 前提醒。
-URL:https://www.acmilan.com/en/season/active/schedule/all
-STATUS:TENTATIVE
-TRANSP:TRANSPARENT
-CATEGORIES:AC Milan
-END:VEVENT
-BEGIN:VEVENT
-UID:milan-6a31e7edc63e9a4df43c9131@football-calendar.ricadre.github.io
-DTSTAMP:20260908T063456Z
-CREATED:20260908T063456Z
-LAST-MODIFIED:20260908T063456Z
-SEQUENCE:0
-DTSTART;VALUE=DATE:20261206
-DTEND;VALUE=DATE:20261207
-SUMMARY:【时间待定】AC Milan vs 帕尔马｜意甲 · 第14轮
-LOCATION:圣西罗球场（San Siro / Giuseppe Meazza）
-DESCRIPTION:AC Milan（主） vs 帕尔马（客）\n意甲 · 第14轮\n
- 开球：日期／时间待官方确认，当前为暂定比赛日\n场馆
- ：圣西罗球场（San Siro / Giuseppe Meazza）\n场馆说明：米兰
- 官网赛程列示场馆\n赛程来源：https://www.acmilan.com/en/season
- /active/schedule/all\n场馆来源：https://www.acmilan.com/en/season/act
- ive/schedule/all\n时间明确后会更新为定时日程，并启用赛
- 前提醒。
-URL:https://www.acmilan.com/en/season/active/schedule/all
-STATUS:TENTATIVE
-TRANSP:TRANSPARENT
-CATEGORIES:AC Milan
-END:VEVENT
-BEGIN:VEVENT
-UID:milan-6a957ed8af5945385cfd81d0@football-calendar.ricadre.github.io
-DTSTAMP:20260908T063456Z
-CREATED:20260908T063456Z
-LAST-MODIFIED:20260908T063456Z
-SEQUENCE:0
-DTSTART:20261210T200000Z
-DTEND:20261210T220000Z
-SUMMARY:AC Milan vs 桑德兰｜欧联杯 · 第6轮
-LOCATION:圣西罗球场（San Siro / Giuseppe Meazza）
-DESCRIPTION:AC Milan（主） vs 桑德兰（客）\n欧联杯 · 第6轮\n
- 开球：2026-12-11 04:00 北京时间\n场馆：圣西罗球场（San Sir
- o / Giuseppe Meazza）\n场馆说明：米兰官网赛程列示场馆\n赛
- 程来源：https://www.acmilan.com/en/season/active/schedule/all\n场馆
- 来源：https://www.acmilan.com/en/season/active/schedule/all\n日历占
- 用2小时，仅为观赛预留；实际终场时间可能变化。
-URL:https://www.acmilan.com/en/season/active/schedule/all
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-CATEGORIES:AC Milan
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:AC Milan vs 桑德兰｜欧联杯 · 第6轮\n12月11日 04:00 
- 北京时间\n圣西罗球场（San Siro / Giuseppe Meazza）
-TRIGGER:-PT25200S
-END:VALARM
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:AC Milan vs 桑德兰｜欧联杯 · 第6轮\n12月11日 04:00 
- 北京时间\n圣西罗球场（San Siro / Giuseppe Meazza）
-TRIGGER:-PT1800S
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:milan-6a31e7eac63e9a4df43c90e5@football-calendar.ricadre.github.io
-DTSTAMP:20260908T063456Z
-CREATED:20260908T063456Z
-LAST-MODIFIED:20260908T063456Z
-SEQUENCE:0
-DTSTART;VALUE=DATE:20261213
-DTEND;VALUE=DATE:20261214
-SUMMARY:【时间待定】那不勒斯 vs AC Milan｜意甲 · 第15轮
-LOCATION:Stadio Maradona
-DESCRIPTION:那不勒斯（主） vs AC Milan（客）\n意甲 · 第15轮\
- n开球：日期／时间待官方确认，当前为暂定比赛日\n场
- 馆：Stadio Maradona\n场馆说明：米兰官网赛程列示场馆\n赛
- 程来源：https://www.acmilan.com/en/season/active/schedule/all\n场馆
- 来源：https://www.acmilan.com/en/season/active/schedule/all\n时间明
- 确后会更新为定时日程，并启用赛前提醒。
-URL:https://www.acmilan.com/en/season/active/schedule/all
-STATUS:TENTATIVE
-TRANSP:TRANSPARENT
-CATEGORIES:AC Milan
-END:VEVENT
-BEGIN:VEVENT
-UID:milan-6a31e7e7c63e9a4df43c9098@football-calendar.ricadre.github.io
-DTSTAMP:20260908T063456Z
-CREATED:20260908T063456Z
-LAST-MODIFIED:20260908T063456Z
-SEQUENCE:0
-DTSTART;VALUE=DATE:20261220
-DTEND;VALUE=DATE:20261221
-SUMMARY:【时间待定】AC Milan vs 科莫｜意甲 · 第16轮
-LOCATION:圣西罗球场（San Siro / Giuseppe Meazza）
-DESCRIPTION:AC Milan（主） vs 科莫（客）\n意甲 · 第16轮\n开
- 球：日期／时间待官方确认，当前为暂定比赛日\n场馆：
- 圣西罗球场（San Siro / Giuseppe Meazza）\n场馆说明：米兰官
- 网赛程列示场馆\n赛程来源：https://www.acmilan.com/en/season/ac
- tive/schedule/all\n场馆来源：https://www.acmilan.com/en/season/active
- /schedule/all\n时间明确后会更新为定时日程，并启用赛前
- 提醒。
-URL:https://www.acmilan.com/en/season/active/schedule/all
-STATUS:TENTATIVE
-TRANSP:TRANSPARENT
-CATEGORIES:AC Milan
-END:VEVENT
-BEGIN:VEVENT
-UID:milan-6a31e7e5c63e9a4df43c904c@football-calendar.ricadre.github.io
-DTSTAMP:20260908T063456Z
-CREATED:20260908T063456Z
-LAST-MODIFIED:20260908T063456Z
-SEQUENCE:0
-DTSTART;VALUE=DATE:20270103
-DTEND;VALUE=DATE:20270104
-SUMMARY:【时间待定】蒙扎 vs AC Milan｜意甲 · 第17轮
-LOCATION:U-Power Stadium
-DESCRIPTION:蒙扎（主） vs AC Milan（客）\n意甲 · 第17轮\n开
- 球：日期／时间待官方确认，当前为暂定比赛日\n场馆：
- U-Power Stadium\n场馆说明：米兰官网赛程列示场馆\n赛程来
- 源：https://www.acmilan.com/en/season/active/schedule/all\n场馆来源
- ：https://www.acmilan.com/en/season/active/schedule/all\n时间明确后
- 会更新为定时日程，并启用赛前提醒。
-URL:https://www.acmilan.com/en/season/active/schedule/all
-STATUS:TENTATIVE
-TRANSP:TRANSPARENT
-CATEGORIES:AC Milan
-END:VEVENT
-BEGIN:VEVENT
-UID:milan-6a31e7e2c63e9a4df43c9000@football-calendar.ricadre.github.io
-DTSTAMP:20260908T063456Z
-CREATED:20260908T063456Z
-LAST-MODIFIED:20260908T063456Z
-SEQUENCE:0
-DTSTART;VALUE=DATE:20270106
-DTEND;VALUE=DATE:20270107
-SUMMARY:【时间待定】AC Milan vs 佛罗伦萨｜意甲 · 第18轮
-LOCATION:圣西罗球场（San Siro / Giuseppe Meazza）
-DESCRIPTION:AC Milan（主） vs 佛罗伦萨（客）\n意甲 · 第18轮\
- n开球：日期／时间待官方确认，当前为暂定比赛日\n场
- 馆：圣西罗球场（San Siro / Giuseppe Meazza）\n场馆说明：米
- 兰官网赛程列示场馆\n赛程来源：https://www.acmilan.com/en/sea
- son/active/schedule/all\n场馆来源：https://www.acmilan.com/en/season/
- active/schedule/all\n时间明确后会更新为定时日程，并启用
- 赛前提醒。
-URL:https://www.acmilan.com/en/season/active/schedule/all
-STATUS:TENTATIVE
-TRANSP:TRANSPARENT
-CATEGORIES:AC Milan
-END:VEVENT
-BEGIN:VEVENT
-UID:milan-6a31e7e0c63e9a4df43c8fb4@football-calendar.ricadre.github.io
-DTSTAMP:20260908T063456Z
-CREATED:20260908T063456Z
-LAST-MODIFIED:20260908T063456Z
-SEQUENCE:0
-DTSTART;VALUE=DATE:20270110
-DTEND;VALUE=DATE:20270111
-SUMMARY:【时间待定】罗马 vs AC Milan｜意甲 · 第19轮
-LOCATION:罗马奥林匹克球场（Stadio Olimpico）
-DESCRIPTION:罗马（主） vs AC Milan（客）\n意甲 · 第19轮\n开
- 球：日期／时间待官方确认，当前为暂定比赛日\n场馆：
- 罗马奥林匹克球场（Stadio Olimpico）\n场馆说明：米兰官网
+DESCRIPTION:卡利亚里（主） vs AC米兰（客）\n主客：AC米兰
+ 客场\n意甲 · 第13轮\n开球：日期／时间待官方确认，当
+ 前为暂定比赛日\n场馆：Unipol Domus\n场馆说明：米兰官网
  赛程列示场馆\n赛程来源：https://www.acmilan.com/en/season/activ
  e/schedule/all\n场馆来源：https://www.acmilan.com/en/season/active/sc
  hedule/all\n时间明确后会更新为定时日程，并启用赛前提
@@ -743,21 +582,102 @@ DESCRIPTION:罗马（主） vs AC Milan（客）\n意甲 · 第19轮\n开
 URL:https://www.acmilan.com/en/season/active/schedule/all
 STATUS:TENTATIVE
 TRANSP:TRANSPARENT
-CATEGORIES:AC Milan
+CATEGORIES:AC米兰
 END:VEVENT
 BEGIN:VEVENT
-UID:milan-6a31e7dec63e9a4df43c8f68@football-calendar.ricadre.github.io
-DTSTAMP:20260908T063456Z
+UID:milan-6a976bafaf5945385c2d4ae4@football-calendar.ricadre.github.io
+DTSTAMP:20260908T065550Z
 CREATED:20260908T063456Z
-LAST-MODIFIED:20260908T063456Z
-SEQUENCE:0
-DTSTART;VALUE=DATE:20270117
-DTEND;VALUE=DATE:20270118
-SUMMARY:【时间待定】AC Milan vs 都灵｜意甲 · 第20轮
+LAST-MODIFIED:20260908T065550Z
+SEQUENCE:2
+DTSTART;VALUE=DATE:20261202
+DTEND;VALUE=DATE:20261203
+SUMMARY:【时间待定】【主场】AC米兰 vs 蒙扎｜意大利杯 · 
+ 第?轮
 LOCATION:圣西罗球场（San Siro / Giuseppe Meazza）
-DESCRIPTION:AC Milan（主） vs 都灵（客）\n意甲 · 第20轮\n开
- 球：日期／时间待官方确认，当前为暂定比赛日\n场馆：
- 圣西罗球场（San Siro / Giuseppe Meazza）\n场馆说明：米兰官
+DESCRIPTION:AC米兰（主） vs 蒙扎（客）\n主客：AC米兰主场\n
+ 意大利杯 · 第?轮\n开球：日期／时间待官方确认，当前
+ 为暂定比赛日\n场馆：圣西罗球场（San Siro / Giuseppe Meazza
+ ）\n场馆说明：米兰官网赛程列示场馆\n赛程来源：https:/
+ /www.acmilan.com/en/season/active/schedule/all\n场馆来源：https://www
+ .acmilan.com/en/season/active/schedule/all\n时间明确后会更新为定
+ 时日程，并启用赛前提醒。
+URL:https://www.acmilan.com/en/season/active/schedule/all
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+CATEGORIES:AC米兰
+END:VEVENT
+BEGIN:VEVENT
+UID:milan-6a31e7edc63e9a4df43c9131@football-calendar.ricadre.github.io
+DTSTAMP:20260908T065550Z
+CREATED:20260908T063456Z
+LAST-MODIFIED:20260908T065550Z
+SEQUENCE:2
+DTSTART;VALUE=DATE:20261206
+DTEND;VALUE=DATE:20261207
+SUMMARY:【时间待定】【主场】AC米兰 vs 帕尔马｜意甲 · 第
+ 14轮
+LOCATION:圣西罗球场（San Siro / Giuseppe Meazza）
+DESCRIPTION:AC米兰（主） vs 帕尔马（客）\n主客：AC米兰主
+ 场\n意甲 · 第14轮\n开球：日期／时间待官方确认，当前
+ 为暂定比赛日\n场馆：圣西罗球场（San Siro / Giuseppe Meazza
+ ）\n场馆说明：米兰官网赛程列示场馆\n赛程来源：https:/
+ /www.acmilan.com/en/season/active/schedule/all\n场馆来源：https://www
+ .acmilan.com/en/season/active/schedule/all\n时间明确后会更新为定
+ 时日程，并启用赛前提醒。
+URL:https://www.acmilan.com/en/season/active/schedule/all
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+CATEGORIES:AC米兰
+END:VEVENT
+BEGIN:VEVENT
+UID:milan-6a957ed8af5945385cfd81d0@football-calendar.ricadre.github.io
+DTSTAMP:20260908T065550Z
+CREATED:20260908T063456Z
+LAST-MODIFIED:20260908T065550Z
+SEQUENCE:2
+DTSTART:20261210T200000Z
+DTEND:20261210T220000Z
+SUMMARY:【主场】AC米兰 vs 桑德兰｜欧联杯 · 第6轮
+LOCATION:圣西罗球场（San Siro / Giuseppe Meazza）
+DESCRIPTION:AC米兰（主） vs 桑德兰（客）\n主客：AC米兰主
+ 场\n欧联杯 · 第6轮\n开球（北京时间）：2026-12-11 04:00\n
+ 开球（意大利时间）：2026-12-10 21:00\n场馆：圣西罗球场
+ （San Siro / Giuseppe Meazza）\n场馆说明：米兰官网赛程列示
+ 场馆\n赛程来源：https://www.acmilan.com/en/season/active/schedule/a
+ ll\n场馆来源：https://www.acmilan.com/en/season/active/schedule/all\n
+ 日历预留120分钟；实际终场时间可能变化。
+URL:https://www.acmilan.com/en/season/active/schedule/all
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+CATEGORIES:AC米兰
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:【主场】AC米兰 vs 桑德兰｜欧联杯 · 第6轮\n12月
+ 11日 04:00 北京时间\n圣西罗球场（San Siro / Giuseppe Meazza）
+TRIGGER:-PT25200S
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:【主场】AC米兰 vs 桑德兰｜欧联杯 · 第6轮\n12月
+ 11日 04:00 北京时间\n圣西罗球场（San Siro / Giuseppe Meazza）
+TRIGGER:-PT1800S
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:milan-6a31e7eac63e9a4df43c90e5@football-calendar.ricadre.github.io
+DTSTAMP:20260908T065550Z
+CREATED:20260908T063456Z
+LAST-MODIFIED:20260908T065550Z
+SEQUENCE:2
+DTSTART;VALUE=DATE:20261213
+DTEND;VALUE=DATE:20261214
+SUMMARY:【时间待定】【客场】那不勒斯 vs AC米兰｜意甲 · 
+ 第15轮
+LOCATION:Stadio Maradona
+DESCRIPTION:那不勒斯（主） vs AC米兰（客）\n主客：AC米兰
+ 客场\n意甲 · 第15轮\n开球：日期／时间待官方确认，当
+ 前为暂定比赛日\n场馆：Stadio Maradona\n场馆说明：米兰官
  网赛程列示场馆\n赛程来源：https://www.acmilan.com/en/season/ac
  tive/schedule/all\n场馆来源：https://www.acmilan.com/en/season/active
  /schedule/all\n时间明确后会更新为定时日程，并启用赛前
@@ -765,370 +685,392 @@ DESCRIPTION:AC Milan（主） vs 都灵（客）\n意甲 · 第20轮\n开
 URL:https://www.acmilan.com/en/season/active/schedule/all
 STATUS:TENTATIVE
 TRANSP:TRANSPARENT
-CATEGORIES:AC Milan
+CATEGORIES:AC米兰
+END:VEVENT
+BEGIN:VEVENT
+UID:milan-6a31e7e7c63e9a4df43c9098@football-calendar.ricadre.github.io
+DTSTAMP:20260908T065550Z
+CREATED:20260908T063456Z
+LAST-MODIFIED:20260908T065550Z
+SEQUENCE:2
+DTSTART;VALUE=DATE:20261220
+DTEND;VALUE=DATE:20261221
+SUMMARY:【时间待定】【主场】AC米兰 vs 科莫｜意甲 · 第16
+ 轮
+LOCATION:圣西罗球场（San Siro / Giuseppe Meazza）
+DESCRIPTION:AC米兰（主） vs 科莫（客）\n主客：AC米兰主场\n
+ 意甲 · 第16轮\n开球：日期／时间待官方确认，当前为暂
+ 定比赛日\n场馆：圣西罗球场（San Siro / Giuseppe Meazza）\n
+ 场馆说明：米兰官网赛程列示场馆\n赛程来源：https://www.
+ acmilan.com/en/season/active/schedule/all\n场馆来源：https://www.acmi
+ lan.com/en/season/active/schedule/all\n时间明确后会更新为定时
+ 日程，并启用赛前提醒。
+URL:https://www.acmilan.com/en/season/active/schedule/all
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+CATEGORIES:AC米兰
+END:VEVENT
+BEGIN:VEVENT
+UID:milan-6a31e7e5c63e9a4df43c904c@football-calendar.ricadre.github.io
+DTSTAMP:20260908T065550Z
+CREATED:20260908T063456Z
+LAST-MODIFIED:20260908T065550Z
+SEQUENCE:2
+DTSTART;VALUE=DATE:20270103
+DTEND;VALUE=DATE:20270104
+SUMMARY:【时间待定】【客场】蒙扎 vs AC米兰｜意甲 · 第17
+ 轮
+LOCATION:U-Power Stadium
+DESCRIPTION:蒙扎（主） vs AC米兰（客）\n主客：AC米兰客场\n
+ 意甲 · 第17轮\n开球：日期／时间待官方确认，当前为暂
+ 定比赛日\n场馆：U-Power Stadium\n场馆说明：米兰官网赛程
+ 列示场馆\n赛程来源：https://www.acmilan.com/en/season/active/sche
+ dule/all\n场馆来源：https://www.acmilan.com/en/season/active/schedule
+ /all\n时间明确后会更新为定时日程，并启用赛前提醒。
+URL:https://www.acmilan.com/en/season/active/schedule/all
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+CATEGORIES:AC米兰
+END:VEVENT
+BEGIN:VEVENT
+UID:milan-6a31e7e2c63e9a4df43c9000@football-calendar.ricadre.github.io
+DTSTAMP:20260908T065550Z
+CREATED:20260908T063456Z
+LAST-MODIFIED:20260908T065550Z
+SEQUENCE:2
+DTSTART;VALUE=DATE:20270106
+DTEND;VALUE=DATE:20270107
+SUMMARY:【时间待定】【主场】AC米兰 vs 佛罗伦萨｜意甲 · 
+ 第18轮
+LOCATION:圣西罗球场（San Siro / Giuseppe Meazza）
+DESCRIPTION:AC米兰（主） vs 佛罗伦萨（客）\n主客：AC米兰
+ 主场\n意甲 · 第18轮\n开球：日期／时间待官方确认，当
+ 前为暂定比赛日\n场馆：圣西罗球场（San Siro / Giuseppe Meaz
+ za）\n场馆说明：米兰官网赛程列示场馆\n赛程来源：https
+ ://www.acmilan.com/en/season/active/schedule/all\n场馆来源：https://w
+ ww.acmilan.com/en/season/active/schedule/all\n时间明确后会更新为
+ 定时日程，并启用赛前提醒。
+URL:https://www.acmilan.com/en/season/active/schedule/all
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+CATEGORIES:AC米兰
+END:VEVENT
+BEGIN:VEVENT
+UID:milan-6a31e7e0c63e9a4df43c8fb4@football-calendar.ricadre.github.io
+DTSTAMP:20260908T065550Z
+CREATED:20260908T063456Z
+LAST-MODIFIED:20260908T065550Z
+SEQUENCE:2
+DTSTART;VALUE=DATE:20270110
+DTEND;VALUE=DATE:20270111
+SUMMARY:【时间待定】【客场】罗马 vs AC米兰｜意甲 · 第19
+ 轮
+LOCATION:罗马奥林匹克球场（Stadio Olimpico）
+DESCRIPTION:罗马（主） vs AC米兰（客）\n主客：AC米兰客场\n
+ 意甲 · 第19轮\n开球：日期／时间待官方确认，当前为暂
+ 定比赛日\n场馆：罗马奥林匹克球场（Stadio Olimpico）\n场
+ 馆说明：米兰官网赛程列示场馆\n赛程来源：https://www.acm
+ ilan.com/en/season/active/schedule/all\n场馆来源：https://www.acmilan
+ .com/en/season/active/schedule/all\n时间明确后会更新为定时日
+ 程，并启用赛前提醒。
+URL:https://www.acmilan.com/en/season/active/schedule/all
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+CATEGORIES:AC米兰
+END:VEVENT
+BEGIN:VEVENT
+UID:milan-6a31e7dec63e9a4df43c8f68@football-calendar.ricadre.github.io
+DTSTAMP:20260908T065550Z
+CREATED:20260908T063456Z
+LAST-MODIFIED:20260908T065550Z
+SEQUENCE:2
+DTSTART;VALUE=DATE:20270117
+DTEND;VALUE=DATE:20270118
+SUMMARY:【时间待定】【主场】AC米兰 vs 都灵｜意甲 · 第20
+ 轮
+LOCATION:圣西罗球场（San Siro / Giuseppe Meazza）
+DESCRIPTION:AC米兰（主） vs 都灵（客）\n主客：AC米兰主场\n
+ 意甲 · 第20轮\n开球：日期／时间待官方确认，当前为暂
+ 定比赛日\n场馆：圣西罗球场（San Siro / Giuseppe Meazza）\n
+ 场馆说明：米兰官网赛程列示场馆\n赛程来源：https://www.
+ acmilan.com/en/season/active/schedule/all\n场馆来源：https://www.acmi
+ lan.com/en/season/active/schedule/all\n时间明确后会更新为定时
+ 日程，并启用赛前提醒。
+URL:https://www.acmilan.com/en/season/active/schedule/all
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+CATEGORIES:AC米兰
 END:VEVENT
 BEGIN:VEVENT
 UID:milan-6a957ed4af5945385cfd815c@football-calendar.ricadre.github.io
-DTSTAMP:20260908T063456Z
+DTSTAMP:20260908T065550Z
 CREATED:20260908T063456Z
-LAST-MODIFIED:20260908T063456Z
-SEQUENCE:0
+LAST-MODIFIED:20260908T065550Z
+SEQUENCE:2
 DTSTART:20270121T200000Z
 DTEND:20270121T220000Z
-SUMMARY:索菲亚列夫斯基 vs AC Milan｜欧联杯 · 第7轮
+SUMMARY:【客场】索菲亚列夫斯基 vs AC米兰｜欧联杯 · 第7
+ 轮
 LOCATION:Stadion Georgi Asparuhov
-DESCRIPTION:索菲亚列夫斯基（主） vs AC Milan（客）\n欧联杯 
- · 第7轮\n开球：2027-01-22 04:00 北京时间\n场馆：Stadion Georg
- i Asparuhov\n场馆说明：米兰官网赛程列示场馆\n赛程来源
- ：https://www.acmilan.com/en/season/active/schedule/all\n场馆来源：h
- ttps://www.acmilan.com/en/season/active/schedule/all\n日历占用2小时
- ，仅为观赛预留；实际终场时间可能变化。
+DESCRIPTION:索菲亚列夫斯基（主） vs AC米兰（客）\n主客：A
+ C米兰客场\n欧联杯 · 第7轮\n开球（北京时间）：2027-01-22
+  04:00\n开球（意大利时间）：2027-01-21 21:00\n场馆：Stadion G
+ eorgi Asparuhov\n场馆说明：米兰官网赛程列示场馆\n赛程来
+ 源：https://www.acmilan.com/en/season/active/schedule/all\n场馆来源
+ ：https://www.acmilan.com/en/season/active/schedule/all\n日历预留120
+ 分钟；实际终场时间可能变化。
 URL:https://www.acmilan.com/en/season/active/schedule/all
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
-CATEGORIES:AC Milan
+CATEGORIES:AC米兰
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:索菲亚列夫斯基 vs AC Milan｜欧联杯 · 第7轮\n01月
- 22日 04:00 北京时间\nStadion Georgi Asparuhov
+DESCRIPTION:【客场】索菲亚列夫斯基 vs AC米兰｜欧联杯 · 
+ 第7轮\n01月22日 04:00 北京时间\nStadion Georgi Asparuhov
 TRIGGER:-PT25200S
 END:VALARM
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:索菲亚列夫斯基 vs AC Milan｜欧联杯 · 第7轮\n01月
- 22日 04:00 北京时间\nStadion Georgi Asparuhov
+DESCRIPTION:【客场】索菲亚列夫斯基 vs AC米兰｜欧联杯 · 
+ 第7轮\n01月22日 04:00 北京时间\nStadion Georgi Asparuhov
 TRIGGER:-PT1800S
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:milan-6a31e7dbc63e9a4df43c8f1c@football-calendar.ricadre.github.io
-DTSTAMP:20260908T063456Z
+DTSTAMP:20260908T065550Z
 CREATED:20260908T063456Z
-LAST-MODIFIED:20260908T063456Z
-SEQUENCE:0
+LAST-MODIFIED:20260908T065550Z
+SEQUENCE:2
 DTSTART;VALUE=DATE:20270124
 DTEND;VALUE=DATE:20270125
-SUMMARY:【时间待定】弗罗西诺内 vs AC Milan｜意甲 · 第21轮
+SUMMARY:【时间待定】【客场】弗罗西诺内 vs AC米兰｜意甲 
+ · 第21轮
 LOCATION:Stadio Stirpe
-DESCRIPTION:弗罗西诺内（主） vs AC Milan（客）\n意甲 · 第21
- 轮\n开球：日期／时间待官方确认，当前为暂定比赛日\n
- 场馆：Stadio Stirpe\n场馆说明：米兰官网赛程列示场馆\n赛
- 程来源：https://www.acmilan.com/en/season/active/schedule/all\n场馆
- 来源：https://www.acmilan.com/en/season/active/schedule/all\n时间明
- 确后会更新为定时日程，并启用赛前提醒。
+DESCRIPTION:弗罗西诺内（主） vs AC米兰（客）\n主客：AC米
+ 兰客场\n意甲 · 第21轮\n开球：日期／时间待官方确认，
+ 当前为暂定比赛日\n场馆：Stadio Stirpe\n场馆说明：米兰官
+ 网赛程列示场馆\n赛程来源：https://www.acmilan.com/en/season/ac
+ tive/schedule/all\n场馆来源：https://www.acmilan.com/en/season/active
+ /schedule/all\n时间明确后会更新为定时日程，并启用赛前
+ 提醒。
 URL:https://www.acmilan.com/en/season/active/schedule/all
 STATUS:TENTATIVE
 TRANSP:TRANSPARENT
-CATEGORIES:AC Milan
+CATEGORIES:AC米兰
 END:VEVENT
 BEGIN:VEVENT
 UID:milan-6a957ed1af5945385cfd80e8@football-calendar.ricadre.github.io
-DTSTAMP:20260908T063456Z
+DTSTAMP:20260908T065550Z
 CREATED:20260908T063456Z
-LAST-MODIFIED:20260908T063456Z
-SEQUENCE:0
+LAST-MODIFIED:20260908T065550Z
+SEQUENCE:2
 DTSTART:20270128T200000Z
 DTEND:20270128T220000Z
-SUMMARY:AC Milan vs 阿拉拉特亚美尼亚｜欧联杯 · 第8轮
+SUMMARY:【主场】AC米兰 vs 阿拉拉特亚美尼亚｜欧联杯 · 第
+ 8轮
 LOCATION:圣西罗球场（San Siro / Giuseppe Meazza）
-DESCRIPTION:AC Milan（主） vs 阿拉拉特亚美尼亚（客）\n欧联
- 杯 · 第8轮\n开球：2027-01-29 04:00 北京时间\n场馆：圣西罗
- 球场（San Siro / Giuseppe Meazza）\n场馆说明：米兰官网赛程
- 列示场馆\n赛程来源：https://www.acmilan.com/en/season/active/sche
- dule/all\n场馆来源：https://www.acmilan.com/en/season/active/schedule
- /all\n日历占用2小时，仅为观赛预留；实际终场时间可能
- 变化。
+DESCRIPTION:AC米兰（主） vs 阿拉拉特亚美尼亚（客）\n主客
+ ：AC米兰主场\n欧联杯 · 第8轮\n开球（北京时间）：2027-0
+ 1-29 04:00\n开球（意大利时间）：2027-01-28 21:00\n场馆：圣
+ 西罗球场（San Siro / Giuseppe Meazza）\n场馆说明：米兰官网
+ 赛程列示场馆\n赛程来源：https://www.acmilan.com/en/season/activ
+ e/schedule/all\n场馆来源：https://www.acmilan.com/en/season/active/sc
+ hedule/all\n日历预留120分钟；实际终场时间可能变化。
 URL:https://www.acmilan.com/en/season/active/schedule/all
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
-CATEGORIES:AC Milan
+CATEGORIES:AC米兰
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:AC Milan vs 阿拉拉特亚美尼亚｜欧联杯 · 第8轮\n01
- 月29日 04:00 北京时间\n圣西罗球场（San Siro / Giuseppe Meazza
- ）
+DESCRIPTION:【主场】AC米兰 vs 阿拉拉特亚美尼亚｜欧联杯 ·
+  第8轮\n01月29日 04:00 北京时间\n圣西罗球场（San Siro / Gius
+ eppe Meazza）
 TRIGGER:-PT25200S
 END:VALARM
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:AC Milan vs 阿拉拉特亚美尼亚｜欧联杯 · 第8轮\n01
- 月29日 04:00 北京时间\n圣西罗球场（San Siro / Giuseppe Meazza
- ）
+DESCRIPTION:【主场】AC米兰 vs 阿拉拉特亚美尼亚｜欧联杯 ·
+  第8轮\n01月29日 04:00 北京时间\n圣西罗球场（San Siro / Gius
+ eppe Meazza）
 TRIGGER:-PT1800S
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:milan-6a31e7d9c63e9a4df43c8ed0@football-calendar.ricadre.github.io
-DTSTAMP:20260908T063456Z
+DTSTAMP:20260908T065550Z
 CREATED:20260908T063456Z
-LAST-MODIFIED:20260908T063456Z
-SEQUENCE:0
+LAST-MODIFIED:20260908T065550Z
+SEQUENCE:2
 DTSTART;VALUE=DATE:20270131
 DTEND;VALUE=DATE:20270201
-SUMMARY:【时间待定】AC Milan vs 尤文图斯｜意甲 · 第22轮
+SUMMARY:【时间待定】【主场】AC米兰 vs 尤文图斯｜意甲 · 
+ 第22轮
 LOCATION:圣西罗球场（San Siro / Giuseppe Meazza）
-DESCRIPTION:AC Milan（主） vs 尤文图斯（客）\n意甲 · 第22轮\
- n开球：日期／时间待官方确认，当前为暂定比赛日\n场
- 馆：圣西罗球场（San Siro / Giuseppe Meazza）\n场馆说明：米
- 兰官网赛程列示场馆\n赛程来源：https://www.acmilan.com/en/sea
- son/active/schedule/all\n场馆来源：https://www.acmilan.com/en/season/
- active/schedule/all\n时间明确后会更新为定时日程，并启用
- 赛前提醒。
+DESCRIPTION:AC米兰（主） vs 尤文图斯（客）\n主客：AC米兰
+ 主场\n意甲 · 第22轮\n开球：日期／时间待官方确认，当
+ 前为暂定比赛日\n场馆：圣西罗球场（San Siro / Giuseppe Meaz
+ za）\n场馆说明：米兰官网赛程列示场馆\n赛程来源：https
+ ://www.acmilan.com/en/season/active/schedule/all\n场馆来源：https://w
+ ww.acmilan.com/en/season/active/schedule/all\n时间明确后会更新为
+ 定时日程，并启用赛前提醒。
 URL:https://www.acmilan.com/en/season/active/schedule/all
 STATUS:TENTATIVE
 TRANSP:TRANSPARENT
-CATEGORIES:AC Milan
+CATEGORIES:AC米兰
 END:VEVENT
 BEGIN:VEVENT
 UID:milan-6a31e7d6c63e9a4df43c8e83@football-calendar.ricadre.github.io
-DTSTAMP:20260908T063456Z
+DTSTAMP:20260908T065550Z
 CREATED:20260908T063456Z
-LAST-MODIFIED:20260908T063456Z
-SEQUENCE:0
+LAST-MODIFIED:20260908T065550Z
+SEQUENCE:2
 DTSTART;VALUE=DATE:20270207
 DTEND;VALUE=DATE:20270208
-SUMMARY:【时间待定】博洛尼亚 vs AC Milan｜意甲 · 第23轮
+SUMMARY:【时间待定】【客场】博洛尼亚 vs AC米兰｜意甲 · 
+ 第23轮
 LOCATION:Stadio Dall'Ara
-DESCRIPTION:博洛尼亚（主） vs AC Milan（客）\n意甲 · 第23轮\
- n开球：日期／时间待官方确认，当前为暂定比赛日\n场
- 馆：Stadio Dall'Ara\n场馆说明：米兰官网赛程列示场馆\n赛
- 程来源：https://www.acmilan.com/en/season/active/schedule/all\n场馆
- 来源：https://www.acmilan.com/en/season/active/schedule/all\n时间明
- 确后会更新为定时日程，并启用赛前提醒。
+DESCRIPTION:博洛尼亚（主） vs AC米兰（客）\n主客：AC米兰
+ 客场\n意甲 · 第23轮\n开球：日期／时间待官方确认，当
+ 前为暂定比赛日\n场馆：Stadio Dall'Ara\n场馆说明：米兰官
+ 网赛程列示场馆\n赛程来源：https://www.acmilan.com/en/season/ac
+ tive/schedule/all\n场馆来源：https://www.acmilan.com/en/season/active
+ /schedule/all\n时间明确后会更新为定时日程，并启用赛前
+ 提醒。
 URL:https://www.acmilan.com/en/season/active/schedule/all
 STATUS:TENTATIVE
 TRANSP:TRANSPARENT
-CATEGORIES:AC Milan
+CATEGORIES:AC米兰
 END:VEVENT
 BEGIN:VEVENT
 UID:milan-6a31e7d4c63e9a4df43c8e37@football-calendar.ricadre.github.io
-DTSTAMP:20260908T063456Z
+DTSTAMP:20260908T065550Z
 CREATED:20260908T063456Z
-LAST-MODIFIED:20260908T063456Z
-SEQUENCE:0
+LAST-MODIFIED:20260908T065550Z
+SEQUENCE:2
 DTSTART;VALUE=DATE:20270214
 DTEND;VALUE=DATE:20270215
-SUMMARY:【时间待定】国际米兰 vs AC Milan｜意甲 · 第24轮
+SUMMARY:【时间待定】【客场】国际米兰 vs AC米兰｜意甲 · 
+ 第24轮
 LOCATION:圣西罗球场（San Siro / Giuseppe Meazza）
-DESCRIPTION:国际米兰（主） vs AC Milan（客）\n意甲 · 第24轮\
- n开球：日期／时间待官方确认，当前为暂定比赛日\n场
- 馆：圣西罗球场（San Siro / Giuseppe Meazza）\n场馆说明：米
- 兰官网赛程列示场馆\n赛程来源：https://www.acmilan.com/en/sea
- son/active/schedule/all\n场馆来源：https://www.acmilan.com/en/season/
- active/schedule/all\n时间明确后会更新为定时日程，并启用
- 赛前提醒。
+DESCRIPTION:国际米兰（主） vs AC米兰（客）\n主客：AC米兰
+ 客场\n意甲 · 第24轮\n开球：日期／时间待官方确认，当
+ 前为暂定比赛日\n场馆：圣西罗球场（San Siro / Giuseppe Meaz
+ za）\n场馆说明：米兰官网赛程列示场馆\n赛程来源：https
+ ://www.acmilan.com/en/season/active/schedule/all\n场馆来源：https://w
+ ww.acmilan.com/en/season/active/schedule/all\n时间明确后会更新为
+ 定时日程，并启用赛前提醒。
 URL:https://www.acmilan.com/en/season/active/schedule/all
 STATUS:TENTATIVE
 TRANSP:TRANSPARENT
-CATEGORIES:AC Milan
+CATEGORIES:AC米兰
 END:VEVENT
 BEGIN:VEVENT
 UID:milan-6a31e7d2c63e9a4df43c8dea@football-calendar.ricadre.github.io
-DTSTAMP:20260908T063456Z
+DTSTAMP:20260908T065550Z
 CREATED:20260908T063456Z
-LAST-MODIFIED:20260908T063456Z
-SEQUENCE:0
+LAST-MODIFIED:20260908T065550Z
+SEQUENCE:2
 DTSTART;VALUE=DATE:20270221
 DTEND;VALUE=DATE:20270222
-SUMMARY:【时间待定】AC Milan vs 热那亚｜意甲 · 第25轮
+SUMMARY:【时间待定】【主场】AC米兰 vs 热那亚｜意甲 · 第
+ 25轮
 LOCATION:圣西罗球场（San Siro / Giuseppe Meazza）
-DESCRIPTION:AC Milan（主） vs 热那亚（客）\n意甲 · 第25轮\n
- 开球：日期／时间待官方确认，当前为暂定比赛日\n场馆
- ：圣西罗球场（San Siro / Giuseppe Meazza）\n场馆说明：米兰
- 官网赛程列示场馆\n赛程来源：https://www.acmilan.com/en/season
- /active/schedule/all\n场馆来源：https://www.acmilan.com/en/season/act
- ive/schedule/all\n时间明确后会更新为定时日程，并启用赛
- 前提醒。
+DESCRIPTION:AC米兰（主） vs 热那亚（客）\n主客：AC米兰主
+ 场\n意甲 · 第25轮\n开球：日期／时间待官方确认，当前
+ 为暂定比赛日\n场馆：圣西罗球场（San Siro / Giuseppe Meazza
+ ）\n场馆说明：米兰官网赛程列示场馆\n赛程来源：https:/
+ /www.acmilan.com/en/season/active/schedule/all\n场馆来源：https://www
+ .acmilan.com/en/season/active/schedule/all\n时间明确后会更新为定
+ 时日程，并启用赛前提醒。
 URL:https://www.acmilan.com/en/season/active/schedule/all
 STATUS:TENTATIVE
 TRANSP:TRANSPARENT
-CATEGORIES:AC Milan
+CATEGORIES:AC米兰
 END:VEVENT
 BEGIN:VEVENT
 UID:milan-6a31e7d0c63e9a4df43c8d9e@football-calendar.ricadre.github.io
-DTSTAMP:20260908T063456Z
+DTSTAMP:20260908T065550Z
 CREATED:20260908T063456Z
-LAST-MODIFIED:20260908T063456Z
-SEQUENCE:0
+LAST-MODIFIED:20260908T065550Z
+SEQUENCE:2
 DTSTART;VALUE=DATE:20270228
 DTEND;VALUE=DATE:20270301
-SUMMARY:【时间待定】科莫 vs AC Milan｜意甲 · 第26轮
+SUMMARY:【时间待定】【客场】科莫 vs AC米兰｜意甲 · 第26
+ 轮
 LOCATION:Stadio Sinigaglia
-DESCRIPTION:科莫（主） vs AC Milan（客）\n意甲 · 第26轮\n开
- 球：日期／时间待官方确认，当前为暂定比赛日\n场馆：
- Stadio Sinigaglia\n场馆说明：米兰官网赛程列示场馆\n赛程
- 来源：https://www.acmilan.com/en/season/active/schedule/all\n场馆来
- 源：https://www.acmilan.com/en/season/active/schedule/all\n时间明确
- 后会更新为定时日程，并启用赛前提醒。
+DESCRIPTION:科莫（主） vs AC米兰（客）\n主客：AC米兰客场\n
+ 意甲 · 第26轮\n开球：日期／时间待官方确认，当前为暂
+ 定比赛日\n场馆：Stadio Sinigaglia\n场馆说明：米兰官网赛
+ 程列示场馆\n赛程来源：https://www.acmilan.com/en/season/active/s
+ chedule/all\n场馆来源：https://www.acmilan.com/en/season/active/sched
+ ule/all\n时间明确后会更新为定时日程，并启用赛前提醒
+ 。
 URL:https://www.acmilan.com/en/season/active/schedule/all
 STATUS:TENTATIVE
 TRANSP:TRANSPARENT
-CATEGORIES:AC Milan
+CATEGORIES:AC米兰
 END:VEVENT
 BEGIN:VEVENT
 UID:milan-6a31e7cec63e9a4df43c8d52@football-calendar.ricadre.github.io
-DTSTAMP:20260908T063456Z
+DTSTAMP:20260908T065550Z
 CREATED:20260908T063456Z
-LAST-MODIFIED:20260908T063456Z
-SEQUENCE:0
+LAST-MODIFIED:20260908T065550Z
+SEQUENCE:2
 DTSTART;VALUE=DATE:20270307
 DTEND;VALUE=DATE:20270308
-SUMMARY:【时间待定】AC Milan vs 卡利亚里｜意甲 · 第27轮
+SUMMARY:【时间待定】【主场】AC米兰 vs 卡利亚里｜意甲 · 
+ 第27轮
 LOCATION:圣西罗球场（San Siro / Giuseppe Meazza）
-DESCRIPTION:AC Milan（主） vs 卡利亚里（客）\n意甲 · 第27轮\
- n开球：日期／时间待官方确认，当前为暂定比赛日\n场
- 馆：圣西罗球场（San Siro / Giuseppe Meazza）\n场馆说明：米
- 兰官网赛程列示场馆\n赛程来源：https://www.acmilan.com/en/sea
- son/active/schedule/all\n场馆来源：https://www.acmilan.com/en/season/
- active/schedule/all\n时间明确后会更新为定时日程，并启用
- 赛前提醒。
+DESCRIPTION:AC米兰（主） vs 卡利亚里（客）\n主客：AC米兰
+ 主场\n意甲 · 第27轮\n开球：日期／时间待官方确认，当
+ 前为暂定比赛日\n场馆：圣西罗球场（San Siro / Giuseppe Meaz
+ za）\n场馆说明：米兰官网赛程列示场馆\n赛程来源：https
+ ://www.acmilan.com/en/season/active/schedule/all\n场馆来源：https://w
+ ww.acmilan.com/en/season/active/schedule/all\n时间明确后会更新为
+ 定时日程，并启用赛前提醒。
 URL:https://www.acmilan.com/en/season/active/schedule/all
 STATUS:TENTATIVE
 TRANSP:TRANSPARENT
-CATEGORIES:AC Milan
+CATEGORIES:AC米兰
 END:VEVENT
 BEGIN:VEVENT
 UID:milan-6a31e7cbc63e9a4df43c8d06@football-calendar.ricadre.github.io
-DTSTAMP:20260908T063456Z
+DTSTAMP:20260908T065550Z
 CREATED:20260908T063456Z
-LAST-MODIFIED:20260908T063456Z
-SEQUENCE:0
+LAST-MODIFIED:20260908T065550Z
+SEQUENCE:2
 DTSTART;VALUE=DATE:20270314
 DTEND;VALUE=DATE:20270315
-SUMMARY:【时间待定】AC Milan vs 萨索洛｜意甲 · 第28轮
+SUMMARY:【时间待定】【主场】AC米兰 vs 萨索洛｜意甲 · 第
+ 28轮
 LOCATION:圣西罗球场（San Siro / Giuseppe Meazza）
-DESCRIPTION:AC Milan（主） vs 萨索洛（客）\n意甲 · 第28轮\n
- 开球：日期／时间待官方确认，当前为暂定比赛日\n场馆
- ：圣西罗球场（San Siro / Giuseppe Meazza）\n场馆说明：米兰
- 官网赛程列示场馆\n赛程来源：https://www.acmilan.com/en/season
- /active/schedule/all\n场馆来源：https://www.acmilan.com/en/season/act
- ive/schedule/all\n时间明确后会更新为定时日程，并启用赛
- 前提醒。
+DESCRIPTION:AC米兰（主） vs 萨索洛（客）\n主客：AC米兰主
+ 场\n意甲 · 第28轮\n开球：日期／时间待官方确认，当前
+ 为暂定比赛日\n场馆：圣西罗球场（San Siro / Giuseppe Meazza
+ ）\n场馆说明：米兰官网赛程列示场馆\n赛程来源：https:/
+ /www.acmilan.com/en/season/active/schedule/all\n场馆来源：https://www
+ .acmilan.com/en/season/active/schedule/all\n时间明确后会更新为定
+ 时日程，并启用赛前提醒。
 URL:https://www.acmilan.com/en/season/active/schedule/all
 STATUS:TENTATIVE
 TRANSP:TRANSPARENT
-CATEGORIES:AC Milan
+CATEGORIES:AC米兰
 END:VEVENT
 BEGIN:VEVENT
 UID:milan-6a31e7c9c63e9a4df43c8cba@football-calendar.ricadre.github.io
-DTSTAMP:20260908T063456Z
+DTSTAMP:20260908T065550Z
 CREATED:20260908T063456Z
-LAST-MODIFIED:20260908T063456Z
-SEQUENCE:0
+LAST-MODIFIED:20260908T065550Z
+SEQUENCE:2
 DTSTART;VALUE=DATE:20270321
 DTEND;VALUE=DATE:20270322
-SUMMARY:【时间待定】亚特兰大 vs AC Milan｜意甲 · 第29轮
+SUMMARY:【时间待定】【客场】亚特兰大 vs AC米兰｜意甲 · 
+ 第29轮
 LOCATION:New Balance Arena
-DESCRIPTION:亚特兰大（主） vs AC Milan（客）\n意甲 · 第29轮\
- n开球：日期／时间待官方确认，当前为暂定比赛日\n场
- 馆：New Balance Arena\n场馆说明：米兰官网赛程列示场馆\n
- 赛程来源：https://www.acmilan.com/en/season/active/schedule/all\n场
- 馆来源：https://www.acmilan.com/en/season/active/schedule/all\n时间
- 明确后会更新为定时日程，并启用赛前提醒。
-URL:https://www.acmilan.com/en/season/active/schedule/all
-STATUS:TENTATIVE
-TRANSP:TRANSPARENT
-CATEGORIES:AC Milan
-END:VEVENT
-BEGIN:VEVENT
-UID:milan-6a31e7c6c63e9a4df43c8c6d@football-calendar.ricadre.github.io
-DTSTAMP:20260908T063456Z
-CREATED:20260908T063456Z
-LAST-MODIFIED:20260908T063456Z
-SEQUENCE:0
-DTSTART;VALUE=DATE:20270404
-DTEND;VALUE=DATE:20270405
-SUMMARY:【时间待定】AC Milan vs 蒙扎｜意甲 · 第30轮
-LOCATION:圣西罗球场（San Siro / Giuseppe Meazza）
-DESCRIPTION:AC Milan（主） vs 蒙扎（客）\n意甲 · 第30轮\n开
- 球：日期／时间待官方确认，当前为暂定比赛日\n场馆：
- 圣西罗球场（San Siro / Giuseppe Meazza）\n场馆说明：米兰官
- 网赛程列示场馆\n赛程来源：https://www.acmilan.com/en/season/ac
- tive/schedule/all\n场馆来源：https://www.acmilan.com/en/season/active
- /schedule/all\n时间明确后会更新为定时日程，并启用赛前
- 提醒。
-URL:https://www.acmilan.com/en/season/active/schedule/all
-STATUS:TENTATIVE
-TRANSP:TRANSPARENT
-CATEGORIES:AC Milan
-END:VEVENT
-BEGIN:VEVENT
-UID:milan-6a31e7c4c63e9a4df43c8c21@football-calendar.ricadre.github.io
-DTSTAMP:20260908T063456Z
-CREATED:20260908T063456Z
-LAST-MODIFIED:20260908T063456Z
-SEQUENCE:0
-DTSTART;VALUE=DATE:20270411
-DTEND;VALUE=DATE:20270412
-SUMMARY:【时间待定】佛罗伦萨 vs AC Milan｜意甲 · 第31轮
-LOCATION:Stadio Franchi
-DESCRIPTION:佛罗伦萨（主） vs AC Milan（客）\n意甲 · 第31轮\
- n开球：日期／时间待官方确认，当前为暂定比赛日\n场
- 馆：Stadio Franchi\n场馆说明：米兰官网赛程列示场馆\n赛
- 程来源：https://www.acmilan.com/en/season/active/schedule/all\n场馆
- 来源：https://www.acmilan.com/en/season/active/schedule/all\n时间明
- 确后会更新为定时日程，并启用赛前提醒。
-URL:https://www.acmilan.com/en/season/active/schedule/all
-STATUS:TENTATIVE
-TRANSP:TRANSPARENT
-CATEGORIES:AC Milan
-END:VEVENT
-BEGIN:VEVENT
-UID:milan-6a31e7c1c63e9a4df43c8bd5@football-calendar.ricadre.github.io
-DTSTAMP:20260908T063456Z
-CREATED:20260908T063456Z
-LAST-MODIFIED:20260908T063456Z
-SEQUENCE:0
-DTSTART;VALUE=DATE:20270418
-DTEND;VALUE=DATE:20270419
-SUMMARY:【时间待定】AC Milan vs 那不勒斯｜意甲 · 第32轮
-LOCATION:圣西罗球场（San Siro / Giuseppe Meazza）
-DESCRIPTION:AC Milan（主） vs 那不勒斯（客）\n意甲 · 第32轮\
- n开球：日期／时间待官方确认，当前为暂定比赛日\n场
- 馆：圣西罗球场（San Siro / Giuseppe Meazza）\n场馆说明：米
- 兰官网赛程列示场馆\n赛程来源：https://www.acmilan.com/en/sea
- son/active/schedule/all\n场馆来源：https://www.acmilan.com/en/season/
- active/schedule/all\n时间明确后会更新为定时日程，并启用
- 赛前提醒。
-URL:https://www.acmilan.com/en/season/active/schedule/all
-STATUS:TENTATIVE
-TRANSP:TRANSPARENT
-CATEGORIES:AC Milan
-END:VEVENT
-BEGIN:VEVENT
-UID:milan-6a31e7bfc63e9a4df43c8b88@football-calendar.ricadre.github.io
-DTSTAMP:20260908T063456Z
-CREATED:20260908T063456Z
-LAST-MODIFIED:20260908T063456Z
-SEQUENCE:0
-DTSTART;VALUE=DATE:20270425
-DTEND;VALUE=DATE:20270426
-SUMMARY:【时间待定】莱切 vs AC Milan｜意甲 · 第33轮
-LOCATION:Stadio Via del Mare
-DESCRIPTION:莱切（主） vs AC Milan（客）\n意甲 · 第33轮\n开
- 球：日期／时间待官方确认，当前为暂定比赛日\n场馆：
- Stadio Via del Mare\n场馆说明：米兰官网赛程列示场馆\n赛程
- 来源：https://www.acmilan.com/en/season/active/schedule/all\n场馆来
- 源：https://www.acmilan.com/en/season/active/schedule/all\n时间明确
- 后会更新为定时日程，并启用赛前提醒。
-URL:https://www.acmilan.com/en/season/active/schedule/all
-STATUS:TENTATIVE
-TRANSP:TRANSPARENT
-CATEGORIES:AC Milan
-END:VEVENT
-BEGIN:VEVENT
-UID:milan-6a31e7bcc63e9a4df43c8b3c@football-calendar.ricadre.github.io
-DTSTAMP:20260908T063456Z
-CREATED:20260908T063456Z
-LAST-MODIFIED:20260908T063456Z
-SEQUENCE:0
-DTSTART;VALUE=DATE:20270502
-DTEND;VALUE=DATE:20270503
-SUMMARY:【时间待定】AC Milan vs 拉齐奥｜意甲 · 第34轮
-LOCATION:圣西罗球场（San Siro / Giuseppe Meazza）
-DESCRIPTION:AC Milan（主） vs 拉齐奥（客）\n意甲 · 第34轮\n
- 开球：日期／时间待官方确认，当前为暂定比赛日\n场馆
- ：圣西罗球场（San Siro / Giuseppe Meazza）\n场馆说明：米兰
+DESCRIPTION:亚特兰大（主） vs AC米兰（客）\n主客：AC米兰
+ 客场\n意甲 · 第29轮\n开球：日期／时间待官方确认，当
+ 前为暂定比赛日\n场馆：New Balance Arena\n场馆说明：米兰
  官网赛程列示场馆\n赛程来源：https://www.acmilan.com/en/season
  /active/schedule/all\n场馆来源：https://www.acmilan.com/en/season/act
  ive/schedule/all\n时间明确后会更新为定时日程，并启用赛
@@ -1136,42 +1078,45 @@ DESCRIPTION:AC Milan（主） vs 拉齐奥（客）\n意甲 · 第34轮\n
 URL:https://www.acmilan.com/en/season/active/schedule/all
 STATUS:TENTATIVE
 TRANSP:TRANSPARENT
-CATEGORIES:AC Milan
+CATEGORIES:AC米兰
 END:VEVENT
 BEGIN:VEVENT
-UID:milan-6a31e7b9c63e9a4df43c8aee@football-calendar.ricadre.github.io
-DTSTAMP:20260908T063456Z
+UID:milan-6a31e7c6c63e9a4df43c8c6d@football-calendar.ricadre.github.io
+DTSTAMP:20260908T065550Z
 CREATED:20260908T063456Z
-LAST-MODIFIED:20260908T063456Z
-SEQUENCE:0
-DTSTART;VALUE=DATE:20270509
-DTEND;VALUE=DATE:20270510
-SUMMARY:【时间待定】帕尔马 vs AC Milan｜意甲 · 第35轮
-LOCATION:Stadio Tardini
-DESCRIPTION:帕尔马（主） vs AC Milan（客）\n意甲 · 第35轮\n
- 开球：日期／时间待官方确认，当前为暂定比赛日\n场馆
- ：Stadio Tardini\n场馆说明：米兰官网赛程列示场馆\n赛程
- 来源：https://www.acmilan.com/en/season/active/schedule/all\n场馆来
- 源：https://www.acmilan.com/en/season/active/schedule/all\n时间明确
- 后会更新为定时日程，并启用赛前提醒。
+LAST-MODIFIED:20260908T065550Z
+SEQUENCE:2
+DTSTART;VALUE=DATE:20270404
+DTEND;VALUE=DATE:20270405
+SUMMARY:【时间待定】【主场】AC米兰 vs 蒙扎｜意甲 · 第30
+ 轮
+LOCATION:圣西罗球场（San Siro / Giuseppe Meazza）
+DESCRIPTION:AC米兰（主） vs 蒙扎（客）\n主客：AC米兰主场\n
+ 意甲 · 第30轮\n开球：日期／时间待官方确认，当前为暂
+ 定比赛日\n场馆：圣西罗球场（San Siro / Giuseppe Meazza）\n
+ 场馆说明：米兰官网赛程列示场馆\n赛程来源：https://www.
+ acmilan.com/en/season/active/schedule/all\n场馆来源：https://www.acmi
+ lan.com/en/season/active/schedule/all\n时间明确后会更新为定时
+ 日程，并启用赛前提醒。
 URL:https://www.acmilan.com/en/season/active/schedule/all
 STATUS:TENTATIVE
 TRANSP:TRANSPARENT
-CATEGORIES:AC Milan
+CATEGORIES:AC米兰
 END:VEVENT
 BEGIN:VEVENT
-UID:milan-6a31e7b5c63e9a4df43c8aa2@football-calendar.ricadre.github.io
-DTSTAMP:20260908T063456Z
+UID:milan-6a31e7c4c63e9a4df43c8c21@football-calendar.ricadre.github.io
+DTSTAMP:20260908T065550Z
 CREATED:20260908T063456Z
-LAST-MODIFIED:20260908T063456Z
-SEQUENCE:0
-DTSTART;VALUE=DATE:20270516
-DTEND;VALUE=DATE:20270517
-SUMMARY:【时间待定】AC Milan vs 罗马｜意甲 · 第36轮
-LOCATION:圣西罗球场（San Siro / Giuseppe Meazza）
-DESCRIPTION:AC Milan（主） vs 罗马（客）\n意甲 · 第36轮\n开
- 球：日期／时间待官方确认，当前为暂定比赛日\n场馆：
- 圣西罗球场（San Siro / Giuseppe Meazza）\n场馆说明：米兰官
+LAST-MODIFIED:20260908T065550Z
+SEQUENCE:2
+DTSTART;VALUE=DATE:20270411
+DTEND;VALUE=DATE:20270412
+SUMMARY:【时间待定】【客场】佛罗伦萨 vs AC米兰｜意甲 · 
+ 第31轮
+LOCATION:Stadio Franchi
+DESCRIPTION:佛罗伦萨（主） vs AC米兰（客）\n主客：AC米兰
+ 客场\n意甲 · 第31轮\n开球：日期／时间待官方确认，当
+ 前为暂定比赛日\n场馆：Stadio Franchi\n场馆说明：米兰官
  网赛程列示场馆\n赛程来源：https://www.acmilan.com/en/season/ac
  tive/schedule/all\n场馆来源：https://www.acmilan.com/en/season/active
  /schedule/all\n时间明确后会更新为定时日程，并启用赛前
@@ -1179,49 +1124,167 @@ DESCRIPTION:AC Milan（主） vs 罗马（客）\n意甲 · 第36轮\n开
 URL:https://www.acmilan.com/en/season/active/schedule/all
 STATUS:TENTATIVE
 TRANSP:TRANSPARENT
-CATEGORIES:AC Milan
+CATEGORIES:AC米兰
+END:VEVENT
+BEGIN:VEVENT
+UID:milan-6a31e7c1c63e9a4df43c8bd5@football-calendar.ricadre.github.io
+DTSTAMP:20260908T065550Z
+CREATED:20260908T063456Z
+LAST-MODIFIED:20260908T065550Z
+SEQUENCE:2
+DTSTART;VALUE=DATE:20270418
+DTEND;VALUE=DATE:20270419
+SUMMARY:【时间待定】【主场】AC米兰 vs 那不勒斯｜意甲 · 
+ 第32轮
+LOCATION:圣西罗球场（San Siro / Giuseppe Meazza）
+DESCRIPTION:AC米兰（主） vs 那不勒斯（客）\n主客：AC米兰
+ 主场\n意甲 · 第32轮\n开球：日期／时间待官方确认，当
+ 前为暂定比赛日\n场馆：圣西罗球场（San Siro / Giuseppe Meaz
+ za）\n场馆说明：米兰官网赛程列示场馆\n赛程来源：https
+ ://www.acmilan.com/en/season/active/schedule/all\n场馆来源：https://w
+ ww.acmilan.com/en/season/active/schedule/all\n时间明确后会更新为
+ 定时日程，并启用赛前提醒。
+URL:https://www.acmilan.com/en/season/active/schedule/all
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+CATEGORIES:AC米兰
+END:VEVENT
+BEGIN:VEVENT
+UID:milan-6a31e7bfc63e9a4df43c8b88@football-calendar.ricadre.github.io
+DTSTAMP:20260908T065550Z
+CREATED:20260908T063456Z
+LAST-MODIFIED:20260908T065550Z
+SEQUENCE:2
+DTSTART;VALUE=DATE:20270425
+DTEND;VALUE=DATE:20270426
+SUMMARY:【时间待定】【客场】莱切 vs AC米兰｜意甲 · 第33
+ 轮
+LOCATION:Stadio Via del Mare
+DESCRIPTION:莱切（主） vs AC米兰（客）\n主客：AC米兰客场\n
+ 意甲 · 第33轮\n开球：日期／时间待官方确认，当前为暂
+ 定比赛日\n场馆：Stadio Via del Mare\n场馆说明：米兰官网赛
+ 程列示场馆\n赛程来源：https://www.acmilan.com/en/season/active/s
+ chedule/all\n场馆来源：https://www.acmilan.com/en/season/active/sched
+ ule/all\n时间明确后会更新为定时日程，并启用赛前提醒
+ 。
+URL:https://www.acmilan.com/en/season/active/schedule/all
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+CATEGORIES:AC米兰
+END:VEVENT
+BEGIN:VEVENT
+UID:milan-6a31e7bcc63e9a4df43c8b3c@football-calendar.ricadre.github.io
+DTSTAMP:20260908T065550Z
+CREATED:20260908T063456Z
+LAST-MODIFIED:20260908T065550Z
+SEQUENCE:2
+DTSTART;VALUE=DATE:20270502
+DTEND;VALUE=DATE:20270503
+SUMMARY:【时间待定】【主场】AC米兰 vs 拉齐奥｜意甲 · 第
+ 34轮
+LOCATION:圣西罗球场（San Siro / Giuseppe Meazza）
+DESCRIPTION:AC米兰（主） vs 拉齐奥（客）\n主客：AC米兰主
+ 场\n意甲 · 第34轮\n开球：日期／时间待官方确认，当前
+ 为暂定比赛日\n场馆：圣西罗球场（San Siro / Giuseppe Meazza
+ ）\n场馆说明：米兰官网赛程列示场馆\n赛程来源：https:/
+ /www.acmilan.com/en/season/active/schedule/all\n场馆来源：https://www
+ .acmilan.com/en/season/active/schedule/all\n时间明确后会更新为定
+ 时日程，并启用赛前提醒。
+URL:https://www.acmilan.com/en/season/active/schedule/all
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+CATEGORIES:AC米兰
+END:VEVENT
+BEGIN:VEVENT
+UID:milan-6a31e7b9c63e9a4df43c8aee@football-calendar.ricadre.github.io
+DTSTAMP:20260908T065550Z
+CREATED:20260908T063456Z
+LAST-MODIFIED:20260908T065550Z
+SEQUENCE:2
+DTSTART;VALUE=DATE:20270509
+DTEND;VALUE=DATE:20270510
+SUMMARY:【时间待定】【客场】帕尔马 vs AC米兰｜意甲 · 第
+ 35轮
+LOCATION:Stadio Tardini
+DESCRIPTION:帕尔马（主） vs AC米兰（客）\n主客：AC米兰客
+ 场\n意甲 · 第35轮\n开球：日期／时间待官方确认，当前
+ 为暂定比赛日\n场馆：Stadio Tardini\n场馆说明：米兰官网
+ 赛程列示场馆\n赛程来源：https://www.acmilan.com/en/season/activ
+ e/schedule/all\n场馆来源：https://www.acmilan.com/en/season/active/sc
+ hedule/all\n时间明确后会更新为定时日程，并启用赛前提
+ 醒。
+URL:https://www.acmilan.com/en/season/active/schedule/all
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+CATEGORIES:AC米兰
+END:VEVENT
+BEGIN:VEVENT
+UID:milan-6a31e7b5c63e9a4df43c8aa2@football-calendar.ricadre.github.io
+DTSTAMP:20260908T065550Z
+CREATED:20260908T063456Z
+LAST-MODIFIED:20260908T065550Z
+SEQUENCE:2
+DTSTART;VALUE=DATE:20270516
+DTEND;VALUE=DATE:20270517
+SUMMARY:【时间待定】【主场】AC米兰 vs 罗马｜意甲 · 第36
+ 轮
+LOCATION:圣西罗球场（San Siro / Giuseppe Meazza）
+DESCRIPTION:AC米兰（主） vs 罗马（客）\n主客：AC米兰主场\n
+ 意甲 · 第36轮\n开球：日期／时间待官方确认，当前为暂
+ 定比赛日\n场馆：圣西罗球场（San Siro / Giuseppe Meazza）\n
+ 场馆说明：米兰官网赛程列示场馆\n赛程来源：https://www.
+ acmilan.com/en/season/active/schedule/all\n场馆来源：https://www.acmi
+ lan.com/en/season/active/schedule/all\n时间明确后会更新为定时
+ 日程，并启用赛前提醒。
+URL:https://www.acmilan.com/en/season/active/schedule/all
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+CATEGORIES:AC米兰
 END:VEVENT
 BEGIN:VEVENT
 UID:milan-6a31e7b3c63e9a4df43c8a56@football-calendar.ricadre.github.io
-DTSTAMP:20260908T063456Z
+DTSTAMP:20260908T065550Z
 CREATED:20260908T063456Z
-LAST-MODIFIED:20260908T063456Z
-SEQUENCE:0
+LAST-MODIFIED:20260908T065550Z
+SEQUENCE:2
 DTSTART;VALUE=DATE:20270523
 DTEND;VALUE=DATE:20270524
-SUMMARY:【时间待定】威尼斯 vs AC Milan｜意甲 · 第37轮
+SUMMARY:【时间待定】【客场】威尼斯 vs AC米兰｜意甲 · 第
+ 37轮
 LOCATION:Stadio Penzo
-DESCRIPTION:威尼斯（主） vs AC Milan（客）\n意甲 · 第37轮\n
- 开球：日期／时间待官方确认，当前为暂定比赛日\n场馆
- ：Stadio Penzo\n场馆说明：米兰官网赛程列示场馆\n赛程来
- 源：https://www.acmilan.com/en/season/active/schedule/all\n场馆来源
- ：https://www.acmilan.com/en/season/active/schedule/all\n时间明确后
- 会更新为定时日程，并启用赛前提醒。
+DESCRIPTION:威尼斯（主） vs AC米兰（客）\n主客：AC米兰客
+ 场\n意甲 · 第37轮\n开球：日期／时间待官方确认，当前
+ 为暂定比赛日\n场馆：Stadio Penzo\n场馆说明：米兰官网赛
+ 程列示场馆\n赛程来源：https://www.acmilan.com/en/season/active/s
+ chedule/all\n场馆来源：https://www.acmilan.com/en/season/active/sched
+ ule/all\n时间明确后会更新为定时日程，并启用赛前提醒
+ 。
 URL:https://www.acmilan.com/en/season/active/schedule/all
 STATUS:TENTATIVE
 TRANSP:TRANSPARENT
-CATEGORIES:AC Milan
+CATEGORIES:AC米兰
 END:VEVENT
 BEGIN:VEVENT
 UID:milan-6a31e7b0c63e9a4df43c8a0a@football-calendar.ricadre.github.io
-DTSTAMP:20260908T063456Z
+DTSTAMP:20260908T065550Z
 CREATED:20260908T063456Z
-LAST-MODIFIED:20260908T063456Z
-SEQUENCE:0
+LAST-MODIFIED:20260908T065550Z
+SEQUENCE:2
 DTSTART;VALUE=DATE:20270530
 DTEND;VALUE=DATE:20270531
-SUMMARY:【时间待定】AC Milan vs 乌迪内斯｜意甲 · 第38轮
+SUMMARY:【时间待定】【主场】AC米兰 vs 乌迪内斯｜意甲 · 
+ 第38轮
 LOCATION:圣西罗球场（San Siro / Giuseppe Meazza）
-DESCRIPTION:AC Milan（主） vs 乌迪内斯（客）\n意甲 · 第38轮\
- n开球：日期／时间待官方确认，当前为暂定比赛日\n场
- 馆：圣西罗球场（San Siro / Giuseppe Meazza）\n场馆说明：米
- 兰官网赛程列示场馆\n赛程来源：https://www.acmilan.com/en/sea
- son/active/schedule/all\n场馆来源：https://www.acmilan.com/en/season/
- active/schedule/all\n时间明确后会更新为定时日程，并启用
- 赛前提醒。
+DESCRIPTION:AC米兰（主） vs 乌迪内斯（客）\n主客：AC米兰
+ 主场\n意甲 · 第38轮\n开球：日期／时间待官方确认，当
+ 前为暂定比赛日\n场馆：圣西罗球场（San Siro / Giuseppe Meaz
+ za）\n场馆说明：米兰官网赛程列示场馆\n赛程来源：https
+ ://www.acmilan.com/en/season/active/schedule/all\n场馆来源：https://w
+ ww.acmilan.com/en/season/active/schedule/all\n时间明确后会更新为
+ 定时日程，并启用赛前提醒。
 URL:https://www.acmilan.com/en/season/active/schedule/all
 STATUS:TENTATIVE
 TRANSP:TRANSPARENT
-CATEGORIES:AC Milan
+CATEGORIES:AC米兰
 END:VEVENT
 END:VCALENDAR

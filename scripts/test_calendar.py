@@ -1,6 +1,7 @@
 import copy
 from datetime import datetime, timedelta, timezone
 import unittest
+from unittest.mock import patch
 import update as cal
 
 class CalendarTests(unittest.TestCase):
@@ -48,5 +49,64 @@ class CalendarTests(unittest.TestCase):
         with self.assertRaises(ValueError):cal.reconcile(old,[],'milan',self.now)
     def test_italian_winter_tbc_date_uses_rome(self):
         self.assertEqual(cal.dt('2026-12-05T23:00:00Z').astimezone(cal.ROME).date().isoformat(),'2026-12-06')
+
+    def test_chinese_name_and_home_away_preserve_original_uid(self):
+        migrated=cal.reconcile([self.g],[self.g],'milan',self.now)[0]
+        self.assertEqual(migrated['away'],'AC米兰')
+        self.assertEqual(migrated['id'],self.g['id'])
+        body=cal.build_ics([migrated],'测试','https://example.com/all.ics',self.now).decode().replace('\r\n ','')
+        self.assertIn('【客场】拉齐奥 vs AC米兰',body)
+        self.assertIn('主客：AC米兰客场',body)
+        self.assertIn('UID:milan-test@football-calendar.ricadre.github.io',body)
+        self.assertNotIn('AC Milan',body)
+        self.assertEqual(cal.home_away(dict(migrated,home='AC米兰',away='本菲卡')),'主场')
+
+    def test_dual_timezone_tracks_summer_and_winter(self):
+        summer='\n'.join(cal.kickoff_lines(self.g))
+        self.assertIn('开球（北京时间）：2026-09-13 00:00',summer)
+        self.assertIn('开球（意大利时间）：2026-09-12 18:00',summer)
+        winter='\n'.join(cal.kickoff_lines(dict(self.g,start='2026-12-10T20:00:00Z')))
+        self.assertIn('开球（北京时间）：2026-12-11 04:00',winter)
+        self.assertIn('开球（意大利时间）：2026-12-10 21:00',winter)
+        pending='\n'.join(cal.kickoff_lines(dict(self.g,tentative=True)))
+        self.assertNotIn('00:00',pending)
+
+    def test_reminder_only_change_updates_version_once(self):
+        first=cal.reconcile([], [self.g], 'milan', self.now)[0]
+        with patch.object(cal.C,'KICKOFF_REMINDER_MINUTES',[60]):
+            second=cal.reconcile([first],[first],'milan',self.now+timedelta(hours=6))[0]
+            self.assertEqual(second['sequence'],first['sequence']+1)
+            self.assertNotEqual(second['modified'],first['modified'])
+            body=cal.build_ics([second],'测试','https://example.com/all.ics',self.now).decode()
+            self.assertIn('TRIGGER:-PT3600S',body)
+            third=cal.reconcile([second],[second],'milan',self.now+timedelta(hours=12))[0]
+            self.assertEqual(third['sequence'],second['sequence'])
+            self.assertEqual(third['modified'],second['modified'])
+
+    def test_configured_timezone_and_optional_reminders(self):
+        with patch.object(cal.C,'USER_TIMEZONE','America/Los_Angeles'):
+            self.assertEqual(cal.early_alarm(cal.dt('2026-09-13T08:00:00Z')).isoformat(),'2026-09-12T21:00:00-07:00')
+        with patch.object(cal.C,'MORNING_REMINDER',None):
+            self.assertEqual(cal.alarm_triggers(cal.dt(self.g['start'])),[cal.dt(self.g['start'])-timedelta(minutes=30)])
+        with patch.object(cal.C,'KICKOFF_REMINDER_MINUTES',[0]):
+            with self.assertRaises(ValueError):cal.validate_settings()
+
+    def test_crosscheck_parses_real_emoji_and_competition_suffix(self):
+        raw='BEGIN:VCALENDAR\r\nVERSION:2.0\r\nBEGIN:VEVENT\r\nUID:sample\r\nDTSTART:20260912T160000Z\r\nSUMMARY:⚽️ RB Salzburg - AC Milan [EL]\r\nEND:VEVENT\r\nEND:VCALENDAR\r\n'
+        parsed=cal.parse_crosscheck_feed(raw)
+        self.assertEqual((parsed[0]['home'],parsed[0]['away']),('萨尔茨堡红牛','AC米兰'))
+        self.assertEqual(cal.chinese_name('S.S. Lazio'),'拉齐奥')
+        self.assertEqual(cal.chinese_name('Ferencváros'),'费伦茨瓦罗斯')
+
+    def test_crosscheck_never_changes_official_times(self):
+        known=copy.deepcopy(self.g)
+        pending=dict(self.g,id='milan-pending',home='AC米兰',away='帕尔马',tentative=True,start='2026-12-05T23:00:00Z')
+        games=[known,pending];before=copy.deepcopy(games)
+        ref=[{'home':'拉齐奥','away':'AC米兰','start':'2026-09-13T18:45:00Z','status':'','source':'https://example.com/reference'}, {'home':'AC米兰','away':'帕尔马','start':'2026-12-06T20:00:00Z','status':'','source':'https://example.com/reference'}]
+        report=cal.compare_milan_fixtures(games,ref,self.now)
+        self.assertEqual(report['compared'],1)
+        self.assertEqual(report['official_time_pending'],1)
+        self.assertEqual(len(report['differences']),1)
+        self.assertEqual(games,before)
 
 if __name__=='__main__':unittest.main()
