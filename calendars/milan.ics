@@ -12,40 +12,6 @@ REFRESH-INTERVAL;VALUE=DURATION:PT6H
 X-PUBLISHED-TTL:PT6H
 URL:https://ricadre.github.io/football-calendar/calendars/milan.ics
 BEGIN:VEVENT
-UID:milan-6a31e80bc63e9a4df43c94c5@football-calendar.ricadre.github.io
-DTSTAMP:20260908T065550Z
-CREATED:20260908T063456Z
-LAST-MODIFIED:20260908T065550Z
-SEQUENCE:2
-DTSTART:20260828T184500Z
-DTEND:20260828T204500Z
-SUMMARY:【主场】AC米兰 vs 威尼斯｜意甲 · 第2轮
-LOCATION:圣西罗球场（San Siro / Giuseppe Meazza）
-DESCRIPTION:AC米兰（主） vs 威尼斯（客）\n主客：AC米兰主
- 场\n意甲 · 第2轮\n开球（北京时间）：2026-08-29 02:45\n开
- 球（意大利时间）：2026-08-28 20:45\n场馆：圣西罗球场（Sa
- n Siro / Giuseppe Meazza）\n场馆说明：米兰官网赛程列示场馆
- \n赛程来源：https://www.acmilan.com/en/season/active/schedule/all\n
- 场馆来源：https://www.acmilan.com/en/season/active/schedule/all\n日
- 历预留120分钟；实际终场时间可能变化。
-URL:https://www.acmilan.com/en/season/active/schedule/all
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-CATEGORIES:AC米兰
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:【主场】AC米兰 vs 威尼斯｜意甲 · 第2轮\n08月29
- 日 02:45 北京时间\n圣西罗球场（San Siro / Giuseppe Meazza）
-TRIGGER:-PT20700S
-END:VALARM
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:【主场】AC米兰 vs 威尼斯｜意甲 · 第2轮\n08月29
- 日 02:45 北京时间\n圣西罗球场（San Siro / Giuseppe Meazza）
-TRIGGER:-PT1800S
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
 UID:milan-6a31e808c63e9a4df43c9479@football-calendar.ricadre.github.io
 DTSTAMP:20260908T065550Z
 CREATED:20260908T063456Z

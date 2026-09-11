@@ -1,25 +1,6 @@
 {
   "games": [
     {
-      "id": "milan-6a31e80bc63e9a4df43c94c5",
-      "team": "milan",
-      "start": "2026-08-28T18:45:00Z",
-      "date": "2026-08-28",
-      "tentative": false,
-      "home": "AC米兰",
-      "away": "威尼斯",
-      "competition": "意甲 · 第2轮",
-      "venue": "圣西罗球场（San Siro / Giuseppe Meazza）",
-      "venue_note": "米兰官网赛程列示场馆",
-      "venue_source": "https://www.acmilan.com/en/season/active/schedule/all",
-      "source": "https://www.acmilan.com/en/season/active/schedule/all",
-      "status": "Played",
-      "presentation_revision": "f398941b0a7b2ee54efd",
-      "sequence": 2,
-      "modified": "2026-09-08T06:55:50Z",
-      "created": "2026-09-08T06:34:56Z"
-    },
-    {
       "id": "milan-6a31e808c63e9a4df43c9479",
       "team": "milan",
       "start": "2026-09-06T18:45:00Z",
@@ -63,7 +44,7 @@
       "home": "广州蒲公英",
       "away": "兰州陇原竞技",
       "source": "https://www.henduoqiu.com/fenxi/14640192",
-      "status": "Fixture",
+      "status": "NeedsReview",
       "start": "2026-09-13T08:00:00Z",
       "date": "2026-09-13",
       "tentative": false,
@@ -72,8 +53,8 @@
       "venue_note": "2026赛季主场参考，本场待确认",
       "venue_source": "https://www.gdfa.gd.cn/news/2780",
       "presentation_revision": "f398941b0a7b2ee54efd",
-      "sequence": 2,
-      "modified": "2026-09-08T06:55:50Z",
+      "sequence": 3,
+      "modified": "2026-09-11T21:00:10Z",
       "created": "2026-09-08T06:34:56Z"
     },
     {
@@ -1028,10 +1009,10 @@
     }
   ],
   "source_success": {
-    "milan": "2026-09-11T16:31:02Z",
-    "lanzhou": "2026-09-11T16:31:02Z"
+    "milan": "2026-09-11T21:00:10Z",
+    "lanzhou": "2026-09-11T21:00:10Z"
   },
-  "checked_at": "2026-09-11T16:31:02Z",
+  "checked_at": "2026-09-11T21:00:10Z",
   "errors": {},
   "crosscheck_status": "ok"
 }

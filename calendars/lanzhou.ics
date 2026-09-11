@@ -13,39 +13,26 @@ X-PUBLISHED-TTL:PT6H
 URL:https://ricadre.github.io/football-calendar/calendars/lanzhou.ics
 BEGIN:VEVENT
 UID:lanzhou-14640192@football-calendar.ricadre.github.io
-DTSTAMP:20260908T065550Z
+DTSTAMP:20260911T210010Z
 CREATED:20260908T063456Z
-LAST-MODIFIED:20260908T065550Z
-SEQUENCE:2
-DTSTART:20260913T080000Z
-DTEND:20260913T100000Z
-SUMMARY:【客场】广州蒲公英 vs 兰州陇原竞技｜中乙保级组
- 第23轮
+LAST-MODIFIED:20260911T210010Z
+SEQUENCE:3
+DTSTART;VALUE=DATE:20260913
+DTEND;VALUE=DATE:20260914
+SUMMARY:【赛程待复核】【客场】广州蒲公英 vs 兰州陇原竞
+ 技｜中乙保级组第23轮
 LOCATION:广州花都体育中心体育场（本场待确认）
 DESCRIPTION:广州蒲公英（主） vs 兰州陇原竞技（客）\n主客
- ：兰州陇原竞技客场\n中乙保级组第23轮\n开球（北京时
- 间）：2026-09-13 16:00\n场馆：广州花都体育中心体育场\n场
- 馆说明：2026赛季主场参考，本场待确认\n赛程来源：https
- ://www.henduoqiu.com/fenxi/14640192\n场馆来源：https://www.gdfa.gd.cn
- /news/2780\n日历预留120分钟；实际终场时间可能变化。
+ ：兰州陇原竞技客场\n中乙保级组第23轮\n开球：日期／
+ 时间待官方确认，当前为暂定比赛日\n场馆：广州花都体
+ 育中心体育场\n场馆说明：2026赛季主场参考，本场待确
+ 认\n赛程来源：https://www.henduoqiu.com/fenxi/14640192\n场馆来源
+ ：https://www.gdfa.gd.cn/news/2780\n时间明确后会更新为定时日
+ 程，并启用赛前提醒。
 URL:https://www.henduoqiu.com/fenxi/14640192
-STATUS:CONFIRMED
+STATUS:TENTATIVE
 TRANSP:TRANSPARENT
 CATEGORIES:兰州陇原竞技
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:【客场】广州蒲公英 vs 兰州陇原竞技｜中乙保
- 级组第23轮\n09月13日 16:00 北京时间\n广州花都体育中心体
- 育场（本场待确认）
-TRIGGER:-PT25200S
-END:VALARM
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:【客场】广州蒲公英 vs 兰州陇原竞技｜中乙保
- 级组第23轮\n09月13日 16:00 北京时间\n广州花都体育中心体
- 育场（本场待确认）
-TRIGGER:-PT1800S
-END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:lanzhou-14640195@football-calendar.ricadre.github.io
