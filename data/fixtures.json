@@ -39,25 +39,6 @@
       "created": "2026-09-08T06:34:56Z"
     },
     {
-      "id": "lanzhou-14640192",
-      "team": "lanzhou",
-      "home": "广州蒲公英",
-      "away": "兰州陇原竞技",
-      "source": "https://www.henduoqiu.com/fenxi/14640192",
-      "status": "NeedsReview",
-      "start": "2026-09-13T08:00:00Z",
-      "date": "2026-09-13",
-      "tentative": false,
-      "competition": "中乙保级组第23轮",
-      "venue": "广州花都体育中心体育场",
-      "venue_note": "2026赛季主场参考，本场待确认",
-      "venue_source": "https://www.gdfa.gd.cn/news/2780",
-      "presentation_revision": "f398941b0a7b2ee54efd",
-      "sequence": 3,
-      "modified": "2026-09-11T21:00:10Z",
-      "created": "2026-09-08T06:34:56Z"
-    },
-    {
       "id": "milan-6a957ee6af5945385cfd86af",
       "team": "milan",
       "start": "2026-09-16T19:00:00Z",
@@ -1009,10 +990,10 @@
     }
   ],
   "source_success": {
-    "milan": "2026-09-13T04:52:09Z",
-    "lanzhou": "2026-09-13T04:52:09Z"
+    "milan": "2026-09-13T11:55:52Z",
+    "lanzhou": "2026-09-13T11:55:52Z"
   },
-  "checked_at": "2026-09-13T04:52:09Z",
+  "checked_at": "2026-09-13T11:55:52Z",
   "errors": {},
   "crosscheck_status": "ok"
 }
