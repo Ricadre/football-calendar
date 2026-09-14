@@ -115,11 +115,11 @@
       "tentative": false,
       "competition": "中乙保级组第24轮",
       "venue": "兰州奥体中心玫瑰体育场",
-      "venue_note": "2026赛季主场参考，本场待确认",
+      "venue_note": "按主队2026赛季常用主场列示；临时换场以本场赛事公告为准",
       "venue_source": "https://m.17500.cn/zq/data-stadium/match-16387",
       "presentation_revision": "c1c114740daaf881321c",
-      "sequence": 3,
-      "modified": "2026-09-14T01:46:31Z",
+      "sequence": 4,
+      "modified": "2026-09-14T02:47:13Z",
       "created": "2026-09-08T06:34:56Z"
     },
     {
@@ -153,11 +153,11 @@
       "tentative": false,
       "competition": "中乙保级组第25轮",
       "venue": "湖北足管中心训练基地中心球场",
-      "venue_note": "省足协2026年8月主场公告参考，本场待确认",
+      "venue_note": "按主队常用主场列示，参考省足协2026年8月主场公告；临时换场以本场赛事公告为准",
       "venue_source": "https://weibo.com/2/detail/5331963306059688",
       "presentation_revision": "c1c114740daaf881321c",
-      "sequence": 3,
-      "modified": "2026-09-14T01:46:31Z",
+      "sequence": 4,
+      "modified": "2026-09-14T02:47:13Z",
       "created": "2026-09-08T06:34:56Z"
     },
     {
@@ -172,11 +172,11 @@
       "tentative": false,
       "competition": "中乙保级组第26轮",
       "venue": "兰州奥体中心玫瑰体育场",
-      "venue_note": "2026赛季主场参考，本场待确认",
+      "venue_note": "按主队2026赛季常用主场列示；临时换场以本场赛事公告为准",
       "venue_source": "https://m.17500.cn/zq/data-stadium/match-16387",
       "presentation_revision": "c1c114740daaf881321c",
-      "sequence": 3,
-      "modified": "2026-09-14T01:46:31Z",
+      "sequence": 4,
+      "modified": "2026-09-14T02:47:13Z",
       "created": "2026-09-08T06:34:56Z"
     },
     {
@@ -229,11 +229,11 @@
       "tentative": false,
       "competition": "中乙保级组第27轮",
       "venue": "兰州奥体中心玫瑰体育场",
-      "venue_note": "2026赛季主场参考，本场待确认",
+      "venue_note": "按主队2026赛季常用主场列示；临时换场以本场赛事公告为准",
       "venue_source": "https://m.17500.cn/zq/data-stadium/match-16387",
       "presentation_revision": "c1c114740daaf881321c",
-      "sequence": 3,
-      "modified": "2026-09-14T01:46:31Z",
+      "sequence": 4,
+      "modified": "2026-09-14T02:47:13Z",
       "created": "2026-09-08T06:34:56Z"
     },
     {
@@ -286,11 +286,11 @@
       "tentative": false,
       "competition": "中乙保级组第28轮",
       "venue": "温州体育中心体育场",
-      "venue_note": "常用主场参考，曾有场地调整，本场待确认",
+      "venue_note": "按主队常用主场列示；该队曾有场地调整，本场以赛事公告为准",
       "venue_source": "https://news.66wz.com/system/2026/06/14/105789083.shtml",
       "presentation_revision": "c1c114740daaf881321c",
-      "sequence": 3,
-      "modified": "2026-09-14T01:46:31Z",
+      "sequence": 4,
+      "modified": "2026-09-14T02:47:13Z",
       "created": "2026-09-08T06:34:56Z"
     },
     {
@@ -343,11 +343,11 @@
       "tentative": false,
       "competition": "中乙保级组第29轮",
       "venue": "兰州奥体中心玫瑰体育场",
-      "venue_note": "2026赛季主场参考，本场待确认",
+      "venue_note": "按主队2026赛季常用主场列示；临时换场以本场赛事公告为准",
       "venue_source": "https://m.17500.cn/zq/data-stadium/match-16387",
       "presentation_revision": "c1c114740daaf881321c",
-      "sequence": 3,
-      "modified": "2026-09-14T01:46:31Z",
+      "sequence": 4,
+      "modified": "2026-09-14T02:47:13Z",
       "created": "2026-09-08T06:34:56Z"
     },
     {
@@ -400,11 +400,11 @@
       "tentative": false,
       "competition": "中乙保级组第30轮",
       "venue": "广东省人民体育场",
-      "venue_note": "2026赛季主场参考，本场待确认",
+      "venue_note": "按主队2026赛季常用主场列示；临时换场以本场赛事公告为准",
       "venue_source": "https://www.gdfa.gd.cn/news/2674",
       "presentation_revision": "c1c114740daaf881321c",
-      "sequence": 3,
-      "modified": "2026-09-14T01:46:31Z",
+      "sequence": 4,
+      "modified": "2026-09-14T02:47:13Z",
       "created": "2026-09-08T06:34:56Z"
     },
     {
@@ -1036,10 +1036,10 @@
     }
   ],
   "source_success": {
-    "milan": "2026-09-14T02:43:08Z",
-    "lanzhou": "2026-09-14T02:43:08Z"
+    "milan": "2026-09-14T02:47:13Z",
+    "lanzhou": "2026-09-14T02:47:13Z"
   },
-  "checked_at": "2026-09-14T02:43:08Z",
+  "checked_at": "2026-09-14T02:47:13Z",
   "errors": {},
   "crosscheck_status": "ok"
 }
