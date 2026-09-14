@@ -74,14 +74,14 @@
       "status": "Played",
       "tentative": false,
       "competition": "中乙保级组第23轮",
-      "venue": "广州花都体育中心体育场",
-      "venue_note": "2026赛季主场参考，本场待确认",
-      "venue_source": "https://www.gdfa.gd.cn/news/2780",
+      "venue": "广州花都体育中心",
+      "venue_note": "2026-09-13 本场战报列示场馆（懂球帝），已按比赛日期与对阵核对",
+      "venue_source": "https://pc.dongqiudi.com/articles/6339657.html",
       "home_score": 1,
       "away_score": 2,
       "presentation_revision": "c1c114740daaf881321c",
-      "sequence": 4,
-      "modified": "2026-09-14T01:46:31Z",
+      "sequence": 5,
+      "modified": "2026-09-14T02:42:21Z",
       "created": "2026-09-08T06:34:56Z"
     },
     {
@@ -1036,10 +1036,10 @@
     }
   ],
   "source_success": {
-    "milan": "2026-09-14T01:49:10Z",
-    "lanzhou": "2026-09-14T01:49:10Z"
+    "milan": "2026-09-14T02:42:21Z",
+    "lanzhou": "2026-09-14T02:42:21Z"
   },
-  "checked_at": "2026-09-14T01:49:10Z",
+  "checked_at": "2026-09-14T02:42:21Z",
   "errors": {},
   "crosscheck_status": "ok"
 }
