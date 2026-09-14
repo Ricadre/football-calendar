@@ -61,11 +61,22 @@ def dt(s):
 def plain(s):
     return re.sub(r'\s+', ' ', unescape(re.sub(r'<[^>]+>', ' ', s))).strip()
 
+def score_fields(status, home, away):
+    # Sources also send 0–0 placeholders before kickoff. Require match state.
+    if status not in ('Played','Live'):return {}
+    if all(not isinstance(v,bool) and re.fullmatch(r'\d{1,2}',str(v)) for v in (home,away)):
+        return {'home_score':int(home),'away_score':int(away)}
+    return {}
+
+def score_text(game):
+    scores=score_fields(game['status'],game.get('home_score'),game.get('away_score'))
+    return f'{scores["home_score"]}–{scores["away_score"]}' if scores else ''
+
 def fetch(url):
     error = None
     for attempt in range(3):
         try:
-            req = Request(url, headers={'User-Agent':'Mozilla/5.0 (compatible; FootballCalendar/1.0)', 'Accept':'text/html', 'Accept-Encoding':'gzip'})
+            req = Request(url, headers={'User-Agent':'Mozilla/5.0 (compatible; FootballCalendar/1.0)', 'Accept':'text/html', 'Accept-Encoding':'gzip', 'Cache-Control':'no-cache'})
             with urlopen(req, timeout=35) as r:
                 raw = r.read(5_000_001)
                 if len(raw)>5_000_000: raise ValueError('Source exceeds size limit')
@@ -93,13 +104,24 @@ def parse_milan(html):
         if 'milan' not in (g['homeTeam'].get('slug'),g['awayTeam'].get('slug')):continue
         when=dt(g['datetime'])
         status=g.get('status','Fixture')
+        if status in ('Playing','InProgress','In progress','Live'):status='Live'
         tentative=str(g.get('datetimeTBC','')).lower() not in ('','false','none','0')
         venue=g.get('stadiumName') or '场馆待确认'
         if venue in ('Stadio San Siro','San Siro Stadium','Stadio Giuseppe Meazza'): venue='圣西罗球场（San Siro / Giuseppe Meazza）'
         elif venue=='Stadio Olimpico':venue='罗马奥林匹克球场（Stadio Olimpico）'
         games[g['id']]={'id':'milan-'+g['id'],'team':'milan','start':iso(when),'date':when.astimezone(ROME).date().isoformat(), 'tentative':tentative,'home':chinese_name(g['homeTeam']['name']),'away':chinese_name(g['awayTeam']['name']),'competition':COMPETITIONS.get(g['competition']['name'],g['competition']['name'])+' · 第'+str(g.get('matchDay','?'))+'轮','venue':venue,'venue_note':'米兰官网赛程列示场馆','venue_source':MILAN,'source':MILAN,'status':status}
+        games[g['id']].update(score_fields(status,g['homeTeam'].get('score'),g['awayTeam'].get('score')))
+        if status in ('Played','Live'):games[g['id']]['tentative']=False
     if len(games)<5:raise ValueError('Milan fixture structure changed; refusing empty replacement')
     return list(games.values())
+
+def lanzhou_status(html):
+    labels={'未开始':'Fixture','未开赛':'Fixture','推迟':'Postponed','延期':'Postponed','取消':'Cancelled','中断':'Suspended','待定':'Postponed','已结束':'Played','完场':'Played','进行中':'Live','上半场':'Live','下半场':'Live','中场':'Live','加时':'Live','点球大战':'Live'}
+    for value in re.findall(r'>([^<>]*)<',html):
+        value=unescape(value).strip()
+        if value in labels:return labels[value]
+        if re.fullmatch(r'\d{1,3}(?:\+\d{1,2})?[′\x27’]',value):return 'Live'
+    return None
 
 def parse_lanzhou_list(html):
     if not re.search(r'<h1[^>]*>[^<]*兰州陇原竞技',html):raise ValueError('Lanzhou team page does not match')
@@ -108,23 +130,40 @@ def parse_lanzhou_list(html):
         if '兰州陇原竞技' not in li:continue
         match=re.search(r'href="(/(?:fenxi|bisai)/(\d+))"[^>]*class="[^"]*group/item',li)
         if not match:continue
-        if not re.search(r'>\s*(未开始|推迟|取消|中断|待定)\s*<',li):continue
         names=re.findall(r'<img\b[^>]*\balt="([^"]+)"',li)
         if len(names)!=2:raise ValueError('Cannot identify home and away teams')
-        status=re.search(r'>\s*(未开始|推迟|取消|中断|待定)\s*<',li)[1]
-        results[match[2]]={'id':'lanzhou-'+match[2],'team':'lanzhou','home':unescape(names[0]),'away':unescape(names[1]),'source':'https://www.henduoqiu.com'+match[1], 'status':{'未开始':'Fixture','推迟':'Postponed','取消':'Cancelled','中断':'Suspended','待定':'Postponed'}[status]}
+        # Discover all states. The match page is authoritative even if the list
+        # temporarily omits a fixture or has a stale/unknown state label.
+        results[match[2]]={'id':'lanzhou-'+match[2],'team':'lanzhou','home':unescape(names[0]),'away':unescape(names[1]),'source':'https://www.henduoqiu.com/bisai/'+match[2], 'status':lanzhou_status(li) or 'Unknown'}
+        listed_day=re.search(r'\b(\d{2}/\d{2})\s+\d{2}:\d{2}',plain(li))
+        if listed_day:results[match[2]]['listed_day']=listed_day[1]
+    if not results:raise ValueError('Lanzhou listing contains no identifiable fixtures')
     return list(results.values())
 
 def parse_lanzhou_detail(game,html,venues):
     # Read the date from this fixture's main article, not tables of historic games.
-    head=re.search(r'<article\b[^>]*>(.*?)</h\d>|<article\b[^>]*>(.{0,5000})',html,re.S)
-    section=(head[0] if head else html)
+    head=re.search(r'<article\b[^>]*>(.*?)</h1>',html,re.S)
+    if not head:raise ValueError('Missing match article')
+    section=head[0]
+    names=re.findall(r'<img\b[^>]*\balt="([^"]+)"',section)
+    if len(names)!=2 or tuple(map(chinese_name,map(unescape,names)))!=(chinese_name(game['home']),chinese_name(game['away'])):
+        raise ValueError('Match page teams do not match fixture')
+    status=lanzhou_status(section)
+    if not status:raise ValueError('Missing match status')
     date=re.search(r'(20\d{2}-\d{2}-\d{2})\s+(\d{2}:\d{2})',plain(section))
     if not date:raise ValueError(f'Missing full fixture date: {game["id"]}')
     when=datetime.fromisoformat(date[1]+'T'+date[2]+':00').replace(tzinfo=BEIJING)
     competition=re.search(r'<a\b[^>]*href="/liansai/\d+"[^>]*>(.*?)</a>',section,re.S)
     if not competition:raise ValueError('Missing competition')
-    result={**game,'start':iso(when),'date':date[1],'tentative':game['status'] in ('Postponed','Suspended'),'competition':plain(competition[1]),'venue':'场馆待确认','venue_note':'本场场馆尚未核实','venue_source':''}
+    result={k:v for k,v in game.items() if k in ('id','team','home','away','source')}
+    result.update(start=iso(when),date=date[1],status=status,tentative=status in ('Postponed','Suspended'),competition=plain(competition[1]),venue='场馆待确认',venue_note='本场场馆尚未核实',venue_source='')
+    # Restrict scores to the header between the two club badges; never read
+    # half-time scores, corner counts or historical/statistics tables.
+    badges=list(re.finditer(r'<img\b[^>]*>',section))
+    scoreboard=section[badges[0].end():badges[1].start()] if len(badges)==2 else ''
+    score=re.search(r'<span\b[^>]*>\s*(\d{1,2})\s*</span>\s*<span\b[^>]*>\s*[-–:]\s*</span>\s*<span\b[^>]*>\s*(\d{1,2})\s*</span>',scoreboard)
+    if score:result.update(score_fields(status,score[1],score[2]))
+    if status in ('Played','Live') and not score:raise ValueError('Missing match header score')
     ref=venues.get(game['id']) or venues.get(game['home'])
     if ref and date[1]<=ref['valid_until']:
         result.update(venue=ref['name'],venue_note=ref['note'],venue_source=ref['source'])
@@ -136,15 +175,37 @@ def parse_lanzhou_detail(game,html,venues):
             result.update(venue=event['location']['name'],venue_note='赛事页面列示场馆',venue_source=game['source'])
     return result
 
-def get_lanzhou(venues,fixture_dir=None):
-    html=(fixture_dir/'lanzhou.html').read_text() if fixture_dir else fetch(LANZHOU)
-    games=parse_lanzhou_list(html)
+def get_lanzhou(venues,fixture_dir=None,previous=(),now=None):
+    now=now or datetime.now(UTC)
+    old={g['id']:g for g in previous if g['team']=='lanzhou' and dt(g['start'])>now-timedelta(days=C.PAST_DAYS_KEEP)}
+    errors=[]
+    try:
+        html=(fixture_dir/'lanzhou.html').read_text() if fixture_dir else fetch(LANZHOU)
+        # Month/day only narrows the history fetch; the actual year always comes
+        # from the full match page. Include both sides of a New Year boundary.
+        recent_days={(now.astimezone(BEIJING)-timedelta(days=n)).strftime('%m/%d') for n in range(C.PAST_DAYS_KEEP+1)}
+        games={g['id']:g for g in parse_lanzhou_list(html) if g['status']!='Played' or not g.get('listed_day') or g['listed_day'] in recent_days}
+    except Exception as exc:
+        if not old:raise
+        games={};errors.append('球队列表：'+str(exc))
+    # Keep following the original IDs across the list's upcoming/live/results
+    # sections. Revisit recent finished games too, to pick up score corrections.
+    for key,g in old.items():games.setdefault(key,g)
     def one(g):
-        p=fixture_dir/(g['id']+'.html') if fixture_dir else None
-        body=p.read_text() if p and p.exists() else fetch(g['source'])
-        if p and not p.exists():p.write_text(body)
-        return parse_lanzhou_detail(g,body,venues)
-    with ThreadPoolExecutor(max_workers=4) as pool:return list(pool.map(one,games))
+        g={**g,'source':'https://www.henduoqiu.com/bisai/'+g['id'].removeprefix('lanzhou-')}
+        try:
+            p=fixture_dir/(g['id']+'.html') if fixture_dir else None
+            body=p.read_text() if p and p.exists() else fetch(g['source'])
+            if p and not p.exists():p.write_text(body)
+            return parse_lanzhou_detail(g,body,venues),None
+        except Exception as exc:return old.get(g['id']),g['id']+'：'+str(exc)
+    results=[]
+    with ThreadPoolExecutor(max_workers=4) as pool:
+        for game,error in pool.map(one,games.values()):
+            if error:errors.append(error)
+            if game:results.append({**game,'refresh_warning':'本场读取失败，保留上次确认内容。'} if error else game)
+    if not results:raise ValueError('No Lanzhou match pages could be read: '+'; '.join(errors))
+    return results,errors
 
 def parse_crosscheck_feed(raw):
     from icalendar import Calendar
@@ -204,7 +265,19 @@ def reconcile(previous, fresh, team, now):
     missing=[g for key,g in old.items() if key not in new and dt(g['start'])>now]
     if len(missing)>max(2,len([g for g in old.values() if dt(g['start'])>now])//2):
         raise ValueError(f'{team}: too many future fixtures disappeared; preserving last good schedule')
-    for g in missing:new[g['id']]={**meaningful(g),'status':'NeedsReview'}
+    for key,g in old.items():
+        if key not in new:
+            new[key]={**meaningful(g),'refresh_warning':'来源暂未列出本场，保留上次确认内容。'}
+    for key,g in new.items():
+        # Migrate the old omission marker without discarding a known kickoff.
+        if g['status']=='NeedsReview':
+            g['status']='Fixture'
+            g['refresh_warning']='来源暂未列出本场，保留上次确认内容。'
+        prior=old.get(key)
+        if prior and prior['status']=='Played' and g['status'] in ('Fixture','Live','Unknown'):
+            new[key]={**meaningful(prior),'refresh_warning':'来源状态回退，保留已确认赛果。'}
+        elif prior and prior['status']==g['status']=='Played' and not score_text(g) and score_text(prior):
+            g.update(home_score=prior['home_score'],away_score=prior['away_score'])
     for key,g in new.items():
         prior=old.get(key)
         changed=not prior or meaningful(g)!=meaningful(prior) or prior.get('presentation_revision')!=revision
@@ -240,7 +313,7 @@ def validate_settings():
         if value:reminder_clock(value)
     if any(not isinstance(m,int) or m<=0 for m in C.KICKOFF_REMINDER_MINUTES):
         raise ValueError('Kickoff reminders must be positive integer minutes')
-    if C.MATCH_DURATION_MINUTES<=0 or C.PAST_DAYS_KEEP<0 or C.REFRESH_HOURS<=0:
+    if C.MATCH_DURATION_MINUTES<=0 or C.PAST_DAYS_KEEP<0 or C.REFRESH_MINUTES<=0:
         raise ValueError('Invalid duration, retention or refresh setting')
     for zones in C.EXTRA_TIMEZONES.values():
         for zone in zones:ZoneInfo(zone)
@@ -263,7 +336,7 @@ def alarm_triggers(start):
     return sorted(set(triggers))
 
 def kickoff_lines(game):
-    if game['tentative'] or game['status'] in ('Postponed','Suspended','NeedsReview'):
+    if game['tentative'] or game['status'] in ('Postponed','Suspended'):
         return ['开球：日期／时间待官方确认，当前为暂定比赛日']
     zones=list(dict.fromkeys(['Asia/Shanghai',*C.EXTRA_TIMEZONES.get(game['team'],[]),C.USER_TIMEZONE]))
     return ['开球（'+C.TIMEZONE_LABELS.get(zone,zone)+'）：'+dt(game['start']).astimezone(ZoneInfo(zone)).strftime('%Y-%m-%d %H:%M') for zone in zones]
@@ -279,24 +352,28 @@ def reminder_summary():
     return text
 
 def build_ics(games,name,feed_url,now):
-    lines=['BEGIN:VCALENDAR','VERSION:2.0','PRODID:-//Ricadre//Football Calendar//ZH-CN','CALSCALE:GREGORIAN','METHOD:PUBLISH','X-WR-CALNAME:'+text_escape(name),'X-WR-TIMEZONE:'+C.USER_TIMEZONE,'X-WR-CALDESC:'+text_escape('AC米兰与兰州陇原竞技；'+reminder_summary()+'场馆核实情况见备注。'),'REFRESH-INTERVAL;VALUE=DURATION:PT'+str(C.REFRESH_HOURS)+'H','X-PUBLISHED-TTL:PT'+str(C.REFRESH_HOURS)+'H','URL:'+feed_url]
+    lines=['BEGIN:VCALENDAR','VERSION:2.0','PRODID:-//Ricadre//Football Calendar//ZH-CN','CALSCALE:GREGORIAN','METHOD:PUBLISH','X-WR-CALNAME:'+text_escape(name),'X-WR-TIMEZONE:'+C.USER_TIMEZONE,'X-WR-CALDESC:'+text_escape('AC米兰与兰州陇原竞技；'+reminder_summary()+'场馆核实情况见备注。'),'REFRESH-INTERVAL;VALUE=DURATION:PT'+str(C.REFRESH_MINUTES)+'M','X-PUBLISHED-TTL:PT'+str(C.REFRESH_MINUTES)+'M','URL:'+feed_url]
     for g in sorted(games,key=lambda x:x['start']):
         g=normalize_game(g)
         start=dt(g['start']);local=start.astimezone(BEIJING)
-        tentative=g['tentative'] or g['status'] in ('Postponed','Suspended','NeedsReview')
+        tentative=g['tentative'] or g['status'] in ('Postponed','Suspended')
         cancelled=g['status'].lower() in ('cancelled','canceled')
-        label='已取消' if cancelled else ('延期／待重新确认' if g['status'] in ('Postponed','Suspended') else ('赛程待复核' if g['status']=='NeedsReview' else '时间待定' if tentative else ''))
+        label='已取消' if cancelled else ('已结束' if g['status']=='Played' else '进行中' if g['status']=='Live' else '延期／待重新确认' if g['status'] in ('Postponed','Suspended') else '时间待定' if tentative else '')
         side=home_away(g) if C.SHOW_HOME_AWAY else ''
-        title=('【'+label+'】' if label else '')+('【'+side+'】' if side else '')+g['home']+' vs '+g['away']+'｜'+g['competition']
+        score=score_text(g)
+        title=('【'+label+'】' if label else '')+('【'+side+'】' if side else '')+g['home']+' '+(score or 'vs')+' '+g['away']+'｜'+g['competition']
         venue=g['venue']+('（本场待确认）' if '本场待确认' in g['venue_note'] else '')
         description='\n'.join(filter(None,[g['home']+'（主） vs '+g['away']+'（客）',('主客：'+TEAM_NAMES[g['team']]+side) if side else '',g['competition'],*kickoff_lines(g),'场馆：'+g['venue'],'场馆说明：'+g['venue_note'],'赛程来源：'+g['source'],('场馆来源：'+g['venue_source']) if g['venue_source'] else '', '日历预留'+str(C.MATCH_DURATION_MINUTES)+'分钟；实际终场时间可能变化。' if not tentative else '时间明确后会更新为定时日程，并启用赛前提醒。']))
+        if score:description+='\n'+('终场比分：' if g['status']=='Played' else '当前比分（非实时推送）：')+g['home']+' '+score+' '+g['away']
+        elif g['status']=='Played':description+='\n比赛已结束，比分待来源补充。'
+        if g.get('refresh_warning'):description+='\n更新说明：'+g['refresh_warning']
         lines+=['BEGIN:VEVENT','UID:'+g['id']+'@football-calendar.ricadre.github.io','DTSTAMP:'+stamp(dt(g['modified'])),'CREATED:'+stamp(dt(g['created'])),'LAST-MODIFIED:'+stamp(dt(g['modified'])),'SEQUENCE:'+str(g['sequence'])]
         if tentative:
             day=datetime.fromisoformat(g['date'])
             lines+=['DTSTART;VALUE=DATE:'+day.strftime('%Y%m%d'),'DTEND;VALUE=DATE:'+(day+timedelta(days=1)).strftime('%Y%m%d')]
         else:lines+=['DTSTART:'+stamp(start),'DTEND:'+stamp(start+timedelta(minutes=C.MATCH_DURATION_MINUTES))]
         lines+=['SUMMARY:'+text_escape(title),'LOCATION:'+text_escape(venue),'DESCRIPTION:'+text_escape(description),'URL:'+g['source'],'STATUS:'+('CANCELLED' if cancelled else 'TENTATIVE' if tentative else 'CONFIRMED'),'TRANSP:TRANSPARENT','CATEGORIES:'+text_escape(TEAM_NAMES[g['team']])]
-        if not tentative and not cancelled:
+        if not tentative and not cancelled and g['status'] not in ('Played','Live'):
             for trigger in alarm_triggers(start):
                 seconds=int((start-trigger).total_seconds())
                 lines+=['BEGIN:VALARM','ACTION:DISPLAY','DESCRIPTION:'+text_escape(title+'\n'+local.strftime('%m月%d日 %H:%M')+' 北京时间\n'+venue),'TRIGGER:-PT'+str(seconds)+'S','END:VALARM']
@@ -322,8 +399,17 @@ def render_page(data,now):
     *{box-sizing:border-box}body{margin:0;background:#f3f5f7;color:#14202b;font:16px/1.65 -apple-system,BlinkMacSystemFont,"PingFang SC",sans-serif}main{max-width:850px;margin:auto;padding:36px 20px 60px}.eyebrow{color:#b21535;font-size:14px;font-weight:750;letter-spacing:.12em}h1{font-size:48px;letter-spacing:-.05em;margin:12px 0 0;line-height:1.3}h1 span{color:#bc1436}header p{color:#596776;margin:10px 0 24px}.subscribe{background:#14202b;border-top:5px solid #c9193c;color:#fff;border-radius:10px;padding:24px;margin:24px 0}.subscribe p{margin:6px 0 20px;color:#d1d8df}.primary{background:#c6193a;color:#fff;display:inline-flex;text-decoration:none;padding:12px 20px;border-radius:8px;font-weight:650;min-height:48px}a:focus-visible{outline:3px solid #9daff9;outline-offset:3px}.sub-links{display:flex;gap:22px;margin-top:16px;flex-wrap:wrap}.sub-links a{color:#e0e8f0;font-size:14px}.fixtures{background:white;border:1px solid #dfe4e9;border-radius:10px;padding:0 22px}.section-label{display:flex;justify-content:space-between;gap:12px;align-items:center;margin:24px 0 12px}h2{font-size:20px;margin:0}.section-label span{color:#576777;font-size:14px}article{display:grid;grid-template-columns:75px 1fr;gap:16px;padding:20px 0;border-top:1px solid #e2e7ed}article:first-child{border:0}.date{font-size:15px;color:#536579}.date strong{display:block;font-size:24px;color:#18232c;font-variant-numeric:tabular-nums}small{font-size:14px;color:#ad1534}h3{font-size:18px;margin:4px 0;line-height:1.6}h3 span{color:#798896;font-size:14px;font-weight:400}article p{margin:0;font-size:14px;color:#5d6b79}footer{font-size:14px;color:#536170;margin-top:26px}footer a{color:#a91431}code{display:block;overflow-wrap:anywhere;padding:12px;background:white;border:1px solid #dce3ea;border-radius:8px;font:14px/1.6 monospace}.notice{background:#fff0cb;padding:12px;border-radius:8px}ol{padding-left:22px}li{padding:3px 0}@media(max-width:540px){h1{font-size:40px}.section-label{align-items:flex-start;flex-direction:column;gap:3px}.fixtures{padding:0 14px}article{grid-template-columns:61px 1fr;gap:12px}h3{font-size:17px}.primary{width:100%;justify-content:center}}
     </style><main><header><span class="eyebrow">MATCHDAY / 比赛日</span><h1>AC米兰 <span>×</span> 陇原</h1><p>AC米兰 · 兰州陇原竞技</p></header><section class="subscribe"><h2>让日历记住每一个比赛日</h2><p>对阵、开球时间、场馆与赛前提醒。</p><a class="primary" href="webcal://ricadre.github.io/football-calendar/calendars/all.ics">在 iPhone 订阅两队比赛 ↗</a><div class="sub-links"><a href="webcal://ricadre.github.io/football-calendar/calendars/milan.ics">仅 AC米兰</a><a href="webcal://ricadre.github.io/football-calendar/calendars/lanzhou.ics">仅兰州陇原竞技</a></div></section>'''
     if data.get('crosscheck_status')=='warning':errors+='<p class="notice">AC米兰的两份来源存在差异或缺项，日历仍按官网显示。核对记录保存在 GitHub 仓库。</p>'
+    recent=[normalize_game(g) for g in reversed(data['games']) if g['status'] in ('Played','Live') and dt(g['start'])<=now]
+    if recent:
+        page+='<div class="section-label"><h2>近期赛果</h2><span>比分随来源更新</span></div><section class="fixtures">'
+        for g in recent:
+            local=dt(g['start']).astimezone(BEIJING)
+            label='已结束' if g['status']=='Played' else '进行中'
+            venue=g['venue']+('（本场待确认）' if '本场待确认' in g['venue_note'] else '')
+            page+=f'<article><div class="date">{local.strftime("%m/%d")}<strong>{local.strftime("%H:%M")}</strong></div><div><small>{escape(label+" · "+g["competition"])}</small><h3>{escape(g["home"])} {escape(score_text(g) or "比分待补充")} {escape(g["away"])}</h3><p>{escape(venue)}</p></div></article>'
+        page+='</section>'
     page+=errors+f'<div class="section-label"><h2>接下来的 {len(upcoming)} 场比赛</h2><span>北京时间 · UTC+8</span></div><section class="fixtures">'+''.join(rows)+'</section>'
-    page+=f'''<footer><h2>订阅与提醒</h2><ol><li>点击上方订阅，或进入 iPhone“日历 → 日历 → 添加日历 → 添加订阅日历”，粘贴下方网址。</li><li>打开此日历的“日程提醒”，并在“设置 → 通知 → 日历”允许通知。</li></ol><code>{ORIGIN}/calendars/all.ics</code><p>{escape(reminder_summary())}比赛时间随手机时区显示，AC米兰备注同时注明北京时间和意大利时间。时间待定的比赛以全天日程呈现，暂不提醒。</p><p>每 {C.REFRESH_HOURS} 小时检查公开赛程；iPhone 拉取更新可能延迟。AC米兰采用俱乐部官网，FotMob 用于交叉核对已确定的开球时间；兰州采用很多球赛程，并交叉核对初始赛程。标注“本场待确认”的场馆是已查到的球队主场参考，尚无本场确认信息。</p><p>最近检查：{now.astimezone(BEIJING).strftime('%Y-%m-%d %H:%M')} 北京时间。</p><p><a href="https://github.com/Ricadre/football-calendar">GitHub 仓库 / 更新状态</a> · <a href="{MILAN}">米兰官方赛程</a> · <a href="{LANZHOU}">兰州赛程</a> · <a href="https://support.apple.com/zh-cn/102301">Apple 订阅说明</a></p><p>非官方球迷日历。</p></footer></main></html>'''
+    page+=f'''<footer><h2>订阅与提醒</h2><ol><li>点击上方订阅，或进入 iPhone“日历 → 日历 → 添加日历 → 添加订阅日历”，粘贴下方网址。</li><li>打开此日历的“日程提醒”，并在“设置 → 通知 → 日历”允许通知。</li></ol><code>{ORIGIN}/calendars/all.ics</code><p>{escape(reminder_summary())}比赛时间随手机时区显示，AC米兰备注同时注明北京时间和意大利时间。时间待定的比赛以全天日程呈现，暂不提醒。</p><p>计划每 {C.REFRESH_MINUTES} 分钟检查赛程和比分，覆盖赛前、赛中与赛后，并复查最近 {C.PAST_DAYS_KEEP} 天赛果。GitHub 调度可能延迟；iPhone 订阅的实际刷新由系统决定，无法保证实时比分。AC米兰采用俱乐部官网，FotMob 用于交叉核对已确定的开球时间；兰州采用很多球赛程，并交叉核对初始赛程。标注“本场待确认”的场馆是已查到的球队主场参考，尚无本场确认信息。</p><p>最近检查：{now.astimezone(BEIJING).strftime('%Y-%m-%d %H:%M')} 北京时间。</p><p><a href="https://github.com/Ricadre/football-calendar">GitHub 仓库 / 更新状态</a> · <a href="{MILAN}">米兰官方赛程</a> · <a href="{LANZHOU}">兰州赛程</a> · <a href="https://support.apple.com/zh-cn/102301">Apple 订阅说明</a></p><p>非官方球迷日历。</p></footer></main></html>'''
     (ROOT/'index.html').write_text(page)
 
 def main():
@@ -336,9 +422,14 @@ def main():
         try:
             if args.render_only:
                 data['games']+=reconcile(previous['games'],old,team,now);continue
-            fresh=parse_milan((args.fixtures/'milan.html').read_text() if args.fixtures else fetch(MILAN)) if team=='milan' else get_lanzhou(venues,args.fixtures)
+            warnings=[]
+            if team=='milan':fresh=parse_milan((args.fixtures/'milan.html').read_text() if args.fixtures else fetch(MILAN))
+            else:fresh,warnings=get_lanzhou(venues,args.fixtures,old,now)
             data['games']+=reconcile(previous['games'],fresh,team,now)
-            data['source_success'][team]=iso(now)
+            if warnings:
+                data['errors'][team]='; '.join(warnings)
+                print(data['errors'][team],file=sys.stderr)
+            else:data['source_success'][team]=iso(now)
         except Exception as exc:
             data['errors'][team]=str(exc);data['games']+=reconcile(previous['games'],old,team,now)
             print(str(exc),file=sys.stderr)

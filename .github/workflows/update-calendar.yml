@@ -1,7 +1,9 @@
 name: Update football calendars
 on:
   schedule:
-    - cron: '17 */6 * * *'
+    # Check before kickoff, during play and after full time, including TBC games.
+    # GitHub may delay scheduled runs; this is a target interval, not an SLA.
+    - cron: '7,37 * * * *'
   workflow_dispatch:
   push:
     branches: [main]

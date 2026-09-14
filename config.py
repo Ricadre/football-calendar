@@ -7,7 +7,7 @@ PREVIOUS_EVENING_REMINDER = "21:00"  # 早于早提醒开球时，改到前一�
 KICKOFF_REMINDER_MINUTES = [30]  # 可设置多个正整数，如 [60, 30]
 MATCH_DURATION_MINUTES = 120
 PAST_DAYS_KEEP = 14
-REFRESH_HOURS = 6              # 改抓取频率时，需同步修改 workflow 的 cron
+REFRESH_MINUTES = 30           # 改抓取频率时，需同步修改 workflow 的 cron
 
 FOLLOWED_TEAMS = {"milan": "AC米兰", "lanzhou": "兰州陇原竞技"}
 CALENDAR_NAMES = {"milan": "AC米兰", "lanzhou": "兰州陇原竞技", "all": "AC米兰 × 陇原｜比赛日历"}
@@ -24,7 +24,7 @@ MILAN_CROSSCHECK_URL = "https://pub.fotmob.com/prod/pub/api/v2/calendar/team/856
 SITE_ORIGIN = "https://ricadre.github.io/football-calendar"
 
 # 修改事件生成逻辑时递增；时区、名称、提醒配置变化则自动检测。
-PRESENTATION_VERSION = 2
+PRESENTATION_VERSION = 3
 
 # 英文别名只用于识别来源，展示使用中文值。
 TEAM_ALIASES = {'Milan': 'AC米兰',
