@@ -1,27 +1,6 @@
 {
   "games": [
     {
-      "id": "lanzhou-14593910",
-      "team": "lanzhou",
-      "home": "北京国安",
-      "away": "兰州陇原竞技",
-      "source": "https://www.henduoqiu.com/bisai/14593910",
-      "start": "2026-09-01T11:35:00Z",
-      "date": "2026-09-01",
-      "status": "Played",
-      "tentative": false,
-      "competition": "足协杯1/4决赛",
-      "venue": "场馆待确认",
-      "venue_note": "本场场馆尚未核实",
-      "venue_source": "",
-      "home_score": 3,
-      "away_score": 1,
-      "presentation_revision": "c1c114740daaf881321c",
-      "sequence": 0,
-      "modified": "2026-09-14T01:46:31Z",
-      "created": "2026-09-14T01:46:31Z"
-    },
-    {
       "id": "milan-6a31e808c63e9a4df43c9479",
       "team": "milan",
       "start": "2026-09-06T18:45:00Z",
@@ -1036,10 +1015,10 @@
     }
   ],
   "source_success": {
-    "milan": "2026-09-15T06:38:55Z",
-    "lanzhou": "2026-09-15T06:38:55Z"
+    "milan": "2026-09-15T12:38:11Z",
+    "lanzhou": "2026-09-15T12:38:11Z"
   },
-  "checked_at": "2026-09-15T06:38:55Z",
+  "checked_at": "2026-09-15T12:38:11Z",
   "errors": {},
   "crosscheck_status": "ok"
 }

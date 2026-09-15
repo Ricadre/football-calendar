@@ -12,28 +12,6 @@ REFRESH-INTERVAL;VALUE=DURATION:PT30M
 X-PUBLISHED-TTL:PT30M
 URL:https://ricadre.github.io/football-calendar/calendars/all.ics
 BEGIN:VEVENT
-UID:lanzhou-14593910@football-calendar.ricadre.github.io
-DTSTAMP:20260914T014631Z
-CREATED:20260914T014631Z
-LAST-MODIFIED:20260914T014631Z
-SEQUENCE:0
-DTSTART:20260901T113500Z
-DTEND:20260901T133500Z
-SUMMARY:【已结束】【客场】北京国安 3–1 兰州陇原竞技｜
- 足协杯1/4决赛
-LOCATION:场馆待确认
-DESCRIPTION:北京国安（主） vs 兰州陇原竞技（客）\n主客：
- 兰州陇原竞技客场\n足协杯1/4决赛\n开球（北京时间）：2
- 026-09-01 19:35\n场馆：场馆待确认\n场馆说明：本场场馆尚
- 未核实\n赛程来源：https://www.henduoqiu.com/bisai/14593910\n日历
- 预留120分钟；实际终场时间可能变化。\n终场比分：北京
- 国安 3–1 兰州陇原竞技
-URL:https://www.henduoqiu.com/bisai/14593910
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-CATEGORIES:兰州陇原竞技
-END:VEVENT
-BEGIN:VEVENT
 UID:milan-6a31e808c63e9a4df43c9479@football-calendar.ricadre.github.io
 DTSTAMP:20260914T014631Z
 CREATED:20260908T063456Z
