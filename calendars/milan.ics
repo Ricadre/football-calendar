@@ -60,13 +60,14 @@ CATEGORIES:AC米兰
 END:VEVENT
 BEGIN:VEVENT
 UID:milan-6a957ee6af5945385cfd86af@football-calendar.ricadre.github.io
-DTSTAMP:20260914T014631Z
+DTSTAMP:20260916T220532Z
 CREATED:20260908T063456Z
-LAST-MODIFIED:20260914T014631Z
-SEQUENCE:3
+LAST-MODIFIED:20260916T220532Z
+SEQUENCE:4
 DTSTART:20260916T190000Z
 DTEND:20260916T210000Z
-SUMMARY:【主场】AC米兰 vs 本菲卡｜欧联杯 · 第1轮
+SUMMARY:【已结束】【主场】AC米兰 0–2 本菲卡｜欧联杯 · 
+ 第1轮
 LOCATION:圣西罗球场（San Siro / Giuseppe Meazza）
 DESCRIPTION:AC米兰（主） vs 本菲卡（客）\n主客：AC米兰主
  场\n欧联杯 · 第1轮\n开球（北京时间）：2026-09-17 03:00\n
@@ -74,23 +75,12 @@ DESCRIPTION:AC米兰（主） vs 本菲卡（客）\n主客：AC米兰主
  （San Siro / Giuseppe Meazza）\n场馆说明：米兰官网赛程列示
  场馆\n赛程来源：https://www.acmilan.com/en/season/active/schedule/a
  ll\n场馆来源：https://www.acmilan.com/en/season/active/schedule/all\n
- 日历预留120分钟；实际终场时间可能变化。
+ 日历预留120分钟；实际终场时间可能变化。\n终场比分：
+ AC米兰 0–2 本菲卡
 URL:https://www.acmilan.com/en/season/active/schedule/all
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 CATEGORIES:AC米兰
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:【主场】AC米兰 vs 本菲卡｜欧联杯 · 第1轮\n09月
- 17日 03:00 北京时间\n圣西罗球场（San Siro / Giuseppe Meazza）
-TRIGGER:-PT21600S
-END:VALARM
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:【主场】AC米兰 vs 本菲卡｜欧联杯 · 第1轮\n09月
- 17日 03:00 北京时间\n圣西罗球场（San Siro / Giuseppe Meazza）
-TRIGGER:-PT1800S
-END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:milan-6a31e803c63e9a4df43c93df@football-calendar.ricadre.github.io
