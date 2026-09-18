@@ -92,15 +92,17 @@
       "source": "https://www.henduoqiu.com/bisai/14640195",
       "start": "2026-09-18T08:00:00Z",
       "date": "2026-09-18",
-      "status": "Fixture",
+      "status": "Played",
       "tentative": false,
       "competition": "中乙保级组第24轮",
       "venue": "兰州奥体中心玫瑰体育场",
       "venue_note": "按主队2026赛季常用主场列示；临时换场以本场赛事公告为准",
       "venue_source": "https://m.17500.cn/zq/data-stadium/match-16387",
+      "home_score": 2,
+      "away_score": 0,
       "presentation_revision": "c1c114740daaf881321c",
-      "sequence": 4,
-      "modified": "2026-09-14T02:47:13Z",
+      "sequence": 5,
+      "modified": "2026-09-18T11:06:39Z",
       "created": "2026-09-08T06:34:56Z"
     },
     {
@@ -1017,10 +1019,10 @@
     }
   ],
   "source_success": {
-    "milan": "2026-09-18T05:51:07Z",
-    "lanzhou": "2026-09-18T05:51:07Z"
+    "milan": "2026-09-18T11:06:39Z",
+    "lanzhou": "2026-09-18T11:06:39Z"
   },
-  "checked_at": "2026-09-18T05:51:07Z",
+  "checked_at": "2026-09-18T11:06:39Z",
   "errors": {},
   "crosscheck_status": "ok"
 }
