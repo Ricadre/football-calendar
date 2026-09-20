@@ -12,29 +12,6 @@ REFRESH-INTERVAL;VALUE=DURATION:PT30M
 X-PUBLISHED-TTL:PT30M
 URL:https://ricadre.github.io/football-calendar/calendars/milan.ics
 BEGIN:VEVENT
-UID:milan-6a31e808c63e9a4df43c9479@football-calendar.ricadre.github.io
-DTSTAMP:20260914T014631Z
-CREATED:20260908T063456Z
-LAST-MODIFIED:20260914T014631Z
-SEQUENCE:3
-DTSTART:20260906T184500Z
-DTEND:20260906T204500Z
-SUMMARY:【已结束】【客场】尤文图斯 1–1 AC米兰｜意甲 · 
- 第3轮
-LOCATION:Allianz Stadium
-DESCRIPTION:尤文图斯（主） vs AC米兰（客）\n主客：AC米兰
- 客场\n意甲 · 第3轮\n开球（北京时间）：2026-09-07 02:45\n
- 开球（意大利时间）：2026-09-06 20:45\n场馆：Allianz Stadium\n
- 场馆说明：米兰官网赛程列示场馆\n赛程来源：https://www.
- acmilan.com/en/season/active/schedule/all\n场馆来源：https://www.acmi
- lan.com/en/season/active/schedule/all\n日历预留120分钟；实际终
- 场时间可能变化。\n终场比分：尤文图斯 1–1 AC米兰
-URL:https://www.acmilan.com/en/season/active/schedule/all
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-CATEGORIES:AC米兰
-END:VEVENT
-BEGIN:VEVENT
 UID:milan-6a31e805c63e9a4df43c942c@football-calendar.ricadre.github.io
 DTSTAMP:20260914T014631Z
 CREATED:20260908T063456Z
@@ -84,13 +61,14 @@ CATEGORIES:AC米兰
 END:VEVENT
 BEGIN:VEVENT
 UID:milan-6a31e803c63e9a4df43c93df@football-calendar.ricadre.github.io
-DTSTAMP:20260914T014631Z
+DTSTAMP:20260920T204452Z
 CREATED:20260908T063456Z
-LAST-MODIFIED:20260914T014631Z
-SEQUENCE:3
+LAST-MODIFIED:20260920T204452Z
+SEQUENCE:4
 DTSTART:20260920T184500Z
 DTEND:20260920T204500Z
-SUMMARY:【主场】AC米兰 vs 莱切｜意甲 · 第5轮
+SUMMARY:【已结束】【主场】AC米兰 3–0 莱切｜意甲 · 第5
+ 轮
 LOCATION:圣西罗球场（San Siro / Giuseppe Meazza）
 DESCRIPTION:AC米兰（主） vs 莱切（客）\n主客：AC米兰主场\n
  意甲 · 第5轮\n开球（北京时间）：2026-09-21 02:45\n开球（
@@ -98,23 +76,12 @@ DESCRIPTION:AC米兰（主） vs 莱切（客）\n主客：AC米兰主场\n
   / Giuseppe Meazza）\n场馆说明：米兰官网赛程列示场馆\n赛
  程来源：https://www.acmilan.com/en/season/active/schedule/all\n场馆
  来源：https://www.acmilan.com/en/season/active/schedule/all\n日历预
- 留120分钟；实际终场时间可能变化。
+ 留120分钟；实际终场时间可能变化。\n终场比分：AC米兰 
+ 3–0 莱切
 URL:https://www.acmilan.com/en/season/active/schedule/all
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 CATEGORIES:AC米兰
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:【主场】AC米兰 vs 莱切｜意甲 · 第5轮\n09月21日 
- 02:45 北京时间\n圣西罗球场（San Siro / Giuseppe Meazza）
-TRIGGER:-PT20700S
-END:VALARM
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:【主场】AC米兰 vs 莱切｜意甲 · 第5轮\n09月21日 
- 02:45 北京时间\n圣西罗球场（San Siro / Giuseppe Meazza）
-TRIGGER:-PT1800S
-END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:milan-6a31e801c63e9a4df43c9393@football-calendar.ricadre.github.io
