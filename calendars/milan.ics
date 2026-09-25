@@ -465,72 +465,71 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:milan-6a31e7efc63e9a4df43c917d@football-calendar.ricadre.github.io
-DTSTAMP:20260914T014631Z
+DTSTAMP:20260925T214811Z
 CREATED:20260908T063456Z
-LAST-MODIFIED:20260914T014631Z
-SEQUENCE:3
-DTSTART;VALUE=DATE:20261129
-DTEND;VALUE=DATE:20261130
-SUMMARY:【时间待定】【客场】卡利亚里 vs AC米兰｜意甲 · 
- 第13轮
+LAST-MODIFIED:20260925T214811Z
+SEQUENCE:4
+DTSTART:20261130T194500Z
+DTEND:20261130T214500Z
+SUMMARY:【客场】卡利亚里 vs AC米兰｜意甲 · 第13轮
 LOCATION:Unipol Domus
 DESCRIPTION:卡利亚里（主） vs AC米兰（客）\n主客：AC米兰
- 客场\n意甲 · 第13轮\n开球：日期／时间待官方确认，当
- 前为暂定比赛日\n场馆：Unipol Domus\n场馆说明：米兰官网
- 赛程列示场馆\n赛程来源：https://www.acmilan.com/en/season/activ
- e/schedule/all\n场馆来源：https://www.acmilan.com/en/season/active/sc
- hedule/all\n时间明确后会更新为定时日程，并启用赛前提
- 醒。
+ 客场\n意甲 · 第13轮\n开球（北京时间）：2026-12-01 03:45\n
+ 开球（意大利时间）：2026-11-30 20:45\n场馆：Unipol Domus\n场
+ 馆说明：米兰官网赛程列示场馆\n赛程来源：https://www.acm
+ ilan.com/en/season/active/schedule/all\n场馆来源：https://www.acmilan
+ .com/en/season/active/schedule/all\n日历预留120分钟；实际终场
+ 时间可能变化。
 URL:https://www.acmilan.com/en/season/active/schedule/all
-STATUS:TENTATIVE
+STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 CATEGORIES:AC米兰
-END:VEVENT
-BEGIN:VEVENT
-UID:milan-6a976bafaf5945385c2d4ae4@football-calendar.ricadre.github.io
-DTSTAMP:20260914T014631Z
-CREATED:20260908T063456Z
-LAST-MODIFIED:20260914T014631Z
-SEQUENCE:4
-DTSTART;VALUE=DATE:20261202
-DTEND;VALUE=DATE:20261203
-SUMMARY:【时间待定】【主场】AC米兰 vs 蒙扎｜意大利杯 · 
- 第?轮
-LOCATION:圣西罗球场（San Siro / Giuseppe Meazza）
-DESCRIPTION:AC米兰（主） vs 蒙扎（客）\n主客：AC米兰主场\n
- 意大利杯 · 第?轮\n开球：日期／时间待官方确认，当前
- 为暂定比赛日\n场馆：圣西罗球场（San Siro / Giuseppe Meazza
- ）\n场馆说明：米兰官网赛程列示场馆\n赛程来源：https:/
- /www.acmilan.com/en/season/active/schedule/all\n场馆来源：https://www
- .acmilan.com/en/season/active/schedule/all\n时间明确后会更新为定
- 时日程，并启用赛前提醒。
-URL:https://www.acmilan.com/en/season/active/schedule/all
-STATUS:TENTATIVE
-TRANSP:TRANSPARENT
-CATEGORIES:AC米兰
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:【客场】卡利亚里 vs AC米兰｜意甲 · 第13轮\n12
+ 月01日 03:45 北京时间\nUnipol Domus
+TRIGGER:-PT24300S
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:【客场】卡利亚里 vs AC米兰｜意甲 · 第13轮\n12
+ 月01日 03:45 北京时间\nUnipol Domus
+TRIGGER:-PT1800S
+END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:milan-6a31e7edc63e9a4df43c9131@football-calendar.ricadre.github.io
-DTSTAMP:20260914T014631Z
+DTSTAMP:20260925T214811Z
 CREATED:20260908T063456Z
-LAST-MODIFIED:20260914T014631Z
-SEQUENCE:3
-DTSTART;VALUE=DATE:20261206
-DTEND;VALUE=DATE:20261207
-SUMMARY:【时间待定】【主场】AC米兰 vs 帕尔马｜意甲 · 第
- 14轮
+LAST-MODIFIED:20260925T214811Z
+SEQUENCE:4
+DTSTART:20261206T194500Z
+DTEND:20261206T214500Z
+SUMMARY:【主场】AC米兰 vs 帕尔马｜意甲 · 第14轮
 LOCATION:圣西罗球场（San Siro / Giuseppe Meazza）
 DESCRIPTION:AC米兰（主） vs 帕尔马（客）\n主客：AC米兰主
- 场\n意甲 · 第14轮\n开球：日期／时间待官方确认，当前
- 为暂定比赛日\n场馆：圣西罗球场（San Siro / Giuseppe Meazza
- ）\n场馆说明：米兰官网赛程列示场馆\n赛程来源：https:/
- /www.acmilan.com/en/season/active/schedule/all\n场馆来源：https://www
- .acmilan.com/en/season/active/schedule/all\n时间明确后会更新为定
- 时日程，并启用赛前提醒。
+ 场\n意甲 · 第14轮\n开球（北京时间）：2026-12-07 03:45\n开
+ 球（意大利时间）：2026-12-06 20:45\n场馆：圣西罗球场（Sa
+ n Siro / Giuseppe Meazza）\n场馆说明：米兰官网赛程列示场馆
+ \n赛程来源：https://www.acmilan.com/en/season/active/schedule/all\n
+ 场馆来源：https://www.acmilan.com/en/season/active/schedule/all\n日
+ 历预留120分钟；实际终场时间可能变化。
 URL:https://www.acmilan.com/en/season/active/schedule/all
-STATUS:TENTATIVE
+STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 CATEGORIES:AC米兰
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:【主场】AC米兰 vs 帕尔马｜意甲 · 第14轮\n12月07
+ 日 03:45 北京时间\n圣西罗球场（San Siro / Giuseppe Meazza）
+TRIGGER:-PT24300S
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:【主场】AC米兰 vs 帕尔马｜意甲 · 第14轮\n12月07
+ 日 03:45 北京时间\n圣西罗球场（San Siro / Giuseppe Meazza）
+TRIGGER:-PT1800S
+END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:milan-6a957ed8af5945385cfd81d0@football-calendar.ricadre.github.io
@@ -568,117 +567,209 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:milan-6a31e7eac63e9a4df43c90e5@football-calendar.ricadre.github.io
-DTSTAMP:20260914T014631Z
+DTSTAMP:20260925T214811Z
 CREATED:20260908T063456Z
-LAST-MODIFIED:20260914T014631Z
-SEQUENCE:3
-DTSTART;VALUE=DATE:20261213
-DTEND;VALUE=DATE:20261214
-SUMMARY:【时间待定】【客场】那不勒斯 vs AC米兰｜意甲 · 
- 第15轮
+LAST-MODIFIED:20260925T214811Z
+SEQUENCE:4
+DTSTART:20261213T194500Z
+DTEND:20261213T214500Z
+SUMMARY:【客场】那不勒斯 vs AC米兰｜意甲 · 第15轮
 LOCATION:Stadio Maradona
 DESCRIPTION:那不勒斯（主） vs AC米兰（客）\n主客：AC米兰
- 客场\n意甲 · 第15轮\n开球：日期／时间待官方确认，当
- 前为暂定比赛日\n场馆：Stadio Maradona\n场馆说明：米兰官
- 网赛程列示场馆\n赛程来源：https://www.acmilan.com/en/season/ac
- tive/schedule/all\n场馆来源：https://www.acmilan.com/en/season/active
- /schedule/all\n时间明确后会更新为定时日程，并启用赛前
- 提醒。
+ 客场\n意甲 · 第15轮\n开球（北京时间）：2026-12-14 03:45\n
+ 开球（意大利时间）：2026-12-13 20:45\n场馆：Stadio Maradona\n
+ 场馆说明：米兰官网赛程列示场馆\n赛程来源：https://www.
+ acmilan.com/en/season/active/schedule/all\n场馆来源：https://www.acmi
+ lan.com/en/season/active/schedule/all\n日历预留120分钟；实际终
+ 场时间可能变化。
 URL:https://www.acmilan.com/en/season/active/schedule/all
-STATUS:TENTATIVE
+STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 CATEGORIES:AC米兰
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:【客场】那不勒斯 vs AC米兰｜意甲 · 第15轮\n12
+ 月14日 03:45 北京时间\nStadio Maradona
+TRIGGER:-PT24300S
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:【客场】那不勒斯 vs AC米兰｜意甲 · 第15轮\n12
+ 月14日 03:45 北京时间\nStadio Maradona
+TRIGGER:-PT1800S
+END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:milan-6a31e7e7c63e9a4df43c9098@football-calendar.ricadre.github.io
-DTSTAMP:20260914T014631Z
+DTSTAMP:20260925T214811Z
 CREATED:20260908T063456Z
-LAST-MODIFIED:20260914T014631Z
-SEQUENCE:3
-DTSTART;VALUE=DATE:20261220
-DTEND;VALUE=DATE:20261221
-SUMMARY:【时间待定】【主场】AC米兰 vs 科莫｜意甲 · 第16
- 轮
+LAST-MODIFIED:20260925T214811Z
+SEQUENCE:4
+DTSTART:20261219T170000Z
+DTEND:20261219T190000Z
+SUMMARY:【主场】AC米兰 vs 科莫｜意甲 · 第16轮
 LOCATION:圣西罗球场（San Siro / Giuseppe Meazza）
 DESCRIPTION:AC米兰（主） vs 科莫（客）\n主客：AC米兰主场\n
- 意甲 · 第16轮\n开球：日期／时间待官方确认，当前为暂
- 定比赛日\n场馆：圣西罗球场（San Siro / Giuseppe Meazza）\n
- 场馆说明：米兰官网赛程列示场馆\n赛程来源：https://www.
- acmilan.com/en/season/active/schedule/all\n场馆来源：https://www.acmi
- lan.com/en/season/active/schedule/all\n时间明确后会更新为定时
- 日程，并启用赛前提醒。
+ 意甲 · 第16轮\n开球（北京时间）：2026-12-20 01:00\n开球（
+ 意大利时间）：2026-12-19 18:00\n场馆：圣西罗球场（San Siro
+  / Giuseppe Meazza）\n场馆说明：米兰官网赛程列示场馆\n赛
+ 程来源：https://www.acmilan.com/en/season/active/schedule/all\n场馆
+ 来源：https://www.acmilan.com/en/season/active/schedule/all\n日历预
+ 留120分钟；实际终场时间可能变化。
 URL:https://www.acmilan.com/en/season/active/schedule/all
-STATUS:TENTATIVE
+STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 CATEGORIES:AC米兰
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:【主场】AC米兰 vs 科莫｜意甲 · 第16轮\n12月20日
+  01:00 北京时间\n圣西罗球场（San Siro / Giuseppe Meazza）
+TRIGGER:-PT14400S
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:【主场】AC米兰 vs 科莫｜意甲 · 第16轮\n12月20日
+  01:00 北京时间\n圣西罗球场（San Siro / Giuseppe Meazza）
+TRIGGER:-PT1800S
+END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:milan-6a31e7e5c63e9a4df43c904c@football-calendar.ricadre.github.io
-DTSTAMP:20260914T014631Z
+DTSTAMP:20260925T214811Z
 CREATED:20260908T063456Z
-LAST-MODIFIED:20260914T014631Z
-SEQUENCE:3
-DTSTART;VALUE=DATE:20270103
-DTEND;VALUE=DATE:20270104
-SUMMARY:【时间待定】【客场】蒙扎 vs AC米兰｜意甲 · 第17
- 轮
+LAST-MODIFIED:20260925T214811Z
+SEQUENCE:4
+DTSTART:20270102T194500Z
+DTEND:20270102T214500Z
+SUMMARY:【客场】蒙扎 vs AC米兰｜意甲 · 第17轮
 LOCATION:U-Power Stadium
 DESCRIPTION:蒙扎（主） vs AC米兰（客）\n主客：AC米兰客场\n
- 意甲 · 第17轮\n开球：日期／时间待官方确认，当前为暂
- 定比赛日\n场馆：U-Power Stadium\n场馆说明：米兰官网赛程
- 列示场馆\n赛程来源：https://www.acmilan.com/en/season/active/sche
- dule/all\n场馆来源：https://www.acmilan.com/en/season/active/schedule
- /all\n时间明确后会更新为定时日程，并启用赛前提醒。
+ 意甲 · 第17轮\n开球（北京时间）：2027-01-03 03:45\n开球（
+ 意大利时间）：2027-01-02 20:45\n场馆：U-Power Stadium\n场馆说
+ 明：米兰官网赛程列示场馆\n赛程来源：https://www.acmilan.c
+ om/en/season/active/schedule/all\n场馆来源：https://www.acmilan.com/e
+ n/season/active/schedule/all\n日历预留120分钟；实际终场时间
+ 可能变化。
 URL:https://www.acmilan.com/en/season/active/schedule/all
-STATUS:TENTATIVE
+STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 CATEGORIES:AC米兰
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:【客场】蒙扎 vs AC米兰｜意甲 · 第17轮\n01月03日
+  03:45 北京时间\nU-Power Stadium
+TRIGGER:-PT24300S
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:【客场】蒙扎 vs AC米兰｜意甲 · 第17轮\n01月03日
+  03:45 北京时间\nU-Power Stadium
+TRIGGER:-PT1800S
+END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:milan-6a31e7e2c63e9a4df43c9000@football-calendar.ricadre.github.io
-DTSTAMP:20260914T014631Z
+DTSTAMP:20260925T214811Z
 CREATED:20260908T063456Z
-LAST-MODIFIED:20260914T014631Z
-SEQUENCE:3
-DTSTART;VALUE=DATE:20270106
-DTEND;VALUE=DATE:20270107
-SUMMARY:【时间待定】【主场】AC米兰 vs 佛罗伦萨｜意甲 · 
- 第18轮
+LAST-MODIFIED:20260925T214811Z
+SEQUENCE:4
+DTSTART:20270105T194500Z
+DTEND:20270105T214500Z
+SUMMARY:【主场】AC米兰 vs 佛罗伦萨｜意甲 · 第18轮
 LOCATION:圣西罗球场（San Siro / Giuseppe Meazza）
 DESCRIPTION:AC米兰（主） vs 佛罗伦萨（客）\n主客：AC米兰
- 主场\n意甲 · 第18轮\n开球：日期／时间待官方确认，当
- 前为暂定比赛日\n场馆：圣西罗球场（San Siro / Giuseppe Meaz
- za）\n场馆说明：米兰官网赛程列示场馆\n赛程来源：https
- ://www.acmilan.com/en/season/active/schedule/all\n场馆来源：https://w
- ww.acmilan.com/en/season/active/schedule/all\n时间明确后会更新为
- 定时日程，并启用赛前提醒。
+ 主场\n意甲 · 第18轮\n开球（北京时间）：2027-01-06 03:45\n
+ 开球（意大利时间）：2027-01-05 20:45\n场馆：圣西罗球场
+ （San Siro / Giuseppe Meazza）\n场馆说明：米兰官网赛程列示
+ 场馆\n赛程来源：https://www.acmilan.com/en/season/active/schedule/a
+ ll\n场馆来源：https://www.acmilan.com/en/season/active/schedule/all\n
+ 日历预留120分钟；实际终场时间可能变化。
 URL:https://www.acmilan.com/en/season/active/schedule/all
-STATUS:TENTATIVE
+STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 CATEGORIES:AC米兰
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:【主场】AC米兰 vs 佛罗伦萨｜意甲 · 第18轮\n01
+ 月06日 03:45 北京时间\n圣西罗球场（San Siro / Giuseppe Meazza
+ ）
+TRIGGER:-PT24300S
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:【主场】AC米兰 vs 佛罗伦萨｜意甲 · 第18轮\n01
+ 月06日 03:45 北京时间\n圣西罗球场（San Siro / Giuseppe Meazza
+ ）
+TRIGGER:-PT1800S
+END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:milan-6a31e7e0c63e9a4df43c8fb4@football-calendar.ricadre.github.io
-DTSTAMP:20260914T014631Z
+DTSTAMP:20260925T214811Z
 CREATED:20260908T063456Z
-LAST-MODIFIED:20260914T014631Z
-SEQUENCE:3
-DTSTART;VALUE=DATE:20270110
-DTEND;VALUE=DATE:20270111
-SUMMARY:【时间待定】【客场】罗马 vs AC米兰｜意甲 · 第19
- 轮
+LAST-MODIFIED:20260925T214811Z
+SEQUENCE:4
+DTSTART:20270109T170000Z
+DTEND:20270109T190000Z
+SUMMARY:【客场】罗马 vs AC米兰｜意甲 · 第19轮
 LOCATION:罗马奥林匹克球场（Stadio Olimpico）
 DESCRIPTION:罗马（主） vs AC米兰（客）\n主客：AC米兰客场\n
- 意甲 · 第19轮\n开球：日期／时间待官方确认，当前为暂
- 定比赛日\n场馆：罗马奥林匹克球场（Stadio Olimpico）\n场
- 馆说明：米兰官网赛程列示场馆\n赛程来源：https://www.acm
- ilan.com/en/season/active/schedule/all\n场馆来源：https://www.acmilan
- .com/en/season/active/schedule/all\n时间明确后会更新为定时日
- 程，并启用赛前提醒。
+ 意甲 · 第19轮\n开球（北京时间）：2027-01-10 01:00\n开球（
+ 意大利时间）：2027-01-09 18:00\n场馆：罗马奥林匹克球场
+ （Stadio Olimpico）\n场馆说明：米兰官网赛程列示场馆\n赛
+ 程来源：https://www.acmilan.com/en/season/active/schedule/all\n场馆
+ 来源：https://www.acmilan.com/en/season/active/schedule/all\n日历预
+ 留120分钟；实际终场时间可能变化。
 URL:https://www.acmilan.com/en/season/active/schedule/all
-STATUS:TENTATIVE
+STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 CATEGORIES:AC米兰
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:【客场】罗马 vs AC米兰｜意甲 · 第19轮\n01月10日
+  01:00 北京时间\n罗马奥林匹克球场（Stadio Olimpico）
+TRIGGER:-PT14400S
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:【客场】罗马 vs AC米兰｜意甲 · 第19轮\n01月10日
+  01:00 北京时间\n罗马奥林匹克球场（Stadio Olimpico）
+TRIGGER:-PT1800S
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:milan-6a976bafaf5945385c2d4ae4@football-calendar.ricadre.github.io
+DTSTAMP:20260925T214811Z
+CREATED:20260908T063456Z
+LAST-MODIFIED:20260925T214811Z
+SEQUENCE:5
+DTSTART:20270113T200000Z
+DTEND:20270113T220000Z
+SUMMARY:【主场】AC米兰 vs 蒙扎｜意大利杯 · 第?轮
+LOCATION:圣西罗球场（San Siro / Giuseppe Meazza）
+DESCRIPTION:AC米兰（主） vs 蒙扎（客）\n主客：AC米兰主场\n
+ 意大利杯 · 第?轮\n开球（北京时间）：2027-01-14 04:00\n开
+ 球（意大利时间）：2027-01-13 21:00\n场馆：圣西罗球场（Sa
+ n Siro / Giuseppe Meazza）\n场馆说明：米兰官网赛程列示场馆
+ \n赛程来源：https://www.acmilan.com/en/season/active/schedule/all\n
+ 场馆来源：https://www.acmilan.com/en/season/active/schedule/all\n日
+ 历预留120分钟；实际终场时间可能变化。
+URL:https://www.acmilan.com/en/season/active/schedule/all
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+CATEGORIES:AC米兰
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:【主场】AC米兰 vs 蒙扎｜意大利杯 · 第?轮\n01月
+ 14日 04:00 北京时间\n圣西罗球场（San Siro / Giuseppe Meazza）
+TRIGGER:-PT25200S
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:【主场】AC米兰 vs 蒙扎｜意大利杯 · 第?轮\n01月
+ 14日 04:00 北京时间\n圣西罗球场（San Siro / Giuseppe Meazza）
+TRIGGER:-PT1800S
+END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:milan-6a31e7dec63e9a4df43c8f68@football-calendar.ricadre.github.io
