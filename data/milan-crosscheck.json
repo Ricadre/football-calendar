@@ -1,9 +1,20 @@
 {
   "source": "https://pub.fotmob.com/prod/pub/api/v2/calendar/team/8564.ics",
-  "checked_at": "2026-09-25T13:40:37Z",
-  "status": "ok",
+  "checked_at": "2026-09-25T18:31:39Z",
+  "status": "warning",
   "compared": 14,
   "official_time_pending": 27,
-  "differences": [],
+  "differences": [
+    {
+      "id": "milan-6a31e7f1c63e9a4df43c91c9",
+      "home": "AC米兰",
+      "away": "弗罗西诺内",
+      "official_start": "2026-11-22T17:00:00Z",
+      "reference_start": "2026-11-22T14:00:00Z",
+      "reference_status": "",
+      "official_source": "https://www.acmilan.com/en/season/active/schedule/all",
+      "reference_source": "https://www.fotmob.com/match/5749750"
+    }
+  ],
   "unmatched": []
 }

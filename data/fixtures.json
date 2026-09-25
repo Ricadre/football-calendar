@@ -393,7 +393,7 @@
     {
       "id": "milan-6a31e7f1c63e9a4df43c91c9",
       "team": "milan",
-      "start": "2026-11-22T14:00:00Z",
+      "start": "2026-11-22T17:00:00Z",
       "date": "2026-11-22",
       "tentative": false,
       "home": "AC米兰",
@@ -405,8 +405,8 @@
       "source": "https://www.acmilan.com/en/season/active/schedule/all",
       "status": "Fixture",
       "presentation_revision": "c1c114740daaf881321c",
-      "sequence": 3,
-      "modified": "2026-09-14T01:46:31Z",
+      "sequence": 4,
+      "modified": "2026-09-25T18:31:39Z",
       "created": "2026-09-08T06:34:56Z"
     },
     {
@@ -1000,10 +1000,10 @@
     }
   ],
   "source_success": {
-    "milan": "2026-09-25T13:40:37Z",
-    "lanzhou": "2026-09-25T13:40:37Z"
+    "milan": "2026-09-25T18:31:39Z",
+    "lanzhou": "2026-09-25T18:31:39Z"
   },
-  "checked_at": "2026-09-25T13:40:37Z",
+  "checked_at": "2026-09-25T18:31:39Z",
   "errors": {},
-  "crosscheck_status": "ok"
+  "crosscheck_status": "warning"
 }
