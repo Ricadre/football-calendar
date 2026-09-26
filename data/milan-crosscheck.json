@@ -1,90 +1,9 @@
 {
   "source": "https://pub.fotmob.com/prod/pub/api/v2/calendar/team/8564.ics",
-  "checked_at": "2026-09-26T14:42:47Z",
-  "status": "warning",
+  "checked_at": "2026-09-26T18:32:33Z",
+  "status": "ok",
   "compared": 22,
   "official_time_pending": 19,
-  "differences": [
-    {
-      "id": "milan-6a31e7f1c63e9a4df43c91c9",
-      "home": "AC米兰",
-      "away": "弗罗西诺内",
-      "official_start": "2026-11-22T17:00:00Z",
-      "reference_start": "2026-11-22T14:00:00Z",
-      "reference_status": "",
-      "official_source": "https://www.acmilan.com/en/season/active/schedule/all",
-      "reference_source": "https://www.fotmob.com/match/5749750"
-    },
-    {
-      "id": "milan-6a31e7efc63e9a4df43c917d",
-      "home": "卡利亚里",
-      "away": "AC米兰",
-      "official_start": "2026-11-30T19:45:00Z",
-      "reference_start": "2026-11-29T17:30:00Z",
-      "reference_status": "",
-      "official_source": "https://www.acmilan.com/en/season/active/schedule/all",
-      "reference_source": "https://www.fotmob.com/match/5749761"
-    },
-    {
-      "id": "milan-6a31e7edc63e9a4df43c9131",
-      "home": "AC米兰",
-      "away": "帕尔马",
-      "official_start": "2026-12-06T19:45:00Z",
-      "reference_start": "2026-12-06T17:30:00Z",
-      "reference_status": "",
-      "official_source": "https://www.acmilan.com/en/season/active/schedule/all",
-      "reference_source": "https://www.fotmob.com/match/5749770"
-    },
-    {
-      "id": "milan-6a31e7eac63e9a4df43c90e5",
-      "home": "那不勒斯",
-      "away": "AC米兰",
-      "official_start": "2026-12-13T19:45:00Z",
-      "reference_start": "2026-12-13T17:30:00Z",
-      "reference_status": "",
-      "official_source": "https://www.acmilan.com/en/season/active/schedule/all",
-      "reference_source": "https://www.fotmob.com/match/5749787"
-    },
-    {
-      "id": "milan-6a31e7e7c63e9a4df43c9098",
-      "home": "AC米兰",
-      "away": "科莫",
-      "official_start": "2026-12-19T17:00:00Z",
-      "reference_start": "2026-12-20T17:30:00Z",
-      "reference_status": "",
-      "official_source": "https://www.acmilan.com/en/season/active/schedule/all",
-      "reference_source": "https://www.fotmob.com/match/5749790"
-    },
-    {
-      "id": "milan-6a31e7e5c63e9a4df43c904c",
-      "home": "蒙扎",
-      "away": "AC米兰",
-      "official_start": "2027-01-02T19:45:00Z",
-      "reference_start": "2027-01-03T17:30:00Z",
-      "reference_status": "",
-      "official_source": "https://www.acmilan.com/en/season/active/schedule/all",
-      "reference_source": "https://www.fotmob.com/match/5749806"
-    },
-    {
-      "id": "milan-6a31e7e2c63e9a4df43c9000",
-      "home": "AC米兰",
-      "away": "佛罗伦萨",
-      "official_start": "2027-01-05T19:45:00Z",
-      "reference_start": "2027-01-06T17:30:00Z",
-      "reference_status": "",
-      "official_source": "https://www.acmilan.com/en/season/active/schedule/all",
-      "reference_source": "https://www.fotmob.com/match/5749810"
-    },
-    {
-      "id": "milan-6a31e7e0c63e9a4df43c8fb4",
-      "home": "罗马",
-      "away": "AC米兰",
-      "official_start": "2027-01-09T17:00:00Z",
-      "reference_start": "2027-01-10T17:30:00Z",
-      "reference_status": "",
-      "official_source": "https://www.acmilan.com/en/season/active/schedule/all",
-      "reference_source": "https://www.fotmob.com/match/5749820"
-    }
-  ],
+  "differences": [],
   "unmatched": []
 }
