@@ -1,27 +1,6 @@
 {
   "games": [
     {
-      "id": "lanzhou-14640192",
-      "team": "lanzhou",
-      "home": "广州蒲公英",
-      "away": "兰州陇原竞技",
-      "source": "https://www.henduoqiu.com/bisai/14640192",
-      "start": "2026-09-13T08:00:00Z",
-      "date": "2026-09-13",
-      "status": "Played",
-      "tentative": false,
-      "competition": "中乙保级组第23轮",
-      "venue": "广州花都体育中心",
-      "venue_note": "2026-09-13 本场战报列示场馆（懂球帝），已按比赛日期与对阵核对",
-      "venue_source": "https://pc.dongqiudi.com/articles/6339657.html",
-      "home_score": 1,
-      "away_score": 2,
-      "presentation_revision": "c1c114740daaf881321c",
-      "sequence": 5,
-      "modified": "2026-09-14T02:42:21Z",
-      "created": "2026-09-08T06:34:56Z"
-    },
-    {
       "id": "milan-6a957ee6af5945385cfd86af",
       "team": "milan",
       "start": "2026-09-16T19:00:00Z",
@@ -979,10 +958,10 @@
     }
   ],
   "source_success": {
-    "milan": "2026-09-27T05:12:03Z",
-    "lanzhou": "2026-09-27T05:12:03Z"
+    "milan": "2026-09-27T10:42:33Z",
+    "lanzhou": "2026-09-27T10:42:33Z"
   },
-  "checked_at": "2026-09-27T05:12:03Z",
+  "checked_at": "2026-09-27T10:42:33Z",
   "errors": {},
   "crosscheck_status": "ok"
 }
