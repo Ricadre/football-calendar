@@ -1,27 +1,6 @@
 {
   "games": [
     {
-      "id": "milan-6a957ee6af5945385cfd86af",
-      "team": "milan",
-      "start": "2026-09-16T19:00:00Z",
-      "date": "2026-09-16",
-      "tentative": false,
-      "home": "AC米兰",
-      "away": "本菲卡",
-      "competition": "欧联杯 · 第1轮",
-      "venue": "圣西罗球场（San Siro / Giuseppe Meazza）",
-      "venue_note": "米兰官网赛程列示场馆",
-      "venue_source": "https://www.acmilan.com/en/season/active/schedule/all",
-      "source": "https://www.acmilan.com/en/season/active/schedule/all",
-      "status": "Played",
-      "home_score": 0,
-      "away_score": 2,
-      "presentation_revision": "c1c114740daaf881321c",
-      "sequence": 4,
-      "modified": "2026-09-16T22:05:32Z",
-      "created": "2026-09-08T06:34:56Z"
-    },
-    {
       "id": "lanzhou-14640195",
       "team": "lanzhou",
       "home": "兰州陇原竞技",
@@ -958,10 +937,10 @@
     }
   ],
   "source_success": {
-    "milan": "2026-09-30T16:59:07Z",
-    "lanzhou": "2026-09-30T16:59:07Z"
+    "milan": "2026-09-30T21:24:08Z",
+    "lanzhou": "2026-09-30T21:24:08Z"
   },
-  "checked_at": "2026-09-30T16:59:07Z",
+  "checked_at": "2026-09-30T21:24:08Z",
   "errors": {},
   "crosscheck_status": "ok"
 }
