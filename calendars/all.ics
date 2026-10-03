@@ -967,22 +967,22 @@ CATEGORIES:AC米兰
 END:VEVENT
 BEGIN:VEVENT
 UID:milan-6a957ed4af5945385cfd815c@football-calendar.ricadre.github.io
-DTSTAMP:20260914T014631Z
+DTSTAMP:20261003T012433Z
 CREATED:20260908T063456Z
-LAST-MODIFIED:20260914T014631Z
-SEQUENCE:3
+LAST-MODIFIED:20261003T012433Z
+SEQUENCE:4
 DTSTART:20270121T200000Z
 DTEND:20270121T220000Z
 SUMMARY:【客场】索菲亚列夫斯基 vs AC米兰｜欧联杯 · 第7
  轮
-LOCATION:Stadion Georgi Asparuhov
+LOCATION:Stadion Vasil Levski
 DESCRIPTION:索菲亚列夫斯基（主） vs AC米兰（客）\n主客：A
  C米兰客场\n欧联杯 · 第7轮\n开球（北京时间）：2027-01-22
-  04:00\n开球（意大利时间）：2027-01-21 21:00\n场馆：Stadion G
- eorgi Asparuhov\n场馆说明：米兰官网赛程列示场馆\n赛程来
- 源：https://www.acmilan.com/en/season/active/schedule/all\n场馆来源
- ：https://www.acmilan.com/en/season/active/schedule/all\n日历预留120
- 分钟；实际终场时间可能变化。
+  04:00\n开球（意大利时间）：2027-01-21 21:00\n场馆：Stadion V
+ asil Levski\n场馆说明：米兰官网赛程列示场馆\n赛程来源
+ ：https://www.acmilan.com/en/season/active/schedule/all\n场馆来源：h
+ ttps://www.acmilan.com/en/season/active/schedule/all\n日历预留120分
+ 钟；实际终场时间可能变化。
 URL:https://www.acmilan.com/en/season/active/schedule/all
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
@@ -990,13 +990,13 @@ CATEGORIES:AC米兰
 BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:【客场】索菲亚列夫斯基 vs AC米兰｜欧联杯 · 
- 第7轮\n01月22日 04:00 北京时间\nStadion Georgi Asparuhov
+ 第7轮\n01月22日 04:00 北京时间\nStadion Vasil Levski
 TRIGGER:-PT25200S
 END:VALARM
 BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:【客场】索菲亚列夫斯基 vs AC米兰｜欧联杯 · 
- 第7轮\n01月22日 04:00 北京时间\nStadion Georgi Asparuhov
+ 第7轮\n01月22日 04:00 北京时间\nStadion Vasil Levski
 TRIGGER:-PT1800S
 END:VALARM
 END:VEVENT

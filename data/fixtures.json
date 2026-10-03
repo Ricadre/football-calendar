@@ -543,14 +543,14 @@
       "home": "索菲亚列夫斯基",
       "away": "AC米兰",
       "competition": "欧联杯 · 第7轮",
-      "venue": "Stadion Georgi Asparuhov",
+      "venue": "Stadion Vasil Levski",
       "venue_note": "米兰官网赛程列示场馆",
       "venue_source": "https://www.acmilan.com/en/season/active/schedule/all",
       "source": "https://www.acmilan.com/en/season/active/schedule/all",
       "status": "Fixture",
       "presentation_revision": "c1c114740daaf881321c",
-      "sequence": 3,
-      "modified": "2026-09-14T01:46:31Z",
+      "sequence": 4,
+      "modified": "2026-10-03T01:24:33Z",
       "created": "2026-09-08T06:34:56Z"
     },
     {
@@ -916,10 +916,10 @@
     }
   ],
   "source_success": {
-    "milan": "2026-10-02T22:31:51Z",
-    "lanzhou": "2026-10-02T22:31:51Z"
+    "milan": "2026-10-03T01:24:33Z",
+    "lanzhou": "2026-10-03T01:24:33Z"
   },
-  "checked_at": "2026-10-02T22:31:51Z",
+  "checked_at": "2026-10-03T01:24:33Z",
   "errors": {},
   "crosscheck_status": "ok"
 }
