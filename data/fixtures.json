@@ -1,27 +1,6 @@
 {
   "games": [
     {
-      "id": "milan-6a31e803c63e9a4df43c93df",
-      "team": "milan",
-      "start": "2026-09-20T18:45:00Z",
-      "date": "2026-09-20",
-      "tentative": false,
-      "home": "AC米兰",
-      "away": "莱切",
-      "competition": "意甲 · 第5轮",
-      "venue": "圣西罗球场（San Siro / Giuseppe Meazza）",
-      "venue_note": "米兰官网赛程列示场馆",
-      "venue_source": "https://www.acmilan.com/en/season/active/schedule/all",
-      "source": "https://www.acmilan.com/en/season/active/schedule/all",
-      "status": "Played",
-      "home_score": 3,
-      "away_score": 0,
-      "presentation_revision": "c1c114740daaf881321c",
-      "sequence": 4,
-      "modified": "2026-09-20T20:44:52Z",
-      "created": "2026-09-08T06:34:56Z"
-    },
-    {
       "id": "lanzhou-14640202",
       "team": "lanzhou",
       "home": "湖北青年星",
@@ -916,10 +895,10 @@
     }
   ],
   "source_success": {
-    "milan": "2026-10-04T18:36:58Z",
-    "lanzhou": "2026-10-04T18:36:58Z"
+    "milan": "2026-10-04T21:56:39Z",
+    "lanzhou": "2026-10-04T21:56:39Z"
   },
-  "checked_at": "2026-10-04T18:36:58Z",
+  "checked_at": "2026-10-04T21:56:39Z",
   "errors": {},
   "crosscheck_status": "ok"
 }
