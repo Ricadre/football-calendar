@@ -8,15 +8,17 @@
       "source": "https://www.henduoqiu.com/bisai/14640202",
       "start": "2026-10-06T09:00:00Z",
       "date": "2026-10-06",
-      "status": "Fixture",
+      "status": "Played",
       "tentative": false,
       "competition": "中乙保级组第25轮",
       "venue": "湖北足管中心训练基地中心球场",
       "venue_note": "按主队常用主场列示，参考省足协2026年8月主场公告；临时换场以本场赛事公告为准",
       "venue_source": "https://weibo.com/2/detail/5331963306059688",
+      "home_score": 2,
+      "away_score": 0,
       "presentation_revision": "c1c114740daaf881321c",
-      "sequence": 4,
-      "modified": "2026-09-14T02:47:13Z",
+      "sequence": 5,
+      "modified": "2026-10-06T16:14:46Z",
       "created": "2026-09-08T06:34:56Z"
     },
     {
@@ -895,10 +897,10 @@
     }
   ],
   "source_success": {
-    "milan": "2026-10-06T02:29:50Z",
-    "lanzhou": "2026-10-06T02:29:50Z"
+    "milan": "2026-10-06T16:14:46Z",
+    "lanzhou": "2026-10-06T16:14:46Z"
   },
-  "checked_at": "2026-10-06T02:29:50Z",
+  "checked_at": "2026-10-06T16:14:46Z",
   "errors": {},
   "crosscheck_status": "ok"
 }

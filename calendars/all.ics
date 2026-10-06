@@ -13,14 +13,14 @@ X-PUBLISHED-TTL:PT30M
 URL:https://ricadre.github.io/football-calendar/calendars/all.ics
 BEGIN:VEVENT
 UID:lanzhou-14640202@football-calendar.ricadre.github.io
-DTSTAMP:20260914T024713Z
+DTSTAMP:20261006T161446Z
 CREATED:20260908T063456Z
-LAST-MODIFIED:20260914T024713Z
-SEQUENCE:4
+LAST-MODIFIED:20261006T161446Z
+SEQUENCE:5
 DTSTART:20261006T090000Z
 DTEND:20261006T110000Z
-SUMMARY:【客场】湖北青年星 vs 兰州陇原竞技｜中乙保级组
- 第25轮
+SUMMARY:【已结束】【客场】湖北青年星 2–0 兰州陇原竞技
+ ｜中乙保级组第25轮
 LOCATION:湖北足管中心训练基地中心球场
 DESCRIPTION:湖北青年星（主） vs 兰州陇原竞技（客）\n主客
  ：兰州陇原竞技客场\n中乙保级组第25轮\n开球（北京时
@@ -29,25 +29,12 @@ DESCRIPTION:湖北青年星（主） vs 兰州陇原竞技（客）\n主客
  年8月主场公告；临时换场以本场赛事公告为准\n赛程来
  源：https://www.henduoqiu.com/bisai/14640202\n场馆来源：https://wei
  bo.com/2/detail/5331963306059688\n日历预留120分钟；实际终场时
- 间可能变化。
+ 间可能变化。\n终场比分：湖北青年星 2–0 兰州陇原竞
+ 技
 URL:https://www.henduoqiu.com/bisai/14640202
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 CATEGORIES:兰州陇原竞技
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:【客场】湖北青年星 vs 兰州陇原竞技｜中乙保
- 级组第25轮\n10月06日 17:00 北京时间\n湖北足管中心训练基
- 地中心球场
-TRIGGER:-PT28800S
-END:VALARM
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:【客场】湖北青年星 vs 兰州陇原竞技｜中乙保
- 级组第25轮\n10月06日 17:00 北京时间\n湖北足管中心训练基
- 地中心球场
-TRIGGER:-PT1800S
-END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:lanzhou-14640204@football-calendar.ricadre.github.io
