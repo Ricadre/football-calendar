@@ -897,10 +897,10 @@
     }
   ],
   "source_success": {
-    "milan": "2026-10-07T01:00:07Z",
-    "lanzhou": "2026-10-07T01:00:07Z"
+    "milan": "2026-10-07T07:10:40Z",
+    "lanzhou": "2026-10-07T07:10:40Z"
   },
-  "checked_at": "2026-10-07T01:00:07Z",
+  "checked_at": "2026-10-07T07:10:40Z",
   "errors": {},
   "crosscheck_status": "ok"
 }
