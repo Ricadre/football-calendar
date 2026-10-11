@@ -27,7 +27,7 @@
       "home": "兰州陇原竞技",
       "away": "广东铭途",
       "source": "https://www.henduoqiu.com/bisai/14640204",
-      "start": "2026-10-11T07:00:00Z",
+      "start": "2026-10-11T08:00:00Z",
       "date": "2026-10-11",
       "status": "Fixture",
       "tentative": false,
@@ -36,8 +36,8 @@
       "venue_note": "按主队2026赛季常用主场列示；临时换场以本场赛事公告为准",
       "venue_source": "https://m.17500.cn/zq/data-stadium/match-16387",
       "presentation_revision": "c1c114740daaf881321c",
-      "sequence": 4,
-      "modified": "2026-09-14T02:47:13Z",
+      "sequence": 5,
+      "modified": "2026-10-11T06:23:28Z",
       "created": "2026-09-08T06:34:56Z"
     },
     {
@@ -897,10 +897,10 @@
     }
   ],
   "source_success": {
-    "milan": "2026-10-11T00:12:40Z",
-    "lanzhou": "2026-10-11T00:12:40Z"
+    "milan": "2026-10-11T06:23:28Z",
+    "lanzhou": "2026-10-11T06:23:28Z"
   },
-  "checked_at": "2026-10-11T00:12:40Z",
+  "checked_at": "2026-10-11T06:23:28Z",
   "errors": {},
   "crosscheck_status": "ok"
 }

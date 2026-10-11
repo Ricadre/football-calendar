@@ -38,18 +38,18 @@ CATEGORIES:兰州陇原竞技
 END:VEVENT
 BEGIN:VEVENT
 UID:lanzhou-14640204@football-calendar.ricadre.github.io
-DTSTAMP:20260914T024713Z
+DTSTAMP:20261011T062328Z
 CREATED:20260908T063456Z
-LAST-MODIFIED:20260914T024713Z
-SEQUENCE:4
-DTSTART:20261011T070000Z
-DTEND:20261011T090000Z
+LAST-MODIFIED:20261011T062328Z
+SEQUENCE:5
+DTSTART:20261011T080000Z
+DTEND:20261011T100000Z
 SUMMARY:【主场】兰州陇原竞技 vs 广东铭途｜中乙保级组第
  26轮
 LOCATION:兰州奥体中心玫瑰体育场
 DESCRIPTION:兰州陇原竞技（主） vs 广东铭途（客）\n主客：
  兰州陇原竞技主场\n中乙保级组第26轮\n开球（北京时间
- ）：2026-10-11 15:00\n场馆：兰州奥体中心玫瑰体育场\n场馆
+ ）：2026-10-11 16:00\n场馆：兰州奥体中心玫瑰体育场\n场馆
  说明：按主队2026赛季常用主场列示；临时换场以本场赛
  事公告为准\n赛程来源：https://www.henduoqiu.com/bisai/14640204\n
  场馆来源：https://m.17500.cn/zq/data-stadium/match-16387\n日历预
@@ -61,14 +61,14 @@ CATEGORIES:兰州陇原竞技
 BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:【主场】兰州陇原竞技 vs 广东铭途｜中乙保级
- 组第26轮\n10月11日 15:00 北京时间\n兰州奥体中心玫瑰体育
+ 组第26轮\n10月11日 16:00 北京时间\n兰州奥体中心玫瑰体育
  场
-TRIGGER:-PT21600S
+TRIGGER:-PT25200S
 END:VALARM
 BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:【主场】兰州陇原竞技 vs 广东铭途｜中乙保级
- 组第26轮\n10月11日 15:00 北京时间\n兰州奥体中心玫瑰体育
+ 组第26轮\n10月11日 16:00 北京时间\n兰州奥体中心玫瑰体育
  场
 TRIGGER:-PT1800S
 END:VALARM
