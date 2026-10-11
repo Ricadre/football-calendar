@@ -62,13 +62,14 @@ CATEGORIES:兰州陇原竞技
 END:VEVENT
 BEGIN:VEVENT
 UID:milan-6a31e801c63e9a4df43c9393@football-calendar.ricadre.github.io
-DTSTAMP:20260914T014631Z
+DTSTAMP:20261011T182549Z
 CREATED:20260908T063456Z
-LAST-MODIFIED:20260914T014631Z
-SEQUENCE:3
+LAST-MODIFIED:20261011T182549Z
+SEQUENCE:4
 DTSTART:20261011T160000Z
 DTEND:20261011T180000Z
-SUMMARY:【客场】萨索洛 vs AC米兰｜意甲 · 第6轮
+SUMMARY:【已结束】【客场】萨索洛 1–1 AC米兰｜意甲 · 第
+ 6轮
 LOCATION:MAPEI Stadium
 DESCRIPTION:萨索洛（主） vs AC米兰（客）\n主客：AC米兰客
  场\n意甲 · 第6轮\n开球（北京时间）：2026-10-12 00:00\n开
@@ -76,23 +77,11 @@ DESCRIPTION:萨索洛（主） vs AC米兰（客）\n主客：AC米兰客
  馆说明：米兰官网赛程列示场馆\n赛程来源：https://www.acm
  ilan.com/en/season/active/schedule/all\n场馆来源：https://www.acmilan
  .com/en/season/active/schedule/all\n日历预留120分钟；实际终场
- 时间可能变化。
+ 时间可能变化。\n终场比分：萨索洛 1–1 AC米兰
 URL:https://www.acmilan.com/en/season/active/schedule/all
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 CATEGORIES:AC米兰
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:【客场】萨索洛 vs AC米兰｜意甲 · 第6轮\n10月12
- 日 00:00 北京时间\nMAPEI Stadium
-TRIGGER:-PT10800S
-END:VALARM
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:【客场】萨索洛 vs AC米兰｜意甲 · 第6轮\n10月12
- 日 00:00 北京时间\nMAPEI Stadium
-TRIGGER:-PT1800S
-END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:milan-6a957ee3af5945385cfd8517@football-calendar.ricadre.github.io
