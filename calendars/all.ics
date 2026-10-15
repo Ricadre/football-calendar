@@ -85,13 +85,13 @@ CATEGORIES:AC米兰
 END:VEVENT
 BEGIN:VEVENT
 UID:milan-6a957ee3af5945385cfd8517@football-calendar.ricadre.github.io
-DTSTAMP:20261015T174429Z
+DTSTAMP:20261015T211744Z
 CREATED:20260908T063456Z
-LAST-MODIFIED:20261015T174429Z
-SEQUENCE:4
+LAST-MODIFIED:20261015T211744Z
+SEQUENCE:5
 DTSTART:20261015T164500Z
 DTEND:20261015T184500Z
-SUMMARY:【进行中】【客场】萨尔茨堡红牛 0–2 AC米兰｜欧
+SUMMARY:【已结束】【客场】萨尔茨堡红牛 0–4 AC米兰｜欧
  联杯 · 第2轮
 LOCATION:Red Bull Arena
 DESCRIPTION:萨尔茨堡红牛（主） vs AC米兰（客）\n主客：AC
@@ -100,8 +100,8 @@ DESCRIPTION:萨尔茨堡红牛（主） vs AC米兰（客）\n主客：AC
  rena\n场馆说明：米兰官网赛程列示场馆\n赛程来源：https:
  //www.acmilan.com/en/season/active/schedule/all\n场馆来源：https://ww
  w.acmilan.com/en/season/active/schedule/all\n日历预留120分钟；实
- 际终场时间可能变化。\n当前比分（非实时推送）：萨尔
- 茨堡红牛 0–2 AC米兰
+ 际终场时间可能变化。\n终场比分：萨尔茨堡红牛 0–4 AC
+ 米兰
 URL:https://www.acmilan.com/en/season/active/schedule/all
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
