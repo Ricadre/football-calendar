@@ -2,15 +2,15 @@
 
 AC米兰男足一线队与兰州陇原竞技的非官方球迷日历。比赛日程包含对阵双方、开球时间、赛事、场馆、提醒及比分。
 
-**[打开订阅页面](https://ricadre.github.io/football-calendar/)**
+**[打开订阅页面](https://nuvora-f44c84.github.io/football-calendar/)**
 
 | 日历 | 订阅网址 |
 | --- | --- |
-| 两队合并 | https://ricadre.github.io/football-calendar/calendars/all.ics |
-| AC米兰 | https://ricadre.github.io/football-calendar/calendars/milan.ics |
-| 兰州陇原竞技 | https://ricadre.github.io/football-calendar/calendars/lanzhou.ics |
+| 两队合并 | https://nuvora-f44c84.github.io/football-calendar/calendars/all.ics |
+| AC米兰 | https://nuvora-f44c84.github.io/football-calendar/calendars/milan.ics |
+| 兰州陇原竞技 | https://nuvora-f44c84.github.io/football-calendar/calendars/lanzhou.ics |
 
-备用合并地址：<https://raw.githubusercontent.com/Ricadre/football-calendar/main/calendars/all.ics>
+备用合并地址：<https://raw.githubusercontent.com/nuvora-f44c84/football-calendar/main/calendars/all.ics>
 
 在 iPhone「日历 → 日历 → 添加日历 → 添加订阅日历」粘贴网址。iOS 26 轻点「查找」，较早版本轻点「订阅」。打开此日历的「日程提醒」，并在「设置 → 通知 → 日历」允许通知。使用订阅才能获取改期等更新；下载文件导入只是一份快照。参见 [Apple 官方说明](https://support.apple.com/zh-cn/102301)。
 
@@ -63,3 +63,7 @@ python scripts/update.py
 - 修改名称、主客标识、时区或提醒配置会更新事件版本；同一场比赛的 UID 始终不变，无需重新订阅。
 - [FotMob AC米兰 ICS](https://pub.fotmob.com/prod/pub/api/v2/calendar/team/8564.ics) 仅用于核对官网已经确定的开球时间。它的占位时间不会写进日历，也不会覆盖官网。按主客队与相近日期匹配，含糊匹配保留为未匹配记录。
 - `data/milan-crosscheck.json` 保存核对时间、匹配数量和差异。核对来源失效时不会阻止官方赛程更新。兰州不使用目前缺少后续联赛的第三方 ICS 源。
+
+## 地址迁移
+
+网页和订阅使用当前 GitHub Pages 地址。账号改名后，旧 Pages 订阅需要在日历客户端更新为上面的地址。事件 UID 保留原有命名空间作为兼容标识，不是需要访问的网址，以避免已有比赛被识别为新事件。

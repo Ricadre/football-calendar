@@ -21,7 +21,7 @@ SOURCES = {
 }
 # 仅核对 AC米兰已确定的开球时间。不会覆盖官网，也不会用于补齐待定时间。
 MILAN_CROSSCHECK_URL = "https://pub.fotmob.com/prod/pub/api/v2/calendar/team/8564.ics"
-SITE_ORIGIN = "https://ricadre.github.io/football-calendar"
+SITE_ORIGIN = "https://nuvora-f44c84.github.io/football-calendar"
 
 # 修改事件生成逻辑时递增；时区、名称、提醒配置变化则自动检测。
 PRESENTATION_VERSION = 3
