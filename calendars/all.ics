@@ -109,14 +109,14 @@ CATEGORIES:AC米兰
 END:VEVENT
 BEGIN:VEVENT
 UID:lanzhou-14640208@football-calendar.ricadre.github.io
-DTSTAMP:20260914T024713Z
+DTSTAMP:20261017T091509Z
 CREATED:20260908T063456Z
-LAST-MODIFIED:20260914T024713Z
-SEQUENCE:4
+LAST-MODIFIED:20261017T091509Z
+SEQUENCE:5
 DTSTART:20261017T070000Z
 DTEND:20261017T090000Z
-SUMMARY:【主场】兰州陇原竞技 vs 广州蒲公英｜中乙保级组
- 第27轮
+SUMMARY:【已结束】【主场】兰州陇原竞技 0–0 广州蒲公英
+ ｜中乙保级组第27轮
 LOCATION:兰州奥体中心玫瑰体育场
 DESCRIPTION:兰州陇原竞技（主） vs 广州蒲公英（客）\n主客
  ：兰州陇原竞技主场\n中乙保级组第27轮\n开球（北京时
@@ -124,25 +124,12 @@ DESCRIPTION:兰州陇原竞技（主） vs 广州蒲公英（客）\n主客
  馆说明：按主队2026赛季常用主场列示；临时换场以本场
  赛事公告为准\n赛程来源：https://www.henduoqiu.com/bisai/1464020
  8\n场馆来源：https://m.17500.cn/zq/data-stadium/match-16387\n日历
- 预留120分钟；实际终场时间可能变化。
+ 预留120分钟；实际终场时间可能变化。\n终场比分：兰州
+ 陇原竞技 0–0 广州蒲公英
 URL:https://www.henduoqiu.com/bisai/14640208
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 CATEGORIES:兰州陇原竞技
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:【主场】兰州陇原竞技 vs 广州蒲公英｜中乙保
- 级组第27轮\n10月17日 15:00 北京时间\n兰州奥体中心玫瑰体
- 育场
-TRIGGER:-PT21600S
-END:VALARM
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:【主场】兰州陇原竞技 vs 广州蒲公英｜中乙保
- 级组第27轮\n10月17日 15:00 北京时间\n兰州奥体中心玫瑰体
- 育场
-TRIGGER:-PT1800S
-END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:milan-6a31e7fdc63e9a4df43c9347@football-calendar.ricadre.github.io
